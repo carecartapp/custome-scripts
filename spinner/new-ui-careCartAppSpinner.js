@@ -1076,7 +1076,7 @@
                     }
 
                     if (Shopify.shop == 'justone-2.myshopify.com') {
-                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@4.37/spinner/2094.png';
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@2.3/spinner/2094.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 
