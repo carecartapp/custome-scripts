@@ -424,6 +424,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "vasttr.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else if (Shopify.shop == "crystalchrono.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+     else if (Shopify.shop == "05a42e-2.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
 
     /**
      * check the status of cart page
@@ -468,6 +474,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelector = '';
     let finalSelector = '';
     let masterSelector = '';
+
+     if (Shopify.shop == "crystalchrono.myshopify.com") {
+        customSelector = $jq321("#_rsi-buy-now-button");
+        finalSelector = customSelector[0];
+    }
+    
     if (Shopify.shop == "grandcruvinhos-teste.myshopify.com") {
         customSelector = $jq321(".new-buy");
         finalSelector = customSelector[6];
@@ -1278,6 +1290,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 */
 
                 let firstSelector;
+
+                if (Shopify.shop == "05a42e-2.myshopify.com") {
+                    $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center{margin-bottom: -45px!important; margin-top: 50px!important;} .cc-stock-pro-message {margin-left: 130px !important;}</style>');
+                    firstSelector = $jq321(".drawer__fixed-header");
+                }
 
                 if (Shopify.shop == "4c3264.myshopify.com") {
                     firstSelector = $jq321("#MainContent");
