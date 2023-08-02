@@ -600,7 +600,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "justinsky.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    
+ if (Shopify.shop == "6a42cb.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
 
+    if (Shopify.shop == "skinfoly.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
 
 
     $jq321.ajax({
@@ -631,6 +638,18 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     /* Custom script goes from here */
     let customSelctor = "";
     let finalSelector = "";
+
+    if (Shopify.shop == "6a42cb.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -25px !important;}</style>');
+        customSelctor = $jq321(".product-form");
+        finalSelector = customSelctor[0];
+    }
+
+    if (Shopify.shop == "skinfoly.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 47px !important; margin-top: -10px !important;}</style>');
+        customSelctor = $jq321(".product-single__quantity");
+        finalSelector = customSelctor[0];
+    }
 
     if (Shopify.shop == "justinsky.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 35px !important;}</style>');
