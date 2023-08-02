@@ -3375,6 +3375,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+         if (Shopify.shop == "oddnot.myshopify.com") {
+            masterSelector = $jq321(".product-meta__price-list-container");
+            finalSelector = masterSelector[0];
+        }
+        
+        if (Shopify.shop == "ef7c26.myshopify.com") {
+            masterSelector = $jq321(".product-single__add-to-cart");
+            finalSelector = masterSelector[0];
+        }
+        
         if (Shopify.shop == "frenchiestuff.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">#clockdivpreviewSales{ display: flex; align-items: center; justify-content: center;  flex-direction: row-reverse;} .colon{top: -7px;}</style>'
@@ -4039,6 +4049,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     // ---------------------------------- <TRUST BADGES MODULE> --------------------------------
     function trustBadges(trustBadgesResponse) {
+         if (Shopify.shop == "vapeology-ashford.myshopify.com") {
+            let text = window.location.pathname;
+            let result = text.indexOf("products");
+
+            if (result == -1) {
+                return;
+            }
+        }
+        
         if (Shopify.shop == "7ac472.myshopify.com") {
             let text = window.location.pathname;
             let result = text.indexOf("products");
