@@ -97,6 +97,18 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     let productID = 0;
 
+
+     if (Shopify.shop == "840ded.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 60px !important;  margin-top: -5px !important;}</style>'
+        );
+    }
+  if (Shopify.shop == "d17e42.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 55px !important;  margin-top: -8px !important;}</style>'
+        );
+    }
+
     if (Shopify.shop == "behappyfr.myshopify.com") {
         productID = 6887512703140;
     }
