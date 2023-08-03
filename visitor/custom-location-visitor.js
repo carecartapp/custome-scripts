@@ -608,6 +608,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "skinfoly.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+     if (Shopify.shop == "bc617d-2.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "theteelovers.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
 
 
     $jq321.ajax({
@@ -639,6 +645,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+     if (Shopify.shop == "theteelovers.myshopify.com") {
+        customSelctor = $jq321(".pf-39_");
+        finalSelector = customSelctor[0];
+    }
+    if (Shopify.shop == "bc617d-2.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 50px !important;}</style>');
+        customSelctor = $jq321(".product-info__title");
+        finalSelector = customSelctor[0];
+    }
+    
     if (Shopify.shop == "6a42cb.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -25px !important;}</style>');
         customSelctor = $jq321(".product-form");
