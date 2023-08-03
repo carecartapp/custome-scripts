@@ -430,7 +430,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
      else if (Shopify.shop == "05a42e-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
-
+     else if (Shopify.shop == "house-heaven-99.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+     else if (Shopify.shop == "prestige-7530.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     /**
      * check the status of cart page
      */
@@ -905,6 +910,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
     }
 
+    if (Shopify.shop == "house-heaven-99.myshopify.com") {
+        customSelector = $jq321(".visitor_counter");
+        finalSelector = customSelector[0];
+    }
+    if (Shopify.shop == "prestige-7530.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{ margin-top:20px !important; margin-bpttom:20px !important; }</style>');
+        customSelector = $jq321(".armament-quantity-selector");
+        finalSelector = customSelector[1];
+    }
     
     function stockCountdown(response) {
 
@@ -991,6 +1005,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer4 = $jq321("form[action='/cart/add']:first");
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
+
+        if (Shopify.shop == "house-heaven-99.myshopify.com") {
+            customSelector = $jq321(".stock-top");
+            finalSelector = customSelector[0];
+        }
         
         if (Shopify.shop == "vasttr.myshopify.com") {
            customSelector = $jq321(".product-form__submit");
