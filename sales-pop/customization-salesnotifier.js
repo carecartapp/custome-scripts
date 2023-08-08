@@ -2948,6 +2948,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.timer-store-front:nth-of-type(2) {display:none !important;}</style>');
     }
 
+     if (Shopify.shop == "toronto-brow-shop.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css">' +
+            '.notificationPreview-box .card-body h5.card-title{font-weight: normal !important;  letter-spacing: normal !important;}' +
+            '</style>'
+        );
+    }
+
     if (Shopify.shop == "soundwaves-foundation.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css">' +
