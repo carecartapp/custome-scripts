@@ -439,6 +439,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
      else if (Shopify.shop == "cbf970-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+      else if (Shopify.shop == "theluckybrands.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     /**
      * check the status of cart page
      */
@@ -927,6 +930,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     customSelector = $jq321(".ecom-product-single__add-to-cart-buttons-wrapper");
     finalSelector = customSelector[0];
     }
+    if (Shopify.shop == "theluckybrands.myshopify.com") {
+    customSelector = $jq321(".total-price");
+    finalSelector = customSelector[0];
+}
     
     function stockCountdown(response) {
 
