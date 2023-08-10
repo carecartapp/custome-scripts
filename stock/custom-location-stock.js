@@ -442,6 +442,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
       else if (Shopify.shop == "theluckybrands.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+     else if (Shopify.shop == "cara-cristini.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "awol-vision.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     /**
      * check the status of cart page
      */
@@ -1324,6 +1330,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 */
 
                 let firstSelector;
+
+                 if (Shopify.shop == "awol-vision.myshopify.com") {
+                    $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center { margin-bottom: 45px !important; margin-top: -45px !important; }</style>');
+                }
 
                 if (Shopify.shop == "05a42e-2.myshopify.com") {
                     $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center{margin-bottom: -45px!important; margin-top: 50px!important;} .cc-stock-pro-message {margin-left: 130px !important;}</style>');
