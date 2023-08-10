@@ -614,6 +614,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "theteelovers.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+     if (Shopify.shop == "thetinytree.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
 
 
     $jq321.ajax({
@@ -644,6 +647,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     /* Custom script goes from here */
     let customSelctor = "";
     let finalSelector = "";
+
+     if (Shopify.shop == "thetinytree.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 35px !important; margin-top: -30px !important;}</style>');
+        customSelctor = $jq321(".v-stack .buy-buttons ");
+        finalSelector = customSelctor[0];
+    }
 
      if (Shopify.shop == "theteelovers.myshopify.com") {
         customSelctor = $jq321(".pf-44_");
