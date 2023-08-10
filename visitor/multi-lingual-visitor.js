@@ -164,6 +164,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         if (response.above_cart == 1) {
 
+          if (Shopify.shop == "la-ronza.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 25px !important; margin-top:-20px !important;} i{ order:1 !important; } </style>');
+            $jq321(response.view).insertBefore('.product-form__actions');
+            var divs = document.querySelectorAll('.visitor-counter-content-box-carecartbysalespop-2020');
+            divs[1].remove();
+            }
+
             if (Shopify.shop == "modibags.myshopify.com") {
                 $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 40px !important; }</style>');
                 $jq321(response.view).insertBefore('.add-to-cart');
