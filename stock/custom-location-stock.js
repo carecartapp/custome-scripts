@@ -448,6 +448,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "awol-vision.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else if (Shopify.shop == "private-8361.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     
     /**
      * check the status of cart page
@@ -940,7 +943,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "theluckybrands.myshopify.com") {
     customSelector = $jq321(".total-price");
     finalSelector = customSelector[0];
-}
+   }
+    if (Shopify.shop == "private-8361.myshopify.com") {
+    customSelector = $jq321(".product__title");
+    finalSelector = customSelector[0];
+   }
     
     function stockCountdown(response) {
 
