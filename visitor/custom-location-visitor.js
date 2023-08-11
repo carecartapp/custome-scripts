@@ -618,7 +618,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
 
-
+   if (Shopify.shop == "the-bob-store-india.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    
     $jq321.ajax({
         type: "GET",
         url: salespoplib_vars_obj.backend_url + 'checkStore/',
@@ -648,6 +651,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "the-bob-store-india.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 45px !important; margin-top: -25px !important;}</style>');
+        customSelctor = $jq321(".ks-chart-container");
+        finalSelector = customSelctor[0];
+    }
      if (Shopify.shop == "thetinytree.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 35px !important; margin-top: -30px !important;}</style>');
         customSelctor = $jq321(".v-stack .buy-buttons ");
