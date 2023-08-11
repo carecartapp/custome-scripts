@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.20
+ * @version 2.23
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1338,7 +1338,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 */
 
                 let firstSelector;
-
+                 if (Shopify.shop == "pura-health11.myshopify.com") {
+                    firstSelector = $jq321("#CartDrawer-Form");
+                }
                  if (Shopify.shop == "awol-vision.myshopify.com") {
                     $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center { margin-bottom: 45px !important; margin-top: -45px !important; }</style>');
                 }
