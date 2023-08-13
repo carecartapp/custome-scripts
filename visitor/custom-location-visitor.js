@@ -658,17 +658,17 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 45px !important; margin-top: -25px !important;}</style>');
         customSelctor = $jq321(".ks-chart-container");
         finalSelector = customSelctor[0];
-    }
-     if (Shopify.shop == "thetinytree.myshopify.com") {
-        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 35px !important; margin-top: -30px !important;}</style>');
-        customSelctor = $jq321(".v-stack .buy-buttons ");
+        }
+      if (Shopify.shop == "thetinytree.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 35px; margin-top: -30px;}</style>');
+        customSelctor = $jq321(".v-stack .buy-buttons");
         finalSelector = customSelctor[0];
-    }
+        }
 
-     if (Shopify.shop == "theteelovers.myshopify.com") {
+       if (Shopify.shop == "theteelovers.myshopify.com") {
         customSelctor = $jq321(".pf-44_");
         finalSelector = customSelctor[0];
-    }
+        }
     if (Shopify.shop == "bc617d-2.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 50px !important;}</style>');
         customSelctor = $jq321(".product-info__title");
