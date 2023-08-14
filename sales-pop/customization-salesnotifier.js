@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.31
+ * @version 2.32
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3208,6 +3208,8 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
         if (Shopify.shop == "the-senset.myshopify.com") {
+            masterSelector = $jq321(".ProductForm__AddToCart");
+            finalSelector = masterSelector[0];
             $jq321("head").append('<style type="text/css">.stock-top{display:block !important;} .stock-progress-background{display:none !important;}</style>');
         }
         if (Shopify.shop == "shimosstore.myshopify.com") {
@@ -3422,7 +3424,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             console.log(finalSelector);
         }
         if (Shopify.shop == "the-senset.myshopify.com") {
-            masterSelector = $jq321(".ProductForm__AddToCart");
+            masterSelector = $jq321(".stock-top");
             finalSelector = masterSelector[0];
         }
 
@@ -3598,10 +3600,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             console.log(finalSelector);
         }
         else if (Shopify.shop == "the-senset.myshopify.com") {
-            masterSelector = $jq321(".ProductMeta");
+            masterSelector = $jq321(".ProductMeta .ProductMeta__PriceList ");
             finalSelector = masterSelector[0];
             $jq321("head").append(
-                '<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 40px !important; margin-top: -15px !important;}</style>'
+                '<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important;}</style>'
             );
         }
         else if (Shopify.shop == "mylove-jewellery.myshopify.com") {
