@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.29
+ * @version 2.36
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1350,13 +1350,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "casualmode-store.myshopify.com") {
         customSelctor = $jq321(".shopify-product-form{}");
         finalSelector = customSelctor[0];
-        console.log(finalSelector);
+    
     }
     if (Shopify.shop == "luxiebeam.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 40px !important; }</style>');
         customSelctor = $jq321(".instant-buy");
         finalSelector = customSelctor[0];
-        console.log(finalSelector);
+    
     }
     if (Shopify.shop == "sorrynotsorryclothing.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 40px !important; margin-top: -15px !important; } .counter-text-carecartbysalespop-2020 {    min-height: 25px !important; } @media only screen and (max-width:768px) , only screen and (max-width:992px){.visitor-counter-content-box-carecartbysalespop-2020 { height: 50px !important; }}</style>');
@@ -1370,29 +1370,35 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 30px !important; }</style>');
         customSelctor = $jq321(".product__title");
         finalSelector = customSelctor[0];
-        console.log(finalSelector);
+        
     }
     if (Shopify.shop == "theskshop-616.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 30px !important; } .counter-text-carecartbysalespop-2020 {min-height : 0px !important;}</style>');
         customSelctor = $jq321(".product-form");
         finalSelector = customSelctor[0];
-        console.log(finalSelector);
+        
     }
     if (Shopify.shop == "iqon-collection.myshopify.com") {
         customSelctor = $jq321(".product-form__submit");
         finalSelector = customSelctor[0];
-        console.log(finalSelector);
+       
     }
     if (Shopify.shop == "well-squared.myshopify.com") {
         customSelctor = $jq321(".bynw-rcv");
         finalSelector = customSelctor[0];
-        console.log(finalSelector);
+       
     }
     if (Shopify.shop == "b4accf-2.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 35px !important; margin-top: -16px !important;}</style>');
         customSelctor = $jq321(".option-selector--with-size-chart");
         finalSelector = customSelctor[0];
-        console.log(finalSelector);
+      
+    }
+     if (Shopify.shop == "8d56ce.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.counter-text-carecartbysalespop-2020 {min-height: 20px !important;} .visitor-counter-content-box-carecartbysalespop-2020{height: 20px !important;}</style>');
+        customSelctor = $jq321(".product__title");
+        finalSelector = customSelctor[0];
+    
     }
 
     function visitorCounter(responseVisitor) {
@@ -1471,17 +1477,6 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             $jq321("body").append('<style style="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -24px !important}</style>');
         }
 
-        if (Shopify.shop == "8d56ce.myshopify.com") {
-            $jq321("head").append('<style type="text/css">' + '.visitor-counter-content-box-carecartbysalespop-2020{height: 20px !important;}' +
-                '</style>');
-            if(window.location.href == "https://tryfrost.com/products/toothpaste")
-            {
-                $jq321("head").append('<style type="text/css">.counter-text-carecartbysalespop-2020 {min-height: 35px !important;} .visitor-counter-content-box-carecartbysalespop-2020{height: 10px !important;}</style>');
-                customSelctor = $jq321(".clearfix");
-                finalSelector = customSelctor[0];
-                $jq321(responseVisitor.view).insertAfter(finalSelector);
-            }
-        }
         $jq321('n').html(function (i, v) {
             return v.replace(/(\d)/g, '<span ' + responseVisitor.count + '>$1</span>');
         });
