@@ -454,6 +454,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "pura-health11.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else if (Shopify.shop == "neneschicks.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     
     /**
      * check the status of cart page
@@ -951,6 +954,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     customSelector = $jq321(".product__title");
     finalSelector = customSelector[0];
    }
+
+    if (Shopify.shop == "neneschicks.myshopify.com") {
+    customSelector = $jq321(".product__submit__buttons");
+    finalSelector = customSelector[0];
+    }
     
     function stockCountdown(response) {
 
