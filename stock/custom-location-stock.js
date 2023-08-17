@@ -460,6 +460,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "f8c697.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+     else if (Shopify.shop == "shopper-bridge.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     
     /**
      * check the status of cart page
@@ -962,7 +965,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     customSelector = $jq321(".product__submit__buttons");
     finalSelector = customSelector[0];
     }
-    
+    if (Shopify.shop == "shopper-bridge.myshopify.com") {
+    $jq321("head").append('<style type="text/css">.stock-top{ margin-top:15px !important; margin-bottom:25px !important; }</style>');
+    customSelector = $jq321(".product-single__policies");
+    finalSelector = customSelector[0];
+    }
     function stockCountdown(response) {
 
         var selectorStock0 = $jq321("form[action='/cart/add']").find(".product__submit__buttons").parent();
