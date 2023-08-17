@@ -627,6 +627,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "c0c589-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+     if (Shopify.shop == "bevinty.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "kbaksu-2.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     
     $jq321.ajax({
         type: "GET",
@@ -657,6 +663,19 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+     if (Shopify.shop == "kbaksu-2.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 45px !important; margin-top: -30px !important;}</style>');
+        customSelctor = $jq321(".product-form__buttons");
+        finalSelector = customSelctor[0];
+
+    }
+    if (Shopify.shop == "bevinty.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 45px !important; margin-top: -30px !important;}</style>');
+        customSelctor = $jq321(".product-price");
+        finalSelector = customSelctor[0];
+
+    }
+    
      if (Shopify.shop == "c0c589-2.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 60px !important; margin-top: -10px !important;}</style>');
         customSelctor = $jq321(".product-single__add-to-cart");
