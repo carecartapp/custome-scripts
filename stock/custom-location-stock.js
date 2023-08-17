@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.23
+ * @version 2.41
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -455,6 +455,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "neneschicks.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "f8c697.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     
@@ -1046,6 +1049,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+
+    if (Shopify.shop == "f8c697.myshopify.com") {
+        if(window.location.href == "https://spankygarbage.store/products/factory-price-flame-humidifier-aroma-diffusers-machine-home-bedroom-silent-essential-oil-flame-aroma-diffuser")
+        {
+        customSelector = $jq321(".pf-46_");
+        finalSelector = customSelector[0];
+        }
+    }
+        
         if (Shopify.shop == "house-heaven-99.myshopify.com") {
             customSelector = $jq321(".stock-top");
             finalSelector = customSelector[0];
