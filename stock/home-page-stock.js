@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 1.1.7
+ * @version 2.50
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -268,6 +268,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "69d051.myshopify.com") {
         productID = 8377966657835;
     }
+    if (Shopify.shop == "3da54d.myshopify.com") {
+        productID = 8520236073296;
+    }
 
     /**
      * check the status of cart page
@@ -424,6 +427,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelector = $jq321(".product-form__submit");
         finalSelector = customSelector[0];
     }
+    if (Shopify.shop == "3da54d.myshopify.com") {
+        customSelector = $jq321(".pf-option-swatches");
+        finalSelector = customSelector[0];
+    }
+    
     // if (Shopify.shop == "432928-3.myshopify.com") {
     //     customSelector = $jq321(".sc-bBHHxi.fhourC.pf-24_");
     //     finalSelector = customSelector[0];
@@ -518,6 +526,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
                 console.log(finalSelector);
             }
+        }
+        if (Shopify.shop == "3da54d.myshopify.com") {
+            customSelector = $jq321(".sc-jaSCiF");
+            finalSelector = customSelector[0];
         }
 
         var selectorTimer1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
