@@ -1080,6 +1080,15 @@
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 
+                     if (Shopify.shop == 'drink-yuzy.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@2.46/spinner/lime-for-spinner-wheel_ut0w6l-removebg-preview.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+                    if (Shopify.shop == 'happykittysalve.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@2.47/spinner/happy-kitty-logo-4_1087gih-removebg-preview.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+
                 }
 
                 function hideSpinASaleModule() {
@@ -3223,6 +3232,11 @@
                 }
                 if (Shopify.shop == 'orthorobic.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css"> .checkbox input[type=checkbox],.checkbox input[type=radio]{ clip: auto;overflow: visible;position: static;height: auto;width: auto;z-index: 1;opacity: 1!important;}.checkbox label:after{display:none;}</style>');
+                    //console.log("SAS https://partychampions.com/");
+                }
+
+                if (Shopify.shop == 'drink-yuzy.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css"> #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p{color:red;}#wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description, span#cc-spin-a-sale-consent-text, .wheelify-cc-spin-a-sale-spinner-progress-bar{color:#000 !important;}div#wheelify-cc-spin-a-sale-powered-by-carecart a span b{color:#000 !important;}</style>');
                     //console.log("SAS https://partychampions.com/");
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
