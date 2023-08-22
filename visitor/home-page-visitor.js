@@ -210,15 +210,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
    if (Shopify.shop == "3da54d.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 40px !important;margin-top: -5px !important;}}</style>');
-        customSelctor = $jq321(".sc-domHDO");
+        customSelctor = $jq321(".pf-83_");
         finalSelector = customSelctor[0];
 
         var screenWidth = window.innerWidth;
         var isSmallScreen = screenWidth <= 576;
 
         if (isSmallScreen) {
-            customSelctor = $jq321(".sc-domHDO");
-            finalSelector = customSelctor[1];    
+            customSelctor = $jq321(".pf-154_");
+            finalSelector = customSelctor[0];    
         }
     }
     if (Shopify.shop == "walea-shop.myshopify.com") {
