@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.50
+ * @version 2.57
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -428,8 +428,18 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
     }
     if (Shopify.shop == "3da54d.myshopify.com") {
-        customSelector = $jq321(".pf-option-swatches");
-        finalSelector = customSelector[0];
+        customSelctor = $jq321(".pf-option-swatches");
+        finalSelector = customSelctor[0];
+
+        var screenWidth = window.innerWidth;
+        var isSmallScreen = screenWidth <= 776;
+
+        if (isSmallScreen) {
+            customSelctor = $jq321(".pf-option-swatches");
+            finalSelector = customSelctor[1];
+
+        }
+
     }
     
     // if (Shopify.shop == "432928-3.myshopify.com") {
@@ -527,9 +537,19 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 console.log(finalSelector);
             }
         }
-        if (Shopify.shop == "3da54d.myshopify.com") {
-            customSelector = $jq321(".sc-jaSCiF");
-            finalSelector = customSelector[0];
+       if (Shopify.shop == "3da54d.myshopify.com") {
+            customSelctor = $jq321(".sc-jaSCiF");
+            finalSelector = customSelctor[0];
+
+            var screenWidth = window.innerWidth;
+            var isSmallScreen = screenWidth <= 776;
+
+            if (isSmallScreen) {
+                customSelctor = $jq321(".sc-jaSCiF");
+                finalSelector = customSelctor[1];
+
+            }
+
         }
 
         var selectorTimer1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
