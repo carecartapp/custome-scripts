@@ -428,6 +428,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
     }
     if (Shopify.shop == "3da54d.myshopify.com") {
+        customSelector = $jq321(".pf-option-swatches");
+        finalSelector = customSelector[0];
+    }
+    
+    if (Shopify.shop == "3da54d.myshopify.com") {
         customSelctor = $jq321(".pf-option-swatches");
         finalSelector = customSelctor[0];
 
@@ -537,6 +542,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 console.log(finalSelector);
             }
         }
+
+        if (Shopify.shop == "3da54d.myshopify.com") {
+            customSelctor = $jq321(".sc-jaSCiF");
+            finalSelector = customSelctor[0];
+        }
+        
        if (Shopify.shop == "3da54d.myshopify.com") {
             customSelctor = $jq321(".sc-jaSCiF");
             finalSelector = customSelctor[0];
