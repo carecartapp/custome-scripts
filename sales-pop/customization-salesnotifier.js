@@ -3194,7 +3194,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     /** Stock for variants ends **/
 
     function stockCountdown(responseStock) {
-
+        
         var selectorStock1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock2 = $jq321("form[action='/cart/add']");
         var selectorStock3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
@@ -3202,6 +3202,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "my-recovery-edge.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
+        }
+        if (Shopify.shop == "slimming-patch-3236.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
+        }
          if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
             masterSelector = $jq321(".button_heart");
@@ -3401,6 +3407,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "my-recovery-edge.myshopify.com") {
+            masterSelector = $jq321(".ProductForm__Variants");
+            finalSelector = masterSelector[0];
+        }
+        if (Shopify.shop == "slimming-patch-3236.myshopify.com") {
+            masterSelector = $jq321(".ProductForm__Variants");
+            finalSelector = masterSelector[0];
+        }
           if (Shopify.shop == "frenchiestuff.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">.colon{left:-1px; top: 2px;} #clockdivpreviewSales{display:flex;}</style>'
@@ -3584,7 +3598,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
-          if (Shopify.shop == "anatomylifeshop.myshopify.com") {
+        if (Shopify.shop == "f9e8d5.myshopify.com") {
+            $jq321("head").append(
+                "<style type='text/css'>.fa-eye:before {content: '\\f06e' !important;} .visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -20px !important;}</style>"
+            );
+        }
+        if (Shopify.shop == "anatomylifeshop.myshopify.com") {
             masterSelector = $jq321(".module-wrap .module .gf_icon-list");
             finalSelector = masterSelector[0];
             }
@@ -3697,6 +3716,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+        if (Shopify.shop == "f9e8d5.myshopify.com") {
+            $jq321("head").append(
+                "<style type='text/css'>.fa-check:before {content: '\\f00c' !important;}</style>"
+            );
+        }
         if (Shopify.shop == "shimosstore.myshopify.com") {
             masterSelector = $jq321(".btn--add-to-cart");
             finalSelector = masterSelector[0];
