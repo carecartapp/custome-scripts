@@ -2989,11 +2989,6 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "mhrbusa-1552.myshopify.com") {
         $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px}.stock-message-font-size-inherit{font-size: 16px !important;}</style>');
     }
-    if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
-        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px}</style>');
-        masterSelector = $jq321(".button_heart");
-        finalSelector = masterSelector[0];
-    }
     if (Shopify.shop == "boutique-minifolies.myshopify.com") {
         masterSelector = $jq321(".product__submit__buttons");
         finalSelector = masterSelector[0];
@@ -3207,6 +3202,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+         if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
+            masterSelector = $jq321(".button_heart");
+            finalSelector = masterSelector[0];
+        }
          if (Shopify.shop == "anatomylifeshop.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
             masterSelector = $jq321(".gf_align-module");
@@ -3401,6 +3401,22 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+          if (Shopify.shop == "frenchiestuff.myshopify.com") {
+            $jq321("head").append(
+                '<style type="text/css">.colon{left:-1px; top: 2px;} #clockdivpreviewSales{display:flex;}</style>'
+            );
+            masterSelector = $jq321(".variations_button");
+            finalSelector = masterSelector[0];
+        }
+        if (Shopify.shop == "directdealstore.myshopify.com") {
+            $jq321("head").append(
+                '<style type="text/css">.colon{left:-1px; top: 2px;} #clockdivpreviewSales{display:flex; flex-direction:row-reverse; justify-content:center;}</style>'
+            );
+        }
+         if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
+            masterSelector = $jq321(".button_heart");
+            finalSelector = masterSelector[0];
+        }
          if (Shopify.shop == "oddnot.myshopify.com") {
             masterSelector = $jq321(".product-meta__price-list-container");
             finalSelector = masterSelector[0];
@@ -4079,6 +4095,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     // ---------------------------------- <TRUST BADGES MODULE> --------------------------------
     function trustBadges(trustBadgesResponse) {
+        
+          if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
+            let text = window.location.pathname;
+            let result = text.indexOf("products");
+
+            if (result == -1) {
+                return;
+            }
+        }
          if (Shopify.shop == "vapeology-ashford.myshopify.com") {
             let text = window.location.pathname;
             let result = text.indexOf("products");
@@ -4254,7 +4279,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 $jq321(trustBadgesResponse.view).insertAfter(".product-form__submit");
             }
             else if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
-                $jq321(trustBadgesResponse.view).insertAfter(".button_heart");
+                $jq321(trustBadgesResponse.view).insertAfter(".stock-top");
             }
             else if (Shopify.shop == "egg-avocado.myshopify.com") {
                 $jq321(trustBadgesResponse.view).insertAfter(".shopify-payment-button__button");
