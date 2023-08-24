@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 2.52 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 2.64 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1357,7 +1357,13 @@
                                     return;
                                 }
                             }
+                            
                             /* New custom fixes added from here */
+
+                            if (Shopify.shop == 'swisspedics.myshopify.com') {
+                                carecartSpinnerJquery("body").append('<style type="text/css"> .wheelify-signupContainer .checkbox label::after{display:none;} .wheelify-signupContainer .checkbox input[type="checkbox"]{clip: auto; height: auto; width: auto; z-index: 1; opacity: 1 !important;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{text-indent: 22px;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{line-height: 1;} </style>');
+                            }
+                            
                             if (Shopify.shop == 'kartcamel-com.myshopify.com') {
                                 carecartSpinnerJquery("body").append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width:auto !important; height:auto; background-color:transparent;border:none;}</style>');
                             }
