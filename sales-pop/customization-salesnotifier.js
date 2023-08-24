@@ -3202,6 +3202,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "f9e8d5.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
+        }
         if (Shopify.shop == "my-recovery-edge.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
         }
