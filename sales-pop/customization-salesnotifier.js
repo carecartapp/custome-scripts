@@ -3410,6 +3410,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+         if (Shopify.shop == "wellshave.myshopify.com") {
+            masterSelector = $jq321(".product-form__submit");
+            finalSelector = masterSelector[0];
+        }
         if (Shopify.shop == "my-recovery-edge.myshopify.com") {
             masterSelector = $jq321(".ProductForm__Variants");
             finalSelector = masterSelector[0];
@@ -3719,6 +3723,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+         if (Shopify.shop == "wellshave.myshopify.com") {
+            masterSelector = $jq321(".product-form__submit");
+            finalSelector = masterSelector[0];
+        }
         if (Shopify.shop == "f9e8d5.myshopify.com") {
             $jq321("head").append(
                 "<style type='text/css'>.fa-check:before {content: '\\f00c' !important;}</style>"
