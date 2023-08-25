@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.71
+ * @version 2.73
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -469,7 +469,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "cora-and-violet.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
-    
+    else if (Shopify.shop == "1f6647.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     /**
      * check the status of cart page
      */
@@ -978,6 +980,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "3neyecare.myshopify.com") {
         customSelector = $jq321(".sc-bXdNzS");
+        finalSelector = customSelector[0];
+    }
+    if (Shopify.shop == "1f6647.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-message{margin-top:115px !important;}</style>');
+        customSelector = $jq321(".payment-buttons");
         finalSelector = customSelector[0];
     }
     
