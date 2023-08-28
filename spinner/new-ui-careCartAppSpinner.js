@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 2.77 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 2.79 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3239,6 +3239,11 @@
                     carecartSpinnerJquery('head').append('<style type="text/css"> #page-transition-overlay{background-color:transparent !important;}</style>');
                     //console.log("SAS https://partychampions.com/");
                 }
+
+                if (Shopify.shop == 'sirplus-dev.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox{width: auto;height: auto;background: transparent;border: none;}</style>');
+                }
+                
                 if (Shopify.shop == 'orthorobic.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css"> .checkbox input[type=checkbox],.checkbox input[type=radio]{ clip: auto;overflow: visible;position: static;height: auto;width: auto;z-index: 1;opacity: 1!important;}.checkbox label:after{display:none;}</style>');
                     //console.log("SAS https://partychampions.com/");
