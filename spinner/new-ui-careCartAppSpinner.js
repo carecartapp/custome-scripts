@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 2.79 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 2.80 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3241,6 +3241,10 @@
                 }
 
                 if (Shopify.shop == 'sirplus-dev.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox{width: auto;height: auto;background: transparent;border: none;}</style>');
+                }
+
+                if (Shopify.shop == 'banzaihobby.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox{width: auto;height: auto;background: transparent;border: none;}</style>');
                 }
                 
