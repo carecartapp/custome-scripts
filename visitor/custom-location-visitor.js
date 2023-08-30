@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.70
+ * @version 2.84
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -643,6 +643,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     if (Shopify.shop == "saltytubco.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "pachamama-indoor-farming.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     
@@ -1464,7 +1467,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelctor[0];
         console.log(finalSelector);
     }
-    
+     if (Shopify.shop == "pachamama-indoor-farming.myshopify.com") {
+        $jq321("head").append('<style type="text/css">[class^="icon-"]{font-family:inherit !important;}{font-family: inherit !important;}</style>');
+    }
+
     function visitorCounter(responseVisitor) {
         var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor2 = $jq321("form[action='/cart/add']");
