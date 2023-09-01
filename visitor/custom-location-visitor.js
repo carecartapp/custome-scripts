@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.84
+ * @version 2.88
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -648,6 +648,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "pachamama-indoor-farming.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "a67d4a.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+
     
     $jq321.ajax({
         type: "GET",
@@ -1469,6 +1473,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
      if (Shopify.shop == "pachamama-indoor-farming.myshopify.com") {
         $jq321("head").append('<style type="text/css">[class^="icon-"]{font-family:inherit !important;}{font-family: inherit !important;}</style>');
+    }
+
+     if (Shopify.shop == "a67d4a.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 38px !important;margin-top: -15px !important;}</style>');
+        customSelctor = $jq321(".jedi-stock-counter");
+        finalSelector = customSelctor[0];
     }
 
     function visitorCounter(responseVisitor) {
