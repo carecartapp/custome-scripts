@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.42
+ * @version 2.91
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -208,16 +208,17 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important; margin-top: -25px !important;}</style>');
         }
     }
-   if (Shopify.shop == "3da54d.myshopify.com") {
-        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 40px !important;margin-top: -5px !important;}}</style>');
-        customSelctor = $jq321(".pf-83_");
+      if (Shopify.shop == "3da54d.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 25px !important;margin-top: -15px !important;}}</style>');
+        customSelctor = $jq321(".pf-84_");
         finalSelector = customSelctor[0];
 
         var screenWidth = window.innerWidth;
         var isSmallScreen = screenWidth <= 576;
 
         if (isSmallScreen) {
-            customSelctor = $jq321(".pf-154_");
+            $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important;margin-top: -15px !important;}}</style>');
+            customSelctor = $jq321(".pf-153_");
             finalSelector = customSelctor[0];    
         }
     }
