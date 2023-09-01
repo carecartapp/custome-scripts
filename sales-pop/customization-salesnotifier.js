@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.76
+ * @version 2.91
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3681,6 +3681,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         }
         else if (Shopify.shop == "egg-avocado.myshopify.com") {
             masterSelector = $jq321(".product-meta__title");
+            finalSelector = masterSelector[0];
+        }
+        else if (Shopify.shop == "thesmartbud-com.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-progress-background {width: 50% !important;}</style>');
+            masterSelector = $jq321(".sc-gwNDlS.gJLEdj");
             finalSelector = masterSelector[0];
         }
         if (response.above_cart == 1) {
