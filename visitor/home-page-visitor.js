@@ -218,7 +218,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         if (isSmallScreen) {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important;margin-top: -15px !important;}}</style>');
-            customSelctor = $jq321(".pf-153_");
+            customSelctor = $jq321(".pf-154_");
             finalSelector = customSelctor[0];    
         }
     }
