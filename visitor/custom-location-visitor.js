@@ -654,9 +654,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
      if (Shopify.shop == "c3d8a4-3.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
-    if (Shopify.shop == "shopkouneli.myshopify.com") {
-        var meta = { "product": { "id": __st.rid } };
-    }
+    
     
     $jq321.ajax({
         type: "GET",
@@ -1350,10 +1348,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">' + '.visitor-counter-content-box-carecartbysalespop-2020{height:32px !important;}.visitor-left{padding-left:30px !important;}' +
             '</style>');
     }
-    if (Shopify.shop == "shopkouneli.myshopify.com") {
-        customSelctor = $jq321(".ProductMeta");
-        finalSelector = customSelctor[0];
-    }
+    
     if (Shopify.shop == "maxteethwhitening.myshopify.com") {
         $jq321("head").append('<style type="text/css">' + '.visitor-counter-content-box-carecartbysalespop-2020{height:auto !important; margin-top: 0px !important;}.counter-text-carecartbysalespop-2020{min-height: 0px !important;}.product__info-container .product-form, .product__info-container .product__description, .product__info-container .share-button{margin: 1.1rem 0 0 !important;}#appstle_subscription_widget0{margin-top:0px !important;}' +
             '</style>');
