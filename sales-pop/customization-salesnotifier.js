@@ -3202,6 +3202,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "d67b73-2.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
+        }
         if (Shopify.shop == "f9e8d5.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
         }
@@ -4279,6 +4282,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
                 $jq321(trustBadgesResponse.view).insertAfter(finalSelectortr);
             }
+            else if (Shopify.shop == "d67b73-2.myshopify.com") {
+                $jq321("head").append('<style type="text/css">.shopify-product-form .BadgesImgBox label{visibility: visible !important;}#CloneBox{margin-top: -80px;}</style>');
+                $jq321(trustBadgesResponse.view).insertAfter('.form-inpage');
+            }    
             else if (Shopify.shop == "c59bad-2.myshopify.com") {
                 $jq321(trustBadgesResponse.view).insertAfter('#m-1685977443552');
             }
