@@ -654,6 +654,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
      if (Shopify.shop == "c3d8a4-3.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "shopkouneli.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     
     $jq321.ajax({
         type: "GET",
@@ -1495,6 +1498,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelctor[0];
     }
 
+    if (Shopify.shop == "shopkouneli.myshopify.com") {
+        customSelctor = $jq321(".buy-buttons");
+        finalSelector = customSelctor[0];
+    }
     function visitorCounter(responseVisitor) {
         var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor2 = $jq321("form[action='/cart/add']");
