@@ -3030,6 +3030,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = masterSelector[0];
         $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}</style>');
     }
+     if (Shopify.shop == "blackskyenergy.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css">.notificationPreview-box .card-body h5.card-title a{letter-spacing: normal;font-weight: normal;}</style>'
+        );
+    }
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
 
