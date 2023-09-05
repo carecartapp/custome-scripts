@@ -428,24 +428,24 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
     }
     if (Shopify.shop == "3da54d.myshopify.com") {
-        customSelector = $jq321(".pf-option-swatches");
+        customSelector = $jq321(".giraffly-trust-badge");
         finalSelector = customSelector[0];
     }
     
-    if (Shopify.shop == "3da54d.myshopify.com") {
-        customSelctor = $jq321(".pf-option-swatches");
-        finalSelector = customSelctor[0];
+    // if (Shopify.shop == "3da54d.myshopify.com") {
+    //     customSelctor = $jq321(".pf-option-swatches");
+    //     finalSelector = customSelctor[0];
 
-        var screenWidth = window.innerWidth;
-        var isSmallScreen = screenWidth <= 776;
+    //     var screenWidth = window.innerWidth;
+    //     var isSmallScreen = screenWidth <= 776;
 
-        if (isSmallScreen) {
-            customSelctor = $jq321(".pf-option-swatches");
-            finalSelector = customSelctor[1];
+    //     if (isSmallScreen) {
+    //         customSelctor = $jq321(".pf-option-swatches");
+    //         finalSelector = customSelctor[1];
 
-        }
+    //     }
 
-    }
+    // }
     
     // if (Shopify.shop == "432928-3.myshopify.com") {
     //     customSelector = $jq321(".sc-bBHHxi.fhourC.pf-24_");
