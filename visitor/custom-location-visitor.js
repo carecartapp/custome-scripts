@@ -654,6 +654,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
      if (Shopify.shop == "c3d8a4-3.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "ac2828-2.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     
     
     $jq321.ajax({
@@ -1496,6 +1499,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelctor = $jq321(".buy-buttons");
         finalSelector = customSelctor[0];
     }
+     if (Shopify.shop == "ac2828-2.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{margin-top: -14px !important;}</style>');
+        customSelctor = $jq321("#estimator-message");
+        finalSelector = customSelctor[0];
+    }
+    
     function visitorCounter(responseVisitor) {
         var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor2 = $jq321("form[action='/cart/add']");
