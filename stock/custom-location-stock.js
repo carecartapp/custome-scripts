@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.78
+ * @version 3.16
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -470,6 +470,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "1f6647.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "gipfelstuermer-store-de.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     /**
@@ -985,6 +988,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "1f6647.myshopify.com") {
         $jq321("head").append('<style type="text/css">.stock-progress-background {width: 50% !important;}</style>');
         customSelector = $jq321(".ymq-box");
+        finalSelector = customSelector[0];
+    }
+     if (Shopify.shop == "gipfelstuermer-store-de.myshopify.com") {
+        customSelector = $jq321(".variant-wrapper");
         finalSelector = customSelector[0];
     }
     
