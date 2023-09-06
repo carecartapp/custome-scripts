@@ -1360,6 +1360,10 @@
                             
                             /* New custom fixes added from here */
 
+                            if (Shopify.shop == 'por3mx.myshopify.com') {
+                                carecartSpinnerJquery("body").append('<style type="text/css">input#cc-spin-a-sale-consent-checkbox{appearance: auto !important;} input#cc-spin-a-sale-consent-checkbox[type=checkbox]{position:relative; width:auto; height:auto; overflow:inherit; display:block; margin-top:3px;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-closeButton i{display:block!important; color: #fff !important} #wheelify-spin_a_sale_cc_store_front_module .wheelLogo , .btn-submit-form i , .copy-button i{display: inline-block !important;} @media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .wheelify-ContentRight {min-height: 526px;}#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview{height: 559px!important;}}</style>');
+                            }
+                            
                              if (Shopify.shop == 'ox-optics.myshopify.com') {
                                 carecartSpinnerJquery("body").append('<style type="text/css">.custom-radio input[type=radio], input[type=checkbox] {display: block !important; margin-top: 4px !important;} </style>');
                             }
