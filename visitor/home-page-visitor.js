@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.91
+ * @version 3.12
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -208,9 +208,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important; margin-top: -25px !important;}</style>');
         }
     }
-      if (Shopify.shop == "3da54d.myshopify.com") {
+       if (Shopify.shop == "3da54d.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 25px !important;margin-top: -15px !important;}}</style>');
-        customSelctor = $jq321(".pf-84_");
+        customSelctor = $jq321(".wc_store_average_section");
         finalSelector = customSelctor[0];
 
         var screenWidth = window.innerWidth;
@@ -218,7 +218,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         if (isSmallScreen) {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important;margin-top: -15px !important;}}</style>');
-            customSelctor = $jq321(".pf-154_");
+            customSelctor = $jq321(".wc_product_review_badge");
             finalSelector = customSelctor[0];    
         }
     }
