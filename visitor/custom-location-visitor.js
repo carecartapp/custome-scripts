@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.00
+ * @version 3.13
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -657,7 +657,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "ac2828-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
-    
+    if (Shopify.shop == "18c5e3.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+
     
     $jq321.ajax({
         type: "GET",
@@ -1504,9 +1507,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelctor = $jq321("#estimator-message");
         finalSelector = customSelctor[0];
     }
+    if (Shopify.shop == "18c5e3.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 50px !important;margin-top: -15px !important;}</style>');
+        customSelctor = $jq321(".groups-btn-tree");
+        finalSelector = customSelctor[0];
+    }
     
     function visitorCounter(responseVisitor) {
-        //var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
+        var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor2 = $jq321("form[action='/cart/add']");
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']");
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
