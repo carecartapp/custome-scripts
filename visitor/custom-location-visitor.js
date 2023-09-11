@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.17
+ * @version 3.21
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -129,6 +129,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
                 if (block_url[1] == 'collections') {
                     console.log('Block visitor counter on collection pages');
+                    return;
+                }
+            }
+             if (Shopify.shop == "836e9c-2.myshopify.com") {
+                var block_url = window.location.pathname.split("/");
+
+                if (block_url[1] == 'collections') {
                     return;
                 }
             }
@@ -663,6 +670,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
  if (Shopify.shop == "0bdbbc-4.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+ if (Shopify.shop == "836e9c-2.myshopify.com") {
+    var meta = { "product": { "id": __st.rid } };
+    }
     
     $jq321.ajax({
         type: "GET",
@@ -692,7 +702,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     /* Custom script goes from here */
     let customSelctor = "";
     let finalSelector = "";
-
+    
+  if (Shopify.shop == "836e9c-2.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 25px !important;  margin-top: -15px !important;}</style>');
+    }
     if (Shopify.shop == "0bdbbc-4.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 35px !important;  margin-top: -22px !important;}</style>');
         customSelctor = $jq321(".product__inventory");
