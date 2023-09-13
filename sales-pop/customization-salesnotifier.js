@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.09
+ * @version 3.24
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3556,6 +3556,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             finalSelector = masterSelector[0];
         }
 
+         if (Shopify.shop == "wow-nandi.myshopify.com") {
+            masterSelector = $jq321(".product-form__add-to-cart");
+            finalSelector = masterSelector[0];
+        }
+        
         if (responseTimer.above_cart == 1) {
             if (Shopify.shop == "benntify.myshopify.com") {
                 $jq321(responseTimer.view).insertBefore('.sp_cart_btn');
