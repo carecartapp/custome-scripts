@@ -166,6 +166,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         productID = 8370501419311;
     }
+    if (Shopify.shop == "65472d-2.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+
+        productID = 8552041775392;
+    }
 
     $jq321.ajax({
         type: "GET",
@@ -257,6 +262,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "3e396e.myshopify.com") {
         customSelctor = $jq321(".sc-fTQvRK");
+        finalSelector = customSelctor[0];
+    }
+    if (Shopify.shop == "65472d-2.myshopify.com") {
+        customSelctor = $jq321(".product-form__buttons");
         finalSelector = customSelctor[0];
     }
 
