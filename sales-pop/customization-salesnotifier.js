@@ -4700,6 +4700,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 '</style>'
             );
         }
+        if (Shopify.shop == "multipower-online.myshopify.com") {
+            $jq321("head").append(
+                '<style type="text/css">' +
+                'body {overflow: initial;}' +
+                '</style>'
+            );
+        }
         var selectorAnnouncementBar = $jq321("body");
         var placement = announcementBarResponse.placement;
 
