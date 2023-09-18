@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.29
+ * @version 3.31
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -4678,13 +4678,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 '</style>'
             );
         }
-        if (Shopify.shop == "multipower-online.myshopify.com") {
-            $jq321("head").append(
-                '<style type="text/css">' +
-                'html{height:100%;}' +
-                '</style>'
-            );
-        }
+        
         if (Shopify.shop == "madbull-offshore.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">' +
