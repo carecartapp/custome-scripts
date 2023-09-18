@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.24
+ * @version 3.29
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3001,8 +3001,8 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             '</style>'
         );
     }
-    if (Shopify.shop == "nel-cuore-della-sicilia-di-ignaccolo.myshopify.com") {
-        masterSelector = $jq321(".payment-and-quantity");
+   if (Shopify.shop == "nel-cuore-della-sicilia-di-ignaccolo.myshopify.com") {
+        masterSelector = $jq321(".jdgm-prev-badge");
         finalSelector = masterSelector[0];
         $jq321("head").append('<style type="text/css">.product-details .stock-top{display: block !important; margin-top:10px;width: 60%;}@media only screen and (max-width:600px){.product-details .stock-top{width:100%;}}</style>');
     }
