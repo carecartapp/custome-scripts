@@ -475,6 +475,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "gipfelstuermer-store-de.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else if (Shopify.shop == "ea8927.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
      
     /**
      * check the status of cart page
@@ -995,6 +998,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
      if (Shopify.shop == "gipfelstuermer-store-de.myshopify.com") {
         customSelector = $jq321(".add-to-cart");
         finalSelector = customSelector[0];
+    }
+    if (Shopify.shop == "ea8927.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{margin-top:22px;}</style>');
     }
     
     function stockCountdown(response) {
