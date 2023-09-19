@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.26 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.37 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1086,6 +1086,11 @@
                     }
                     if (Shopify.shop == 'happykittysalve.myshopify.com') {
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@2.47/spinner/happy-kitty-logo-4_1087gih-removebg-preview.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+                    
+                    if (Shopify.shop == 'sirplus-food.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@3.35/spinner/_thumb_63150.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 
@@ -3405,6 +3410,11 @@
 
                 if (Shopify.shop == 'wildcameraxl.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input[type=checkbox]{ height: auto; width: auto; z-index: 1; opacity: 1 !important; clip: auto; position:static;} .checkbox label:after{display:none !important;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{line-height: 0.6;}</style>');
+                }
+
+                if (Shopify.shop == 'sirplus-food.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css"> #wheelify-spin_a_sale_cc_store_front_module .checkbox{width:auto;height:auto;background-color: transparent;border:none;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}</style>');
                 }
             });
 
