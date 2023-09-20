@@ -481,6 +481,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "0c2fb0-4.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else if (Shopify.shop == "ffa4a9-3.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
      
     /**
      * check the status of cart page
@@ -1005,7 +1008,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "ea8927.myshopify.com") {
         $jq321("head").append('<style type="text/css">.stock-top{margin-top:22px;}</style>');
     }
-    
+    if (Shopify.shop == "ffa4a9-3.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{margin-top:22px;}</style>');
+        customSelector = $jq321("._rsi-modal-submit-button");
+        finalSelector = customSelector[0];
+    }
     function stockCountdown(response) {
 
         var selectorStock0 = $jq321("form[action='/cart/add']").find(".product__submit__buttons").parent();
