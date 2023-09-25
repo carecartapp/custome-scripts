@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.36
+ * @version 3.42
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -482,6 +482,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "ffa4a9-3.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "gosunnah-com.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
      
@@ -1013,6 +1016,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelector = $jq321("._rsi-modal-submit-button");
         finalSelector = customSelector[0];
     }
+
+    if (Shopify.shop == "gosunnah-com.myshopify.com") {
+        customSelector = $jq321(".product-form__buttons");
+        finalSelector = customSelector[0];
+    }
+    
     function stockCountdown(response) {
 
         var selectorStock0 = $jq321("form[action='/cart/add']").find(".product__submit__buttons").parent();
