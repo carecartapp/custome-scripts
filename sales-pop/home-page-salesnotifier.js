@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.2.3
+ * @version 3.44
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1747,6 +1747,11 @@
         masterSelector = $jq321(".product-form__item--submit");
         finalSelector = masterSelector[0];
         console.log(finalSelector);
+     }
+
+  if (Shopify.shop == "paint-by-canvas.myshopify.com")
+     {
+        productID = 8066034204954;
      }
      if (Shopify.shop == "brandency.myshopify.com")
      {
