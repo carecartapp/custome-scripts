@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 1.0.0
+ * @version 3.46
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -39,6 +39,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	let greetingWidgetOption;
 
 	//custom fix 
+	if(Shopify.shop == "b8e27a-3.myshopify.com") {
+		carecartWhatsApp("head").append('<style type="text/css"> .wa-chat-btn-icon-image-only:empty{display:block !important;} </style>');
+	}
+	if(Shopify.shop == "cozfireindia.myshopify.com") {
+		carecartWhatsApp("head").append('<style type="text/css"> .wa-chat-btn-icon-image-only:empty{display:block !important;} </style>');
+	}
 
 	if(Shopify.shop == "twisted-cards.myshopify.com") {
 		carecartWhatsApp("head").append(
