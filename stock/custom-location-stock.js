@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.42
+ * @version 3.45
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -487,6 +487,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "gosunnah-com.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else{
+        var meta = { "product": { "id": __st.rid } };
+    }
      
     /**
      * check the status of cart page
@@ -534,6 +537,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
      if (Shopify.shop == "crystalchrono.myshopify.com") {
         customSelector = $jq321("#_rsi-buy-now-button");
+        finalSelector = customSelector[0];
+    }
+
+    if (Shopify.shop == "27812f-3.myshopify.com") {
+        customSelector = $jq321(".t4s-product-form__buttons");
         finalSelector = customSelector[0];
     }
     
