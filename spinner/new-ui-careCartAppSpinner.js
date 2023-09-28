@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.39 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.47 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3279,6 +3279,9 @@
                 }
                 if (Shopify.shop == 'colour-flash-made-for-you.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox label {display: block;}.checkbox label:after{display:none;}.checkbox input[type=checkbox],.checkbox input[type=radio]{height: 20px !important;width: 20px !important; z-index: 1;opacity: 1!important;clip: auto;position:static;}</style>');
+                }
+                if (Shopify.shop == 'kshopina-egypt.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto; background: transparent;border: none; }</style>');
                 }
                 //*********************** Custom Fix - sugar-ruff.myshopify.com ***** Make Slices Text Color Black **********************************
                 if (Shopify.shop == 'sugar-ruff.myshopify.com') {
