@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.47 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.52 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1091,6 +1091,15 @@
                     
                     if (Shopify.shop == 'sirplus-food.myshopify.com') {
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@3.35/spinner/_thumb_63150.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+
+                     if (Shopify.shop == 'indeed-laboratories.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@3.51/spinner/indeed.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+                    if (Shopify.shop == 'aadd83.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@3.51/spinner/doted-circle.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 
@@ -3268,6 +3277,10 @@
                 }
                   if (Shopify.shop == 'atowak.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form{height:auto !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading{padding-bottom: 10px;} #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .copy-button{height:auto !important;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading {line-height: 1.5;padding-top: 30px;}}</style>');
+                }
+
+                if (Shopify.shop == '396911.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}</style>');
                 }
 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
