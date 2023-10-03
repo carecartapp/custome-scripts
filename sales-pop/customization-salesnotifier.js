@@ -4776,7 +4776,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     function shareCart(response) {
         let cartPage = !(!window.location.pathname.match("(.*)/cart/(.*)") && !window.location.pathname.match("(.*)/cart"));
         if (cartPage) {
-            let firstSelector = $jq321("form[action='/cart']").parent();
+            let firstSelector = $jq321(".section.clearfix").parent();
             if (firstSelector.length > 0) {
                 var cartContents = fetch('/cart.json', { method: 'GET' })
                     .then(response => response.json())
