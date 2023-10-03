@@ -1561,7 +1561,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         // console.log(finalSelector);
     }
     if (Shopify.shop == "cmy-cubes.myshopify.com") {
-        $jq321("head").append('<style type="text/css">.shopify-block.shopify-app-block{text-align:left !important;}</style>');
+        $jq321("head").append('<style type="text/css">.shopify-block.shopify-app-block{text-align:left !important;}@media only screen and (max-width:575px){.visitor-font-weight-inherit{font-size:9px;}}</style>');
         customSelctor = $jq321(".product__title");
         finalSelector = customSelctor[0];
         // console.log(finalSelector);
