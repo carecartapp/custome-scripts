@@ -1102,6 +1102,10 @@
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@3.51/spinner/doted-circle.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
+                    if (Shopify.shop == 'recreationbeauty.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@3.62/spinner/image_2023_10_03T12_54_35_486Z.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
 
                 }
 
@@ -3280,6 +3284,9 @@
                 }
 
                 if (Shopify.shop == 'aadd83.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{font-weight:bold;}</style>');
+                }
+                if (Shopify.shop == 'recreationbeauty.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}</style>');
                 }
 
