@@ -490,6 +490,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "794f78.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else if (Shopify.shop == "1fb9d5.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "laboutiquegitane.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }    
     else{
         var meta = { "product": { "id": __st.rid } };
     }
@@ -1031,6 +1037,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "gosunnah-com.myshopify.com") {
         customSelector = $jq321(".product-form__buttons");
         finalSelector = customSelector[0];
+    }
+    if (Shopify.shop == "1fb9d5.myshopify.com") {
+        customSelector = $jq321("#new-form-atc");
+        finalSelector = customSelector[0];
+        console.log(finalSelector);
     }
     
     function stockCountdown(response) {
