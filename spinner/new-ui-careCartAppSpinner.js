@@ -3284,10 +3284,10 @@
                 }
 
                 if (Shopify.shop == 'aadd83.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{font-weight:bold;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}.wheelText tspan{font-weight:bold;}</style>');
                 }
                 if (Shopify.shop == 'recreationbeauty.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">.centerCircle circle{fill: #0d0c0c ;}.wheelText tspan{fill:black;}.wheelText tspan{font-weight:bold;}</style>');
                 }
 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
