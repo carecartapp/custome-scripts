@@ -185,6 +185,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     {
         finalSelector = masterSelector[0];
     }
+    if (Shopify.shop == "08503b.myshopify.com") {
+        masterSelector = $jq321(".product-form");
+        finalSelector = masterSelector[0];
+    }
 
      function stockCountdown(response) 
      {   
