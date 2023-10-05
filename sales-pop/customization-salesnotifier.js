@@ -3041,7 +3041,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = masterSelector[0];
         $jq321("head").append('<style type="text/css">@media only screen and (max-width:575px){.content-div-sold-detail.sold-left{text-align:center;}</style>');
     }
-
+    if (Shopify.shop == "b3fc1c.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
+        masterSelector = $jq321(".bndlr-volume");
+        finalSelector = masterSelector[0];
+    }
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
 
