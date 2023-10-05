@@ -495,7 +495,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     else if (Shopify.shop == "laboutiquegitane.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
-    }    
+    }
+    else if (Shopify.shop == "506e71-2.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "3e5cff.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     else{
         var meta = { "product": { "id": __st.rid } };
     }
@@ -1043,6 +1049,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
         console.log(finalSelector);
     }
+     if (Shopify.shop == "506e71-2.myshopify.com") {
+        customSelector = $jq321(".price__sale");
+        finalSelector = customSelector[0];
+        console.log(finalSelector);
+    }
     
     function stockCountdown(response) {
 
@@ -1476,6 +1487,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 }
                 if (Shopify.shop == "firststore-5320.myshopify.com") {
                     $jq321("head").append('<style type="text/css">.cc-stock-pro-message {margin-left: 400px !important;}</style>');
+                }
+                if (Shopify.shop == "1fb9d5.myshopify.com") {
+                    $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center{width:100%;}</style>');
                 }
                 console.log(firstSelector);
                 if (response.barPosition == "top" && cartStatus === null) {
