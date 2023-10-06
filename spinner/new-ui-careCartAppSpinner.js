@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.87 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.88 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3290,7 +3290,7 @@
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc span , #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p , #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description , .wheelify-cc-spin-a-sale-couponwheel_offers_text , #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading  {color:black !important;}.wheelText tspan{fill:black;}</style>');
                 }
                 if (Shopify.shop == 'happy-valley-honey.myshopify.com') {
-                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc span ,  #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading , #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p ,span#cc-spin-a-sale-consent-text{color: #606060 !important;}#wheelify-spin_a_sale_cc_store_front_module .form-group input{border: 1px solid #606060;}.wheelText tspan{color: #606060 !important;}</style>');
+                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc span ,  #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading , #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p ,span#cc-spin-a-sale-consent-text{color: #606060 !important;}#wheelify-spin_a_sale_cc_store_front_module .form-group input{border: 1px solid #606060;}.wheelText tspan{fill: #606060 !important;}</style>');
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
