@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.90 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.93 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3159,6 +3159,13 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
+                  if (Shopify.shop == 'rforrabbit1.myshopify.com') {
+                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input {width: 20px;height: 18px;position: static;display: block;appearance: auto;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelLogo:empty{display:block !important;}</style>');
+                }
+                if (Shopify.shop == 'ollny.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.fa-arrow-circle-up{display:none !important;}</style>');
+                }
                 if (Shopify.shop == 'carrymode-com.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css"> @media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview{height: 639px!important;}}</style>');
                     //console.log("SAS https://partychampions.com/");
