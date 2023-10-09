@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.65
+ * @version 3.95
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -4712,6 +4712,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 '</style>'
             );
         }
+
+        if (Shopify.shop == "bynelo.myshopify.com") {
+            $jq321("head").append(
+                '<style type="text/css">' +
+                '.header-section{top:60px;}' +
+                '.ccAnnouncmntBanner-bpop{ z-index: 50;}' +
+                '</style>'
+            );
+        }
+        
         var selectorAnnouncementBar = $jq321("body");
         var placement = announcementBarResponse.placement;
 
