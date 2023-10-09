@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 1.1.7
+ * @version 3.92
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -97,7 +97,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     let productID = 0;
 
-
+if (Shopify.shop == "a55957.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 50px !important;  margin-top: -15px !important;}</style>'
+        );
+    }
+    
      if (Shopify.shop == "840ded.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 60px !important;  margin-top: -5px !important;}</style>'
