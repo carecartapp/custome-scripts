@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.81
+ * @version 3.99
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -505,6 +505,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "cf8568.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else if (Shopify.shop == "08503b.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }    
     else{
         var meta = { "product": { "id": __st.rid } };
     }
@@ -1062,6 +1065,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
         console.log(finalSelector);
     }
+    if (Shopify.shop == "08503b.myshopify.com") {
+        masterSelector = $jq321(".product-form");
+        finalSelector = masterSelector[0];
+    }
     function stockCountdown(response) {
 
         var selectorStock0 = $jq321("form[action='/cart/add']").find(".product__submit__buttons").parent();
@@ -1497,6 +1504,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 }
                 if (Shopify.shop == "1fb9d5.myshopify.com") {
                     $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center{width:100%;}</style>');
+                }
+                if (Shopify.shop == "08503b.myshopify.com") {
+                    firstSelector = $jq321(".page-width.section-template--20180529316114__cart-items-padding");
+                } else {
+                    firstSelector = $jq321("form[action='/cart']").parent();
                 }
                 console.log(firstSelector);
                 if (response.barPosition == "top" && cartStatus === null) {
