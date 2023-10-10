@@ -4293,7 +4293,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 return;
             }
         }
+        if (Shopify.shop == "90d20d.myshopify.com") {
+            let text = window.location.pathname;
+            let result = text.indexOf("products");
 
+            if (result == -1) {
+                return;
+            }
+        }
         if (trustBadgesResponse.product_page_show_hide == 1) {
             var selectorTrustBadges1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
             var selectorTrustBadges2 = $jq321("form[action='/cart/add']");
