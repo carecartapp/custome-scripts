@@ -3161,7 +3161,7 @@
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
                   if (Shopify.shop == 'rforrabbit1.myshopify.com') {
                      carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input {width: 20px;height: 18px;position: static;display: block;appearance: auto;}</style>');
-                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelLogo:empty{display:block !important;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelLogo:empty{display:block !important;}.wheelText tspan{font-weight: 400;}</style>');
                 }
                 if (Shopify.shop == 'ollny.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.fa-arrow-circle-up{display:none !important;}</style>');
