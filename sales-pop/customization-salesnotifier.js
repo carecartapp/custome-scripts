@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.95
+ * @version 4.1
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3041,11 +3041,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = masterSelector[0];
         $jq321("head").append('<style type="text/css">@media only screen and (max-width:575px){.content-div-sold-detail.sold-left{text-align:center;}</style>');
     }
-    if (Shopify.shop == "b3fc1c.myshopify.com") {
-        $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
-        masterSelector = $jq321(".bndlr-volume");
-        finalSelector = masterSelector[0];
-    }
+
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
 
@@ -3315,6 +3311,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         if (Shopify.shop == "65bf3b.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
         }
+        if (Shopify.shop == "b3fc1c.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
+            masterSelector = $jq321(".bndlr-volume");
+            finalSelector = masterSelector[0];
+        }
 
         if (responseStock.above_cart == 1) {
             if (masterSelector2.length > 0) {
@@ -3570,6 +3571,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
          if (Shopify.shop == "wow-nandi.myshopify.com") {
             masterSelector = $jq321(".product-form__add-to-cart");
             finalSelector = masterSelector[0];
+        }
+
+         if (Shopify.shop == "b3fc1c.myshopify.com") {
+            masterSelector = $jq321(".shopify-block.shopify-app-block");
+            finalSelector = masterSelector[0];
+            console.log(finalSelector);
         }
         
         if (responseTimer.above_cart == 1) {
