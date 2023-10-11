@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.0.0
+ * @version 4.3
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -2136,7 +2136,12 @@
          var selectorVisitor2 = $jq321("form[action='/cart/add']");
          var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
          var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
- 
+      
+      if (Shopify.shop == "cac525-3.myshopify.com") {
+                 masterSelector = $jq321(".product-form__buttons");
+                 finalSelector = masterSelector[0];
+             }
+      
          if (response.above_cart == 1) {
              if (masterSelector.length > 0) {
                 $jq321(response.view).insertBefore(finalSelector);
