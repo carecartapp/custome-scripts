@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.00
+ * @version 4.4
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -687,6 +687,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     if (Shopify.shop == "monolith-eu.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    
+     if (Shopify.shop == "screenmoove.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "8e002b-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     $jq321.ajax({
@@ -1571,6 +1578,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelctor = $jq321(".payment-and-quantity");
         finalSelector = customSelctor[0];
     }
+     if (Shopify.shop == "screenmoove.myshopify.com") {
+        customSelctor = $jq321(".product-stock-level-wrapper");
+        finalSelector = customSelctor[0];
+    }
+    if (Shopify.shop == "8e002b-2.myshopify.com") {
+        customSelctor = $jq321(".qty-container");
+        finalSelector = customSelctor[0];
+    }
+
     
     function visitorCounter(responseVisitor) {
        var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
