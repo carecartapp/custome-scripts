@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.99
+ * @version 4.5
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -507,7 +507,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     else if (Shopify.shop == "08503b.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
-    }    
+    }
+    else if (Shopify.shop == "8e002b-2.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "26eac3.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "getitjustblend.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     else{
         var meta = { "product": { "id": __st.rid } };
     }
@@ -1069,6 +1078,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         masterSelector = $jq321(".product-form");
         finalSelector = masterSelector[0];
     }
+    if (Shopify.shop == "26eac3.myshopify.com") {
+        masterSelector = $jq321(".product-single__buttons");
+        finalSelector = masterSelector[0];
+    }
+    
     function stockCountdown(response) {
 
         var selectorStock0 = $jq321("form[action='/cart/add']").find(".product__submit__buttons").parent();
@@ -1507,6 +1521,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 }
                 if (Shopify.shop == "08503b.myshopify.com") {
                     firstSelector = $jq321(".page-width.section-template--20180529316114__cart-items-padding");
+                } else {
+                    firstSelector = $jq321("form[action='/cart']").parent();
+                }
+                 if (Shopify.shop == "8e002b-2.myshopify.com") {
+                    firstSelector = $jq321(".page-title");
+                } else {
+                    firstSelector = $jq321("form[action='/cart']").parent();
+                }
+                 if (Shopify.shop == "getitjustblend.myshopify.com") {
+                    firstSelector = $jq321("#ajaxCartForm");
                 } else {
                     firstSelector = $jq321("form[action='/cart']").parent();
                 }
