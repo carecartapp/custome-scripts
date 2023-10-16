@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 3.95 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.9 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3298,6 +3298,9 @@
                 }
                 if (Shopify.shop == 'happy-valley-honey.myshopify.com') {
                      carecartSpinnerJquery('head').append('<style type="text/css">.wheelLogo{display:none;}#wheelify-spin-trigger-cc span ,  #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading , #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p ,span#cc-spin-a-sale-consent-text{color: #606060 !important;}#wheelify-spin_a_sale_cc_store_front_module .form-group input{border: 1px solid #606060;}.wheelText tspan{fill: #606060 !important;}.wheelify-cc-spin-a-sale-couponwheel_offers_text , div#wheelify-cc-spin-a-sale-powered-by-carecart{color: #606060;}</style>');
+                }
+                if (Shopify.shop == 'aroka1.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}</style>');
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
