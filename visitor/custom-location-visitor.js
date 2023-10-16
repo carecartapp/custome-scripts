@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.8
+ * @version 4.10
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -696,6 +696,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "8e002b-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "oscarwellness.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    
     $jq321.ajax({
         type: "GET",
         url: salespoplib_vars_obj.backend_url + 'checkStore/',
@@ -1587,6 +1591,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelctor[0];
     }
 
+    if (Shopify.shop == "oscarwellness.myshopify.com") {
+        customSelctor = $jq321(".banner__media");
+        finalSelector = customSelctor[0];
+    }
     
     function visitorCounter(responseVisitor) {
        var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
