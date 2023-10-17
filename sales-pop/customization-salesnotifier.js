@@ -3321,7 +3321,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             masterSelector = $jq321(".ast-button");
             finalSelector = masterSelector[0];
         }
-
+        
+        if (Shopify.shop == "xn-ymcecs6lc3an.myshopify.com") {
+                    $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
+                    masterSelector = $jq321(".product-form__submit");
+                    finalSelector = masterSelector[0];
+         }
         if (responseStock.above_cart == 1) {
             if (masterSelector2.length > 0) {
                 $jq321(responseStock.view).insertBefore(finalSelector2);
@@ -3727,6 +3732,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         else if (Shopify.shop == "thesmartbud-com.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-progress-background {width: 50% !important;}</style>');
             masterSelector = $jq321(".sc-gwNDlS.gJLEdj");
+            finalSelector = masterSelector[0];
+        }
+        else if (Shopify.shop == "xn-ymcecs6lc3an.myshopify.com") {
+            masterSelector = $jq321(".lb-upsell-ppa-grid");
             finalSelector = masterSelector[0];
         }
         if (response.above_cart == 1) {
