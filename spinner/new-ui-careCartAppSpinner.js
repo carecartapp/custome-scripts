@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.21 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.24 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3308,6 +3308,10 @@
                 }
                  if (Shopify.shop == 'valentina-rivera.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#page-transition-overlay{ background-color: transparent;}</style>');
+                }
+                
+                if (Shopify.shop == 'maaji-co.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelLogo{display:none;} #wheelify-spin_a_sale_cc_store_front_module .wheelText{fill: #940403;}</style>');
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
