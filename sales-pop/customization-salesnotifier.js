@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.15
+ * @version 4.28
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3043,6 +3043,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
      if (Shopify.shop == "79ddd7.myshopify.com") {
         $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}.notifyjs-corner{bottom:62px !important;}</style>');
+    }
+     if (Shopify.shop == "elizabethluxx.myshopify.com") {
+        masterSelector = $jq321(".product__submit__buttons");
+        finalSelector = masterSelector[0];
+        console.log(finalSelector);
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}</style>');
     }
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
