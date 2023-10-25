@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 2.69
+ * @version 4.31
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -271,7 +271,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "3da54d.myshopify.com") {
         productID = 8520236073296;
     }
-
+    if (Shopify.shop == "703e40.myshopify.com") {
+        productID = 8567417864535;
+    }
     /**
      * check the status of cart page
      */
@@ -429,6 +431,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "3da54d.myshopify.com") {
         customSelector = $jq321(".giraffly-trust-badge");
+        finalSelector = customSelector[0];
+    }
+    if (Shopify.shop == "703e40.myshopify.com") {
+        customSelector = $jq321(".product-form__buttons");
         finalSelector = customSelector[0];
     }
     
