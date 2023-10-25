@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.22
+ * @version 4.32
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -707,6 +707,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
 
      if (Shopify.shop == "70b303-2.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "revival-shop-store.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     
@@ -1618,6 +1621,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
      if (Shopify.shop == "70b303-2.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 52px !important;}</style>');
         customSelctor = $jq321(".loox-rating");
+        finalSelector = customSelctor[0];
+    }
+     if (Shopify.shop == "revival-shop-store.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{margin-top: -6px !important;height: 25px !important;}</style>');
+        customSelctor = $jq321(".product__headline");
         finalSelector = customSelctor[0];
     }
 
