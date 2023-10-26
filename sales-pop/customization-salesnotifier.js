@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.28
+ * @version 4.36
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1214,6 +1214,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             else if (block_url[1] == 'challenge') {
                 b_url = false;
                 console.log('SP Sales Notification Block on "challenge" page');
+            }
+        }
+          if (Shopify.shop == "pepper-vetiver.myshopify.com") {
+            if (window.location.href == 'https://pepperandvetiver.com/pages/returns') {
+                b_url = false;
+                console.log('SP Sales Notification Block on this page')
+            }
+            else if (window.location.href == 'https://pepperandvetiver.com/pages/contact-us') {
+                b_url = false;
+                console.log('SP Sales Notification Block on this page')
             }
         }
 
@@ -4392,6 +4402,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             }
             else if (Shopify.shop == "egg-avocado.myshopify.com") {
                 $jq321(trustBadgesResponse.view).insertAfter(".shopify-payment-button__button");
+            }
+            else if (Shopify.shop == "hqlighting.myshopify.com") {
+                $jq321(trustBadgesResponse.view).insertAfter('.shopify-payment-button__button');
             }
             else if (masterSelector.length == 1) {
                 $jq321(trustBadgesResponse.view).insertAfter(finalSelector);
