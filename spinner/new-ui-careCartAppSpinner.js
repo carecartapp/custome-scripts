@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.39 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.43 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3322,6 +3322,9 @@
                 }
                 if (Shopify.shop == 'mogu-mogu-drink.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer input[type=checkbox]:checked:after{display:none;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-closeButton i , #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form i.fa, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button i.fa{font-family: "FontAwesome" !important;}</style>');
+                }
+                if (Shopify.shop == 'arbikie-distillery.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#page-transition-overlay{background-color: transparent;}.wheelify-signupContainer .checkbox input{background-color: white;border-radius: 3px;width: 19px; width:20px; height:18px;}</style>');
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
