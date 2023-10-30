@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.34
+ * @version 4.40
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -715,7 +715,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "ae454c.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
-    
+    if (Shopify.shop == "838616-4.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "testtesttest23w34234.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     $jq321.ajax({
         type: "GET",
         url: salespoplib_vars_obj.backend_url + 'checkStore/',
@@ -1636,7 +1641,17 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelctor = $jq321(".AirReviews-Widget--AppBlockSummary");
         finalSelector = customSelctor[0];
     }
-
+    if (Shopify.shop == "838616-4.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 24px;}.counter-text-carecartbysalespop-2020{min-height: 20px;}</style>');
+            customSelctor = $jq321(".product__inventory");
+            finalSelector = customSelctor[0];
+        }
+   if (Shopify.shop == "testtesttest23w34234.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 50px; }</style>');
+        customSelctor = $jq321(".product-form__buttons");
+        finalSelector = customSelctor[0];
+        console.log(finalSelector);
+    } 
     function visitorCounter(responseVisitor) {
        var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor2 = $jq321("form[action='/cart/add']");
