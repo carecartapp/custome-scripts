@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.37
+ * @version 4.42
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -532,6 +532,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     else if (Shopify.shop == "efb8b4.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    else if (Shopify.shop == "mermaid-haus-jewelry.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }    
     else{
         var meta = { "product": { "id": __st.rid } };
     }
@@ -1102,6 +1105,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "262bc3-2.myshopify.com") {
         customSelector = $jq321(".sc-bLdqUH");
+        finalSelector = customSelector[0];
+        console.log(finalSelector);
+    }
+     if (Shopify.shop == "mermaid-haus-jewelry.myshopify.com") {
+        customSelector = $jq321(".button-pdp");
         finalSelector = customSelector[0];
         console.log(finalSelector);
     }
