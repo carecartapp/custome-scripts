@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.38
+ * @version 4.47
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -4416,6 +4416,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             }
             else if (Shopify.shop == "hqlighting.myshopify.com") {
                 $jq321(trustBadgesResponse.view).insertAfter('.shopify-payment-button__button');
+            }
+            else if (Shopify.shop == "elizabethluxx.myshopify.com") {
+                $jq321("head").append('<style type="text/css">@media only screen and (max-width:575px){.BadgesImgBox.column{flex: auto; padding:0px;}}</style>');
+                $jq321(trustBadgesResponse.view).insertAfter('.product__submit__buttons');
             }
             else if (masterSelector.length == 1) {
                 $jq321(trustBadgesResponse.view).insertAfter(finalSelector);
