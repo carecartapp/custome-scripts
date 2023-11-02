@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.46
+ * @version 4.56
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -721,6 +721,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "testtesttest23w34234.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "three-sixty-six.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    
     $jq321.ajax({
         type: "GET",
         url: salespoplib_vars_obj.backend_url + 'checkStore/',
@@ -1607,9 +1611,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelctor = $jq321(".product-stock-level-wrapper");
         finalSelector = customSelctor[0];
     }
-    if (Shopify.shop == "8e002b-2.myshopify.com") {
-        customSelctor = $jq321(".usp");
+   if (Shopify.shop == "8e002b-2.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: auto; }</style>');
+        customSelctor = $jq321(".product--wrapper.product-single__media.media-wrapper");
         finalSelector = customSelctor[0];
+        console.log(finalSelector);
     }
 
     if (Shopify.shop == "oscarwellness.myshopify.com") {
@@ -1652,6 +1658,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelctor[0];
         console.log(finalSelector);
     } 
+    if (Shopify.shop == "three-sixty-six.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.shopify-payment-button{display:none;}</style>');
+        customSelctor = $jq321(".ProductForm__BuyButtons");
+        finalSelector = customSelctor[0];
+        console.log(finalSelector);
+    }
+
     function visitorCounter(responseVisitor) {
        var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor2 = $jq321("form[action='/cart/add']");
