@@ -3,25 +3,11 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.57
+ * @version 4.58
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
-var myStockLocationDiv = document.createElement("ji");
-
-//Set its class.
-myStockLocationDiv.className = 'doubleCheck';
-
-//Finally, append the element to the HTML body
-document.body.appendChild(myStockLocationDiv);
-
-var stockLocationDoubleCheck = document.getElementsByClassName("doubleCheck");
-var stockLocationNdoubleCheck = stockLocationDoubleCheck.length;
-if (stockLocationNdoubleCheck == 2) {
-    //window.stop();
-    throw new Error("DOUBLE APP JS");
-}
 
 function scriptInjection(src, callback) {
     var script = document.createElement('script');
@@ -1148,6 +1134,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
     }
     
+    if (Shopify.shop == "654c1e-3.myshopify.com") {
+        customSelector = $jq321(".product-form__buttons");
+        finalSelector = customSelector[0];
+    } 
     
     function stockCountdown(response) {
 
