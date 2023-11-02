@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.53 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.55 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3311,7 +3311,7 @@
                     carecartSpinnerJquery('head').append('<style type="text/css">.checkbox input[type=checkbox]{clip: auto; position: static; height: 20px; width: 20px; z-index: 1; opacity: 1!important;}.checkbox label:after{display:none;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview{height: 647px!important;}}</style>');
                 }
                 if (Shopify.shop == 'valentina-rivera.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .form-group input{font-weight: normal;}#wheelify-spin_a_sale_cc_store_front_module .wheelText{font-size: 40px !important;}#page-transition-overlay{ background-color: transparent;}.wheelify-signupContainer .checkbox label input[type=checkbox] {width: 34px; height: 12px;     background-color: white; margin-top: 4px !important;} input[type=checkbox]:before{background-repeat: no-repeat;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .form-group input{font-weight: normal;}#wheelify-spin_a_sale_cc_store_front_module .wheelText {font-size: 46px !important;font-weight: bold;}#page-transition-overlay{ background-color: transparent;}.wheelify-signupContainer .checkbox label input[type=checkbox] {width: 34px; height: 12px;     background-color: white; margin-top: 4px !important;} input[type=checkbox]:before{background-repeat: no-repeat;}</style>');
                 }
                 
                 if (Shopify.shop == 'maaji-co.myshopify.com') {
@@ -3334,6 +3334,10 @@
                 }
                 if (Shopify.shop == 'future-waves-project.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox{border:none; width: auto; height: auto;}</style>');
+                }
+                
+                if (Shopify.shop == 'ayurvedaexperience-india.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc span{position:static !important;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
