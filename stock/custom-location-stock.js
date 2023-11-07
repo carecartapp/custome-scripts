@@ -1624,6 +1624,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 } else {
                     firstSelector = $jq321("form[action='/cart']").parent();
                 }
+                 if (Shopify.shop == "pet-haven-hub-1282.myshopify.com") {
+                    $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center.fade {opacity: 1;}</style>');
+                    firstSelector = $jq321(".page-title.center");
+                    console.log(finalSelector);
+                } else {
+                    firstSelector = $jq321("form[action='/cart']").parent();
+                }
                 console.log(firstSelector);
                 if (response.barPosition == "top" && cartStatus === null) {
                     if (firstSelector.length > 0) {
