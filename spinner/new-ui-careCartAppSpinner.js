@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.55 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.67 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3338,6 +3338,9 @@
                 
                 if (Shopify.shop == 'ayurvedaexperience-india.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc span{position:static !important;}</style>');
+                }
+                if (Shopify.shop == 'bitterliebe-ch.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc{left: -76px !important;}@media only screen and (max-width:575px) {#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview{height: 655px!important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-closeButton{margin-right: 0px;}}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
