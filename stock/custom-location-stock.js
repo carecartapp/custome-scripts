@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.65
+ * @version 4.72
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1636,6 +1636,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                     $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center.fade {opacity: 1;}</style>');
                     firstSelector = $jq321(".page-title.center");
                     console.log(finalSelector);
+                } else {
+                    firstSelector = $jq321("form[action='/cart']").parent();
+                }
+                  if (Shopify.shop == "shiftcam-us.myshopify.com") {
+                    firstSelector = $jq321(".tmenu_nav");
                 } else {
                     firstSelector = $jq321("form[action='/cart']").parent();
                 }
