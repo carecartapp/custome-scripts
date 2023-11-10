@@ -1138,7 +1138,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         console.log(finalSelector);
     }
    if (Shopify.shop == "ff3abc.myshopify.com") {
-        customSelector = $jq321(".sc-bLdqUH.eCxunz.pf-34_");
+        customSelector = $jq321(".sc-bLdqUH.eCxunz.pf-31_");
         finalSelector = customSelector[0];
     }
      if (Shopify.shop == "c2bee5.myshopify.com") {
