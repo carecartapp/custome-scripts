@@ -1640,7 +1640,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                     firstSelector = $jq321("form[action='/cart']").parent();
                 }
                   if (Shopify.shop == "shiftcam-us.myshopify.com") {
-                    firstSelector = $jq321(".tmenu_nav");
+                    firstSelector = $jq321(".section.clearfix");
                 } else {
                     firstSelector = $jq321("form[action='/cart']").parent();
                 }
