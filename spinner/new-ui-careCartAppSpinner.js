@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.71 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.75 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1115,7 +1115,7 @@
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
                     if (Shopify.shop == 'veggie-m8.myshopify.com') {
-                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@4.69/spinner/veggie.png';
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@4.69/spinner/veggie-mate.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 
