@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.72
+ * @version 4.79
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -557,6 +557,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "golston-jewelry.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "9b35c4.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     else{
@@ -1166,6 +1169,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "golston-jewelry.myshopify.com") {
         customSelector = $jq321(".product-form__quantity-submit.pt-4");
+        finalSelector = customSelector[0];
+        console.log(finalSelector);
+    }
+    if (Shopify.shop == "9b35c4.myshopify.com") {
+        customSelector = $jq321(".nt_lt_fake");
         finalSelector = customSelector[0];
         console.log(finalSelector);
     }
