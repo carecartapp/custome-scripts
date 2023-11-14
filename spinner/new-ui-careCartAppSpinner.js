@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.76 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.78 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3349,6 +3349,15 @@
                 }
                 if (Shopify.shop == 'bitterliebe-ch.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc{left: -76px !important;}@media only screen and (max-width:575px) {#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview{height: 655px!important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-closeButton{margin-right: 0px;}}</style>');
+                }
+                 if (Shopify.shop == 'frictionfreeshaving.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width:auto; height:auto; background-color:transparent; border:none;}#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}</style>');
+                }
+                if (Shopify.shop == 'kalaya-ca.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input{width:auto;}</style>');
+                }
+                if (Shopify.shop == 'heybike-de.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p, #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description, span#cc-spin-a-sale-consent-text, .wheelify-cc-spin-a-sale-couponwheel_offers_text {color:#000 !important;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
