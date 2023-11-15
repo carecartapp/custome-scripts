@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.79
+ * @version 4.81
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -561,6 +561,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     else if (Shopify.shop == "9b35c4.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "sweetpeeps.myshopify.com") {
+    var meta = { "product": { "id": __st.rid } };
     }
     else{
         var meta = { "product": { "id": __st.rid } };
@@ -1141,7 +1144,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         console.log(finalSelector);
     }
    if (Shopify.shop == "ff3abc.myshopify.com") {
-        customSelector = $jq321(".sc-bLdqUH.eCxunz.pf-31_");
+        customSelector = $jq321(".sc-bLdqUH.eCxunz.pf-34_");
         finalSelector = customSelector[0];
     }
      if (Shopify.shop == "c2bee5.myshopify.com") {
