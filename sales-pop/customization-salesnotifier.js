@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.77
+ * @version 4.83
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3348,6 +3348,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         if (Shopify.shop == "therxshop.myshopify.com") {
             $jq321("head").append('<style type="text/css">.cc-sp-sc-sold-div{display : none;}</style>');
         }
+        if (Shopify.shop == "beatreleaseshop.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
+        }
         if (responseStock.above_cart == 1) {
             if (masterSelector2.length > 0) {
                 $jq321(responseStock.view).insertBefore(finalSelector2);
@@ -3772,6 +3775,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         }
         else if (Shopify.shop == "61cda5-3.myshopify.com") {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 30px !important;}</style>');
+        }
+        if (Shopify.shop == "mussashoes.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 30px !important;}</style>');
+            masterSelector = $jq321(".single_product__options");
+            finalSelector = masterSelector[0];
         }
         if (response.above_cart == 1) {
             if (masterSelector.length > 0) {
@@ -4426,6 +4434,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             else if (Shopify.shop == "elizabethluxx.myshopify.com") {
                 $jq321("head").append('<style type="text/css">@media only screen and (max-width:575px){.BadgesImgBox.column{flex: auto; padding:0px;}}</style>');
                 $jq321(trustBadgesResponse.view).insertAfter('.product__submit__buttons');
+            }
+            else if (Shopify.shop == "beatreleaseshop.myshopify.com") {
+                masterSelectortr = $jq321(".shopify-payment-button");
+                finalSelectortr = masterSelectortr[0];
+                $jq321(trustBadgesResponse.view).insertAfter(finalSelectortr);
             }
             else if (masterSelector.length == 1) {
                 $jq321(trustBadgesResponse.view).insertAfter(finalSelector);
