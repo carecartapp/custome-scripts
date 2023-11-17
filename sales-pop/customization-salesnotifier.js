@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.83
+ * @version 4.85
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1224,6 +1224,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             else if (window.location.href == 'https://pepperandvetiver.com/pages/contact-us') {
                 b_url = false;
                 console.log('SP Sales Notification Block on this page')
+            }
+        }
+        if (Shopify.shop == "upcycle-with-jing.myshopify.com");
+        {
+            if (block_url_store.slice(0, -1) == 'https://upcyclewithjing.com/pages/10-off') {
+                b_url = false;
+                console.log('SP Sales Notification Block on this page');
             }
         }
 
@@ -3350,6 +3357,8 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         }
         if (Shopify.shop == "beatreleaseshop.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
+            masterSelector = $jq321(".share-button.quick-add-hidden");
+            finalSelector = masterSelector[0];
         }
         if (responseStock.above_cart == 1) {
             if (masterSelector2.length > 0) {
@@ -3776,9 +3785,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         else if (Shopify.shop == "61cda5-3.myshopify.com") {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 30px !important;}</style>');
         }
-        if (Shopify.shop == "mussashoes.myshopify.com") {
+        else if (Shopify.shop == "mussashoes.myshopify.com") {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 30px !important;}</style>');
             masterSelector = $jq321(".single_product__options");
+            finalSelector = masterSelector[0];
+        }
+        else if (Shopify.shop == "beatreleaseshop.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px !important;}.visitor-counter-content-box-carecartbysalespop-2020 {height: 40px !important;}</style>');
+            masterSelector = $jq321(".product__description.rte.quick-add-hidden");
             finalSelector = masterSelector[0];
         }
         if (response.above_cart == 1) {
