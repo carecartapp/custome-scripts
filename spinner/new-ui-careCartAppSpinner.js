@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.78 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.84 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3358,6 +3358,9 @@
                 }
                 if (Shopify.shop == 'heybike-de.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p, #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description, span#cc-spin-a-sale-consent-text, .wheelify-cc-spin-a-sale-couponwheel_offers_text {color:#000 !important;}</style>');
+                }
+                if (Shopify.shop == 'yubibar.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview{height: 643px!important}}#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{line-height: normal !important;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
