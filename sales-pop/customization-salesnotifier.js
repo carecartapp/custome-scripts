@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.85
+ * @version 4.89
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3067,6 +3067,17 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         console.log(finalSelector);
         $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}</style>');
     }
+    if (Shopify.shop == "habrok.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}</style>');
+        masterSelector = $jq321(".payment-buttons");
+        finalSelector = masterSelector[0];
+
+    }
+    if (Shopify.shop == "61cda5-3.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}</style>');
+        masterSelector = $jq321(".module.gf_module-left.gf_module-left-lg.gf_module--md.gf_module--sm.gf_module--xs");
+        finalSelector = masterSelector[4];
+    }
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
 
@@ -3795,6 +3806,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             masterSelector = $jq321(".product__description.rte.quick-add-hidden");
             finalSelector = masterSelector[0];
         }
+        else if (Shopify.shop == "useblumi.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px !important;}.visitor-counter-content-box-carecartbysalespop-2020 {height: 40px !important;}</style>');
+            masterSelector = $jq321(".product-meta__aside");
+            finalSelector = masterSelector[0];
+        }
         if (response.above_cart == 1) {
             if (masterSelector.length > 0) {
                 $jq321(response.view).insertBefore(finalSelector);
@@ -4453,6 +4469,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 masterSelectortr = $jq321(".shopify-payment-button");
                 finalSelectortr = masterSelectortr[0];
                 $jq321(trustBadgesResponse.view).insertAfter(finalSelectortr);
+            }
+            else if (Shopify.shop == "31f164-3.myshopify.com") {
+                $jq321(trustBadgesResponse.view).insertAfter(".shopify-payment-button");
             }
             else if (masterSelector.length == 1) {
                 $jq321(trustBadgesResponse.view).insertAfter(finalSelector);
