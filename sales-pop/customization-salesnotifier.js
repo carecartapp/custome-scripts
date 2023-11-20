@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.89
+ * @version 4.90
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3808,7 +3808,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         }
         else if (Shopify.shop == "useblumi.myshopify.com") {
             $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px !important;}.visitor-counter-content-box-carecartbysalespop-2020 {height: 40px !important;}</style>');
-            masterSelector = $jq321(".product-meta__aside");
+            masterSelector = $jq321(".product-form__variants");
             finalSelector = masterSelector[0];
         }
         if (response.above_cart == 1) {
