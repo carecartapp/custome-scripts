@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.88
+ * @version 4.91
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -569,6 +569,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "b8d8ce.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "thecleanhouse-d3a1.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "imperma-range-8797.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "nursing-essentials-hub.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     else{
@@ -1186,6 +1195,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
         console.log(finalSelector);
     }
+    if (Shopify.shop == "imperma-range-8797.myshopify.com") {
+        customSelector = $jq321(".sc-bLdqUH");
+        finalSelector = customSelector[0];
+        console.log(finalSelector);
+    }
     
     function stockCountdown(response) {
 
@@ -1366,6 +1380,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         }
         if (Shopify.shop == "efb8b4.myshopify.com") {
             customSelector = $jq321(".modal_price");
+            finalSelector = customSelector[0];
+            console.log(finalSelector);
+        }
+        if (Shopify.shop == "nursing-essentials-hub.myshopify.com") {
+            customSelector = $jq321(".ecom-product-single__quantity-controls");
+            finalSelector = customSelector[0];
+            console.log(finalSelector);
+        }
+        if (Shopify.shop == "imperma-range-8797.myshopify.com") {
+            customSelector = $jq321(".sc-dYPfWK");
             finalSelector = customSelector[0];
             console.log(finalSelector);
         }
