@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.92 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.93 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -2312,6 +2312,28 @@
                         }
                         return is_page;
                     }
+                    if (Shopify.shop == 'imou-store-1018.myshopify.com') {
+                        var is_page = false;
+                        var currentPageUrl = window.location.href;
+                        if (currentPageUrl.indexOf("thank_you") !== -1) {
+                            is_page = true;
+                        }
+                        if (currentPageUrl.indexOf("orders") !== -1) {
+                            is_page = true;
+                        }
+                        return is_page;
+                    }
+                    if (Shopify.shop == 'black-tie-barn.myshopify.com') {
+                        var is_page = false;
+                        var currentPageUrl = window.location.href;
+                        if (currentPageUrl.indexOf("thank_you") !== -1) {
+                            is_page = true;
+                        }
+                        if (currentPageUrl.indexOf("orders") !== -1) {
+                            is_page = true;
+                        }
+                        return is_page;
+                    }
                     //console.log('SAS inside checkThanksYouCcSpinASale');
                     var is_page = !(!window.location.pathname.match("(.*)/orders/(.*)") && !window.location.pathname.match("(.*)/orders") || window.location.pathname.match("(.*)/checkouts/(.*)") || window.location.pathname.match("(.*)/thank_you"));
                     //console.log(is_page);
@@ -3364,6 +3386,12 @@
                 }
                 if (Shopify.shop == 'car-guy-supplies.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#page-transition-overlay{background-color: transparent !important;}</style>');
+                }
+                if (Shopify.shop == 'hello-499.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input{clip: auto;position: static;height: 20px; width: 20px;z-index: 1;opacity: 1!important;}.checkbox label:after{display: none;}</style>');
+                }
+                if (Shopify.shop == 'sweetearing.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">*, *:before, *:after{transform-origin: inherit;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
