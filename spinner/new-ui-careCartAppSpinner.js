@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.93 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 4.96 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3392,6 +3392,9 @@
                 }
                 if (Shopify.shop == 'sweetearing.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">*, *:before, *:after{transform-origin: inherit;}</style>');
+                }
+                if (Shopify.shop == 'e9ffa3.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.win_text{color: #fff;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
