@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.31
+ * @version 4.94
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -273,6 +273,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "703e40.myshopify.com") {
         productID = 8567417864535;
+    }
+    if (Shopify.shop == "the-bagaholics.myshopify.com") {
+        productID = 7804394766497;
     }
     /**
      * check the status of cart page
@@ -798,6 +801,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 //let firstSelector = $jq321(".cart");
                 if (Shopify.shop == "3da54d.myshopify.com") {
                     $jq321("head").append('<style type="text/css">.cart-countdown-mobile-top{margin-top: 60px!important;}</style>');
+                }
+                if (Shopify.shop == "the-bagaholics.myshopify.com") {
+                    firstSelector = $jq321(".section__wrapper.section");
+                } else {
+                    firstSelector = $jq321("form[action='/cart']").parent();
                 }
                 //console.log('selector');
                 //console.log(firstSelector);
