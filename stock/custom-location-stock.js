@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.97
+ * @version 5.00
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -581,6 +581,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "wisteria-chile.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "aspiranteapolicia.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     else{
@@ -1207,6 +1210,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.stock-top{margin-top: 60px;}</style>');
         customSelector = $jq321(".product-form__item.product-form__item--submit.product_payments_btns");
         finalSelector = customSelector[0];
+    }
+    if (Shopify.shop == "aspiranteapolicia.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-progress-background{display:none !important;}</style>');
     }
     
     function stockCountdown(response) {
