@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.98
+ * @version 4.99
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3078,6 +3078,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         masterSelector = $jq321(".gfgPageWrapper.gfgProductPageWrapperV2");
         finalSelector = masterSelector[4];
     }
+    if (Shopify.shop == "ab2326.myshopify.com") {
+        masterSelector = $jq321(".ProductMeta");
+        finalSelector = masterSelector[0];
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
+    }
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
 
@@ -3809,6 +3814,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         else if (Shopify.shop == "useblumi.myshopify.com") {
             $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px !important;}.visitor-counter-content-box-carecartbysalespop-2020 {height: 40px !important;}</style>');
             masterSelector = $jq321(".product-form__variants");
+            finalSelector = masterSelector[0];
+        }
+        if (Shopify.shop == "kobeleno1.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px !important;}</style>');
+            masterSelector = $jq321(".kaching-bundles__block-title");
             finalSelector = masterSelector[0];
         }
         if (response.above_cart == 1) {
