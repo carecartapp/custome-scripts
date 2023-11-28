@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.01
+ * @version 5.03
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -4916,7 +4916,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     function shareCart(response) {
         let cartPage = !(!window.location.pathname.match("(.*)/cart/(.*)") && !window.location.pathname.match("(.*)/cart"));
         if (cartPage) {
-            let firstSelector = $jq321("form[action='/cart']").parent();
+            let firstSelector = $jq321(".shopify-section").parent();
             if (firstSelector.length > 0) {
                 var cartContents = fetch('/cart.json', { method: 'GET' })
                     .then(response => response.json())
