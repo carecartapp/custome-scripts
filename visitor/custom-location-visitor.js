@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.86
+ * @version 5.05
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -725,6 +725,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     if (Shopify.shop == "54646b-3.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "neom-organics.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "the-style-trader-co.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     
@@ -1456,7 +1462,6 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "6df508.myshopify.com") {
         customSelctor = $jq321(".sc-leSONj");
         finalSelector = customSelctor[0];
-        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 15px !important;} .counter-text-carecartbysalespop-2020 {min-height: 15px !important;}</style>');
     }
     if (Shopify.shop == "nunea.myshopify.com") {
         customSelctor = $jq321(".price-wrapper");
@@ -1671,6 +1676,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 24px !important;}</style>');
         customSelctor = $jq321(".product-description.rte");
         finalSelector = customSelctor[0];
+    }
+    if (Shopify.shop == "neom-organics.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.NE-690 .visitor-counter-content-box-carecartbysalespop-2020{display:block !important;}</style>');
+        customSelctor = $jq321(".product__actions-container");
+        finalSelector = customSelctor[0];
+        console.log(finalSelector);
+    }
+    if (Shopify.shop == "the-style-trader-co.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px!important; }.tis-product-default .visitor-counter-content-box-carecartbysalespop-2020{position:static !important; max-width: 100% !important; margin: 0 !important;}.tis-product-default .counter-text-carecartbysalespop-2020{border:none!important;max-width:100% !important;}.close-visitor{display:none !important;}.tis-product-default .counter-text-carecartbysalespop-2020::after{display:none !important;} .tis-product-default .counter-text-carecartbysalespop-2020 span i, .gift-card-page .counter-text-carecartbysalespop-2020 span i{display: inline-block !important;padding-right: 8px;}</style>');
     }
 
     function visitorCounter(responseVisitor) {
