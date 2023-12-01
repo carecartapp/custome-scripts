@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.07 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.10 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -495,6 +495,17 @@
                         if (Shopify.shop == 'almowear.myshopify.com') {
                             i.results[0].userData.coupon;
                             e.fadeOut(), n.text(i.results[0].msg), a.text(i.results[0].userData.coupon), t.find("input").val("spin20"), t.css({
+                                paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
+                            }),
+                                carecartSpinnerJquery(window).resize(function () {
+                                    t.css({
+                                        // paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
+                                    })
+                                }),
+                                t.fadeIn()
+                          if (Shopify.shop == 'amantelingerie.myshopify.com') {
+                            i.results[0].userData.coupon;
+                            e.fadeOut(), n.text(i.results[0].msg), a.text(i.results[0].userData.coupon), t.find("input").val("Rs.200 OFF"), t.css({
                                 paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
                             }),
                                 carecartSpinnerJquery(window).resize(function () {
@@ -3401,6 +3412,12 @@
                 }
                 if (Shopify.shop == 'kustomshield.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin-trigger-cc{left:60px}}</style>');
+                }
+                if (Shopify.shop == 'sunny-yu-d518.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto; background: transparent; border: none;box-shadow:none;}#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}</style>');
+                }
+                if (Shopify.shop == 'now-shop-fun.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">*, *:before, *:after{transform-origin: inherit;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
