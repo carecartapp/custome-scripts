@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 4.80
+ * @version 5.09
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -215,7 +215,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         if (response.above_cart == 1)
         {
-            if (Shopify.shop == "aria-and-tom.myshopify.com")
+            if (Shopify.shop == "622052.myshopify.com")
+            {
+                $jq321(response.view).insertBefore('.product-form__buttons');
+            }
+            else if (Shopify.shop == "aria-and-tom.myshopify.com")
             {
                 $jq321(response.view).insertBefore('.product-single__add-to-cart');
             }
@@ -270,7 +274,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         }
         else
         {
-            if (Shopify.shop == "aria-and-tom.myshopify.com")
+            if (Shopify.shop == "622052.myshopify.com")
+            {
+                $jq321(response.view).insertAfter('.product-form__buttons');
+            }
+            else if (Shopify.shop == "aria-and-tom.myshopify.com")
             {
                 $jq321(response.view).insertAfter('.product-single__add-to-cart');
             }
