@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.10 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.11 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -492,17 +492,6 @@
                             }),
                             t.fadeIn()
                     } else {
-                        if (Shopify.shop == 'almowear.myshopify.com') {
-                            i.results[0].userData.coupon;
-                            e.fadeOut(), n.text(i.results[0].msg), a.text(i.results[0].userData.coupon), t.find("input").val("spin20"), t.css({
-                                paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
-                            }),
-                                carecartSpinnerJquery(window).resize(function () {
-                                    t.css({
-                                        // paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
-                                    })
-                                }),
-                                t.fadeIn()
                           if (Shopify.shop == 'amantelingerie.myshopify.com') {
                             i.results[0].userData.coupon;
                             e.fadeOut(), n.text(i.results[0].msg), a.text(i.results[0].userData.coupon), t.find("input").val("Rs.200 OFF"), t.css({
