@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.04
+ * @version 5.13
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -4844,6 +4844,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 '<style type="text/css">' +
                 '.header-section{top:60px;}' +
                 '.ccAnnouncmntBanner-bpop{ z-index: 50;}' +
+                '</style>'
+            );
+        }
+        if (Shopify.shop == "cosmetics-fragrance-direct.myshopify.com") {
+            $jq321("head").append(
+                '<style type="text/css">' +
+                '.row.annFullsection{margin-bottom:0 !important}' +
                 '</style>'
             );
         }
