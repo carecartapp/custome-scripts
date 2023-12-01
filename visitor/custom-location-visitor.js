@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.05
+ * @version 5.12
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -731,6 +731,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     if (Shopify.shop == "the-style-trader-co.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if(Shopify.shop == "thrift-6063.myshopify.com"){
         var meta = { "product": { "id": __st.rid } };
     }
     
@@ -1685,6 +1688,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "the-style-trader-co.myshopify.com") {
         $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px!important; }.tis-product-default .visitor-counter-content-box-carecartbysalespop-2020{position:static !important; max-width: 100% !important; margin: 0 !important;}.tis-product-default .counter-text-carecartbysalespop-2020{border:none!important;max-width:100% !important;}.close-visitor{display:none !important;}.tis-product-default .counter-text-carecartbysalespop-2020::after{display:none !important;} .tis-product-default .counter-text-carecartbysalespop-2020 span i, .gift-card-page .counter-text-carecartbysalespop-2020 span i{display: inline-block !important;padding-right: 8px;}</style>');
+    }
+    if (Shopify.shop == "thrift-6063.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important; margin-top: -5px !important;}</style>');
+        customSelctor = $jq321(".add-to-cart__wrapper");
+        finalSelector = customSelctor[1];
     }
 
     function visitorCounter(responseVisitor) {
