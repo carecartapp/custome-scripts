@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.11 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.14 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3406,7 +3406,7 @@
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto; background: transparent; border: none;box-shadow:none;}#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}</style>');
                 }
                 if (Shopify.shop == 'now-shop-fun.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">*, *:before, *:after{transform-origin: inherit;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">*, *:before, *:after{transform-origin: inherit;}@media only screen and (max-width: 575px){*, *:before, *:after{ transform-origin: 0px 0px;}}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
