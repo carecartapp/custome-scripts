@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.12
+ * @version 5.17
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -734,6 +734,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     if(Shopify.shop == "thrift-6063.myshopify.com"){
+        var meta = { "product": { "id": __st.rid } };
+    }
+     if (Shopify.shop == "74ef4c-3.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "3ca44e.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     
@@ -1693,6 +1699,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important; margin-top: -5px !important;}</style>');
         customSelctor = $jq321(".add-to-cart__wrapper");
         finalSelector = customSelctor[1];
+    }
+    if (Shopify.shop == "3ca44e.myshopify.com") {
+        customSelctor = $jq321(".product-meta");
+        finalSelector = customSelctor[0];
+    }
+    if (Shopify.shop == "74ef4c-3.myshopify.com") {
+        customSelctor = $jq321(".sc-gIDmLj.ktCSaA.pf-34_");
+        finalSelector = customSelctor[0];
     }
 
     function visitorCounter(responseVisitor) {
