@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.19
+ * @version 5.21
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -444,10 +444,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelector = $jq321(".product-form__buttons");
         finalSelector = customSelector[0];
     }
-    if (Shopify.shop == "2d8e7e.myshopify.com") {
+     if (Shopify.shop == "2d8e7e.myshopify.com") {
         if (window.location.href == 'https://sanin-lk.shop/') {
-            customSelector = $jq321(".shopify-payment-button__button");
-            finalSelector = customSelector[0];
+            $jq321("head").append('<style type="text/css">.stock-top{display:none}</style>');
         }
     }
 
@@ -550,8 +549,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         if (Shopify.shop == "2d8e7e.myshopify.com") {
             if (window.location.href == 'https://sanin-lk.shop/') {
-                return false;
+                customSelector = $jq321(".shopify-payment-button__button");
+                finalSelector = customSelector[0];
+                $jq321("head").append('<style type="text/css">.timer-store-front {margin-top:10px;}</style>');
             }
+           
         }
         if (Shopify.shop == "impactstore123.myshopify.com") {
             if (window.location.href == 'https://impactstore123.myshopify.com/') {
