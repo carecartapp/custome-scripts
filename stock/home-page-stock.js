@@ -277,6 +277,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "the-bagaholics.myshopify.com") {
         productID = 7804394766497;
     }
+    if (Shopify.shop == "2d8e7e.myshopify.com") {
+        productID = 8787767951656;
+    }
+
     /**
      * check the status of cart page
      */
@@ -440,6 +444,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelector = $jq321(".product-form__buttons");
         finalSelector = customSelector[0];
     }
+    if (Shopify.shop == "2d8e7e.myshopify.com") {
+        if (window.location.href == 'https://sanin-lk.shop/') {
+            customSelector = $jq321(".shopify-payment-button__button");
+            finalSelector = customSelector[0];
+        }
+    }
+
     
     // if (Shopify.shop == "3da54d.myshopify.com") {
     //     customSelctor = $jq321(".pf-option-swatches");
@@ -537,6 +548,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     // CREATE LIVE TIME COUNTDOWN
     function timeCountdown(t) {
 
+        if (Shopify.shop == "2d8e7e.myshopify.com") {
+            if (window.location.href == 'https://sanin-lk.shop/') {
+                return false;
+            }
+        }
         if (Shopify.shop == "impactstore123.myshopify.com") {
             if (window.location.href == 'https://impactstore123.myshopify.com/') {
                 customSelector = $jq321(".card__inner");
