@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.16
+ * @version 5.18
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3496,9 +3496,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         if (Shopify.shop == "amadijewelry.myshopify.com") {
             $jq321("head").append(
-                '<style type="text/css">.message-title{margin: 0px 5px 30px 6px;} .colon{top: -17px;} .labels {line-height: 26px;}</style>'
+                '<style type="text/css">.message-title{margin: 0px 5px 30px 6px;} .colon{top: -17px;} .labels {line-height: 26px;} .timer-store-front {margin-top: 14px;}</style>'
             );
-            masterSelector = $jq321(".product-form__rating");
+            masterSelector = $jq321(".product-form__buttons");
             finalSelector = masterSelector[0];
         }
         if (Shopify.shop == "wellshave.myshopify.com") {
