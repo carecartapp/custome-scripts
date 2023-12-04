@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.15 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.20 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3407,6 +3407,12 @@
                 }
                 if (Shopify.shop == 'now-shop-fun.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">*, *:before, *:after{transform-origin: inherit;}@media only screen and (max-width: 575px){*, *:before, *:after{ transform-origin: 0px 0px;}}</style>');
+                }
+                if (Shopify.shop == '67b7c4.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 576px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview {height: 627px!important;}}</style>');
+                }
+                if (Shopify.shop == 'bobbleware.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}#wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto;background: transparent;border: none;}.wheelify-signupContainer .checkbox input{margin-top: 4px;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
