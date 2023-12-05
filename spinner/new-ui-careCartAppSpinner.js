@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.24 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.25 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3415,7 +3415,7 @@
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}#wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto;background: transparent;border: none;}.wheelify-signupContainer .checkbox input{margin-top: 4px;}</style>');
                 }
                 if (Shopify.shop == 'allure-design-centre.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}.wheelify-signupContainer .checkbox input[type=checkbox]{width: 18px;height: 13px;background: white;border: none;background-repeat: no-repeat;margin-top: 4px;}.wheelify-signupContainer .checkbox input[type=checkbox]::before{background-repeat: no-repeat;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}.wheelify-signupContainer .checkbox input[type=checkbox]{width: 18px;height: 13px;background: white;border: none;background-repeat: no-repeat;margin-top: 4px;}.wheelify-signupContainer .checkbox input[type=checkbox]::before{background-repeat: no-repeat;}#page-transition-overlay{background-color: transparent;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
