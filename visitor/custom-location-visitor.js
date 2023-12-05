@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.22
+ * @version 5.26
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -743,6 +743,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     if (Shopify.shop == "zephyr-9848.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    if (Shopify.shop == "caf6fd-3.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     
@@ -1714,6 +1717,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "zephyr-9848.myshopify.com") {
         customSelctor = $jq321(".shopify-product-form");
         finalSelector = customSelctor[1];
+    }
+     if (Shopify.shop == "caf6fd-3.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px!important;}.visitor-counter-content-box-carecartbysalespop-2020{height: 10px !important;margin-top: 0px !important;}</style>');
+        customSelctor = $jq321(".main-product__price.no-js-hidden");
+        finalSelector = customSelctor[0];
     }
 
     function visitorCounter(responseVisitor) {
