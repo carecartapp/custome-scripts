@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.25 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.30 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1116,6 +1116,10 @@
                     }
                     if (Shopify.shop == 'veggie-m8.myshopify.com') {
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@4.74/spinner/veggie-mate.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+                    if (Shopify.shop == 'pared-eyewear-australia.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@5.29/spinner/pared.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 
@@ -3416,6 +3420,9 @@
                 }
                 if (Shopify.shop == 'allure-design-centre.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}.wheelify-signupContainer .checkbox input[type=checkbox]{width: 18px;height: 13px;background: white;border: none;background-repeat: no-repeat;margin-top: 4px;}.wheelify-signupContainer .checkbox input[type=checkbox]::before{background-repeat: no-repeat;}#page-transition-overlay{background-color: transparent;}</style>');
+                }
+                if (Shopify.shop == 'vaskiajewelry.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelText tspan{fill:black;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
