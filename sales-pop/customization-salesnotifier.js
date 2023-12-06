@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.23
+ * @version 5.28
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1320,7 +1320,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         // STOCK COUNTDOWN CALL
         if (apiResponse && apiResponse.stock && apiResponse.stock !== null) {
             if (apiResponse.stock.on_off == 1) {
-                if (apiResponse.stock.stock_restriction_settings !== null) {
+                if (apiResponse.stock.stock_restriction_settings !== null && apiResponse.stock.variantCheck == 0) {
                     let stock_restriction_setting = JSON.parse(apiResponse.stock.stock_restriction_settings);
                     if (stock_restriction_setting.stock_restriction_check == "on" && parseInt(stock_restriction_setting.stock_restriction_value) !== parseInt(apiResponse.stock.left_stock) && parseInt(apiResponse.stock.left_stock) > parseInt(stock_restriction_setting.stock_restriction_value)) {
                         console.log("SP: Stock restricted to display");
@@ -1331,7 +1331,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                         }));
                         stockCountdown(apiResponse.stock);
                         if (apiResponse.stock.variantCheck && apiResponse.stock.variantCheck == 1 && apiResponse.stock.variantsData !== null && apiResponse.stock.variantsData.length > 1) {
-                            enableStockForVariants(apiResponse.stock.variantsData, apiResponse.stock.variantHeading);
+                            enableStockForVariants(apiResponse.stock.variantsData, apiResponse.stock.variantHeading, apiResponse.stock);
                         }
                     }
                 } else {
@@ -1339,14 +1339,21 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                         rel: "stylesheet",
                         href: serverUrl.cssStock + "?v" + version
                     }));
-                    stockCountdown(apiResponse.stock);
-                    if (apiResponse.stock.variantCheck && apiResponse.stock.variantCheck == 1 && apiResponse.stock.variantsData !== null && apiResponse.stock.variantsData.length > 1) {
-                        enableStockForVariants(apiResponse.stock.variantsData, apiResponse.stock.variantHeading);
+                    // stockCountdown(apiResponse.stock);
+                    // if (apiResponse.stock.variantCheck && apiResponse.stock.variantCheck == 1 && apiResponse.stock.variantsData !== null && apiResponse.stock.variantsData.length > 1) {
+                    //     enableStockForVariants(apiResponse.stock.variantsData, apiResponse.stock.variantHeading, apiResponse.stock);
+                    // }
+			        stockCountdown(apiResponse.stock);
+                    if (apiResponse.stock.variantCheck && apiResponse.stock.variantCheck == 1 && apiResponse.stock.variantsData !== null && apiResponse.stock.variantsData.length > 0) {
+                            enableStockForVariants(apiResponse.stock.variantsData, apiResponse.stock.variantHeading, apiResponse.stock);   
+                    }
+                    let stock_restriction_setting = JSON.parse(apiResponse.stock.stock_restriction_settings);
+                    if (stock_restriction_setting.stock_restriction_check == "on" && parseInt(stock_restriction_setting.stock_restriction_value) !== parseInt(apiResponse.stock.left_stock) && parseInt(apiResponse.stock.left_stock) > parseInt(stock_restriction_setting.stock_restriction_value) && apiResponse.stock.variantsData.length == 1) {
+                            $jq321(".cc-sp-sc-stock-div").hide();
                     }
                 }
             }
         }
-
         // Time COUNTDOWN CALL
         if (apiResponse && apiResponse.timer && apiResponse.timer !== null) {
             setTimeout(function () {
