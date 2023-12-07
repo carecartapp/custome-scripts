@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.92
+ * @version 5.38
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -204,6 +204,9 @@ s
                     $jq321(response.view).insertBefore('.product-form__buttons');
                 }
             }
+            if (Shopify.shop == "drawndrop.myshopify.com") {
+                $jq321(response.view).insertBefore('.payment-buttons');
+            }
             else if (masterSelector.length > 0) {
                 $jq321(response.view).insertBefore(masterSelector);
             }
@@ -221,7 +224,9 @@ s
             }
         }
         else {
-
+            if (Shopify.shop == "drawndrop.myshopify.com") {
+                $jq321(response.view).insertAfter('.payment-buttons');
+            }
             if (Shopify.shop == "modibags.myshopify.com") {
                 $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 40px !important; }</style>');
                 $jq321(response.view).insertAfter('.add-to-cart');
