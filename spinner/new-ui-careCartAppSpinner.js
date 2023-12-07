@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.36 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.37 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3427,6 +3427,9 @@
                 }
                if (Shopify.shop == 'vaskiajewelry.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelText , #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p , #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description , span#cc-spin-a-sale-consent-text , .wheelify-cc-spin-a-sale-couponwheel_offers_text{ fill: black; color: black !important;}</style>');
+                }
+               if (Shopify.shop == 'loistesuomi.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p {margin-top: 0;line-height: normal;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {min-height: 700px !important;}span#cc-spin-a-sale-consent-text{font-size: 12px;}.wheelify-signupContainer .checkbox input{width: 12px; margin-top: 3px;}}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
