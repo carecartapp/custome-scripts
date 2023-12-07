@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.27
+ * @version 5.39
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1436,8 +1436,8 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 5px !important;} .counter-text-carecartbysalespop-2020 {min-height: 22px !important;}</style>');
     }
     if (Shopify.shop == "naturessource42.myshopify.com") {
-        customSelctor = $jq321("button[name='add']");
-        finalSelector = customSelctor[0];
+        customSelctor = $jq321(".product-info-row");
+        finalSelector = customSelctor[2];
     }
     if (Shopify.shop == "shejuvirtual.myshopify.com") {
         customSelctor = $jq321(".precoParcela");
