@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.32 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.36 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1120,6 +1120,10 @@
                     }
                     if (Shopify.shop == 'pared-eyewear-australia.myshopify.com') {
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@5.29/spinner/pared.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+                    if (Shopify.shop == 'cascades-boutique.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@5.35/spinner/boutique.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 
