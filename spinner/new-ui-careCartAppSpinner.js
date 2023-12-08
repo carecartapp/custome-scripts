@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.37 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.42 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1124,6 +1124,10 @@
                     }
                     if (Shopify.shop == 'cascades-boutique.myshopify.com') {
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@5.35/spinner/boutique.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+                    if (Shopify.shop == 'thelaylow.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@5.41/spinner/Amilio.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 
@@ -3430,6 +3434,9 @@
                 }
                if (Shopify.shop == 'loistesuomi.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p {margin-top: 0;line-height: normal;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {min-height: 700px !important;}span#cc-spin-a-sale-consent-text{font-size: 12px;}.wheelify-signupContainer .checkbox input{width: 12px; margin-top: 3px;}}</style>');
+                }
+                if (Shopify.shop == 'urban-circus-paris.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align: center;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto;background-color: transparent;border: none;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
