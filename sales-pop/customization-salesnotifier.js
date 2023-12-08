@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.40
+ * @version 5.44
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3084,6 +3084,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "317aef.myshopify.com") {
         $jq321("head").append("<style type='text/css'>.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px!important;}.visitor-counter-content-box-carecartbysalespop-2020 {margin-top:-18px !important;}.stock-top{display: block !important;}</style>");
     }
+    if (Shopify.shop == "byjus-products.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}</style>');
+        masterSelector = $jq321(".sc-ekrjqK.iqLIcp");
+        finalSelector = masterSelector[0];
+    }
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
 
@@ -3659,6 +3664,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             masterSelector = $jq321(".product-pricing");
             finalSelector = masterSelector[0];
             console.log(finalSelector);
+        }
+	if (Shopify.shop == "byjus-products.myshopify.com") {
+            masterSelector = $jq321(".sc-ekrjqK.iqLIcp");
+            finalSelector = masterSelector[0];
         }
         if (responseTimer.above_cart == 1) {
             if (Shopify.shop == "benntify.myshopify.com") {
