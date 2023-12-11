@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.42 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.46 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1123,7 +1123,7 @@
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
                     if (Shopify.shop == 'cascades-boutique.myshopify.com') {
-                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@5.35/spinner/boutique.png';
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@5.45/spinner/bboutiques.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
                     if (Shopify.shop == 'thelaylow.myshopify.com') {
@@ -3437,6 +3437,9 @@
                 }
                 if (Shopify.shop == 'urban-circus-paris.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align: center;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto;background-color: transparent;border: none;}</style>');
+                }
+                if (Shopify.shop == 'kalaya-ca.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading , #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description{color:black !important;}</style>');
                 }
                 
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
