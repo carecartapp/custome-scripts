@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.46 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.47 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3250,7 +3250,7 @@
                 }
 
                 if (Shopify.shop == 'kalaya-ca.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css"> .wheelify-signupContainer .checkbox input{width:auto;} </style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css"> .wheelify-signupContainer .checkbox input{width:auto;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading , #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description{color:black !important;}</style>');
                     //console.log("SAS https://partychampions.com/");
                 }
                 if (Shopify.shop == 'no-more-beauty.myshopify.com') {
@@ -3387,9 +3387,6 @@
                  if (Shopify.shop == 'frictionfreeshaving.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width:auto; height:auto; background-color:transparent; border:none;}#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}</style>');
                 }
-                if (Shopify.shop == 'kalaya-ca.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input{width:auto;}</style>');
-                }
                 if (Shopify.shop == 'heybike-de.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p, #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description, span#cc-spin-a-sale-consent-text, .wheelify-cc-spin-a-sale-couponwheel_offers_text {color:#000 !important;}</style>');
                 }
@@ -3438,10 +3435,6 @@
                 if (Shopify.shop == 'urban-circus-paris.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align: center;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto;background-color: transparent;border: none;}</style>');
                 }
-                if (Shopify.shop == 'kalaya-ca.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading , #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description{color:black !important;}</style>');
-                }
-                
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox {width: 100%;background-color: transparent;height: auto;border: none;}</style>');
