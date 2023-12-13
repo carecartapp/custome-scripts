@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.50
+ * @version 5.52
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3089,6 +3089,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         masterSelector = $jq321(".sc-ekrjqK.iqLIcp");
         finalSelector = masterSelector[0];
     }
+     if (Shopify.shop == "naturessource42.myshopify.com"){
+	$jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}.visitor-counter-content-box-carecartbysalespop-2020{height: 34px !important;margin-top: 0px !important;}.counter-text-carecartbysalespop-2020{min-height: 13px !important;}</style>');
+	masterSelector = $jq321(".product-info-row");
+	finalSelector = masterSelector[2];
+     }
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
 
