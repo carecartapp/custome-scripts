@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.53 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.56 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3443,6 +3443,9 @@
                 }
                 if (Shopify.shop == 'da9225.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto;border: none;}</style>');
+                }
+                if (Shopify.shop == 'clumrelojesyjoyas.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelText{ font-weight: 800;}</style>');
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
