@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 3.46
+ * @version 5.55
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -60,6 +60,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 		carecartWhatsApp("head").append(
             '<style type="text/css"> .share-widget-custom-left{z-index: 999;left: -14px !important;}</style>'
             );
+	}
+	if (Shopify.shop == "indoorwood-se.myshopify.com") {
+		carecartWhatsApp("head").append(
+			'<style type="text/css">.wa-custom-chat-btn .wa-chat-btn-icon-image-only:empty{display:block;}</style>'
+		);
 	}
 	/** ends **/
 
