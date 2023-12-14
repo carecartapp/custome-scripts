@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.49 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.53 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3437,6 +3437,12 @@
                 }
                 if (Shopify.shop == 'era-protect.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p , #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description , span#cc-spin-a-sale-consent-text , .wheelify-cc-spin-a-sale-couponwheel_offers_text , #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading{color: black !important;}</style>');
+                }
+                 if (Shopify.shop == 'kisna-jewellery.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 576px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview {height: 644px!important;}}</style>');
+                }
+                if (Shopify.shop == 'da9225.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto;border: none;}</style>');
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
