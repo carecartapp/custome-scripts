@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.08
+ * @version 5.60
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -590,6 +590,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "bace5a.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "294561-3.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "0ad155.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     else{
@@ -1241,6 +1247,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelector = $jq321(".addCart");
         finalSelector = customSelector[0];
     }
+    if (Shopify.shop == "0ad155.myshopify.com") {
+        customSelector = $jq321(".product-info__buy-buttons");
+        finalSelector = customSelector[0];
+    }
     
     function stockCountdown(response) {
 
@@ -1723,6 +1733,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 }
                   if (Shopify.shop == "shiftcam-us.myshopify.com") {
                     firstSelector = $jq321(".section.clearfix");
+                } else {
+                    firstSelector = $jq321("form[action='/cart']").parent();
+                }
+                if (Shopify.shop == "0ad155.myshopify.com") {
+                    firstSelector = $jq321(".cart-header");
                 } else {
                     firstSelector = $jq321("form[action='/cart']").parent();
                 }
