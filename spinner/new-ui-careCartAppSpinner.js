@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.59 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.61 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3449,6 +3449,9 @@
                 }
                 if (Shopify.shop == 'atowak.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc{bottom: 4vh !important;}</style>');
+                }
+                if (Shopify.shop == 'matreejewels.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 576px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview {height: 732px!important;}}</style>');
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
