@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.60
+ * @version 5.63
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -593,6 +593,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "294561-3.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "79bc10.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
+    else if (Shopify.shop == "belladiscountshop.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
     else if (Shopify.shop == "0ad155.myshopify.com") {
@@ -1248,7 +1254,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
     }
     if (Shopify.shop == "0ad155.myshopify.com") {
+        $jq321("head").append('<style type="text/css">#clockdivpreview{ flex-direction: row-reverse; display: flex; justify-content: center;}.colon{top: -1px;}</style>');
         customSelector = $jq321(".product-info__buy-buttons");
+        finalSelector = customSelector[0];
+    }
+    if (Shopify.shop == "belladiscountshop.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}</style>');
+        customSelector = $jq321(".product-form__buttons");
         finalSelector = customSelector[0];
     }
     
