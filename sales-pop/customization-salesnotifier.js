@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.58
+ * @version 5.66
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3114,6 +3114,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         masterSelector = $jq321(".product-form__buttons");
         finalSelector = masterSelector[0];
     }
+    if (Shopify.shop == "beauty-nails-paris-3787.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}.visitor-counter-content-box-carecartbysalespop-2020{height: 46px !important;}</style>');
+        masterSelector = $jq321(".cart-button-popup-section.product-cart-btns.sticky-for-cart");
+        finalSelector = masterSelector[0];
+    }
+	
     /** Stock for variants **/
     function makeSelectors(variantHeading) {
 
