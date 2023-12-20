@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.62 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.67 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3451,7 +3451,7 @@
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc{bottom: 4vh !important;}</style>');
                 }
                 if (Shopify.shop == 'matreejewels.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 576px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview {height: 732px!important;}}#wheelify-spin_a_sale_cc_store_front_module .wheelText{font-weight:bold !important;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 576px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview {height: 732px!important;}}#wheelify-spin_a_sale_cc_store_front_module .wheelText{font-weight:bold !important;}#wheelify-spin_a_sale_cc_store_front_module .checkbox , #wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description , .wheelify-cc-spin-a-sale-couponwheel_offers_text{line-height:normal !important; letter-spacing:normal !important;}</style>');
                 }
                 //*********************** Custom Fix - longdan1.myshopify.com ***************************************************
                 if (Shopify.shop == 'longdan1.myshopify.com') {
