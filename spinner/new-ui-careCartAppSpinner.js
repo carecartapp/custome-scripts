@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.74 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.77 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3604,6 +3604,9 @@
                 if (Shopify.shop == 'sirplus-food.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css"> #wheelify-spin_a_sale_cc_store_front_module .checkbox{width:auto;height:auto;background-color: transparent;border:none;}</style>');
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}</style>');
+                }
+                if (Shopify.shop == 'doublestitchbybedsure.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{width: auto;height: auto; background-color: transparent;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{text-align:center;}</style>');
                 }
             });
 
