@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.79
+ * @version 5.81
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -775,6 +775,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "a34303-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "380f44.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     
     $jq321.ajax({
         type: "GET",
@@ -805,6 +808,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "380f44.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{ height: 55px !important;margin-top: -30px !important;}</style>');
+        customSelctor = $jq321(".pf-321_");
+        finalSelector = customSelctor[0];
+    }
+    
     if (Shopify.shop == "a34303-2.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{ height: 55px !important;margin-top: -15px !important;}</style>');
     }
