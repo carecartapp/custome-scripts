@@ -3292,6 +3292,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "atmosphear.myshopify.com") {
+            masterSelector = $jq321(".t4s-product-form__buttons");
+            finalSelector = masterSelector[0];
+        }
         if (Shopify.shop == "rungway.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
             masterSelector = $jq321(".detail-attr");
@@ -3534,6 +3538,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "atmosphear.myshopify.com") {
+            masterSelector = $jq321(".t4s-product-form__buttons");
+            finalSelector = masterSelector[0];
+        }
         if (Shopify.shop == "amadijewelry.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">.message-title{margin: 0px 5px 30px 6px;} .colon{top: -17px;} .labels {line-height: 26px;} .timer-store-front {margin-top: 14px;}</style>'
@@ -3762,6 +3770,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+        if (Shopify.shop == "atmosphear.myshopify.com") {
+            masterSelector = $jq321(".t4s-product-form__buttons");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "naturessource42.myshopify.com") {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 34px !important;margin-top: 0px !important;}.counter-text-carecartbysalespop-2020{min-height: 13px !important;}</style>');
             masterSelector = $jq321(".product-info-row");
@@ -3917,6 +3929,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+        if (Shopify.shop == "atmosphear.myshopify.com") {
+            masterSelector = $jq321(".t4s-product-form__buttons");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "naturessource42.myshopify.com") {
             masterSelector = $jq321(".product-info-row");
             finalSelector = masterSelector[2];
