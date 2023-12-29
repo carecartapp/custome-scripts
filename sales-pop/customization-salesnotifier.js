@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.83
+ * @version 5.85
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3423,6 +3423,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         }
 	if (Shopify.shop == "ca339c.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}@media only screen and (max-width: 575px) {.stock-top{margin-top: 38px;}}</style>');
+        }
+	if (Shopify.shop == "homeandcosy.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top{display: block !important;}</style>');
+            masterSelector = $jq321(".shopify-product-form");
+            finalSelector = masterSelector[1];
         }
         if (responseStock.above_cart == 1) {
             if (masterSelector2.length > 0) {
