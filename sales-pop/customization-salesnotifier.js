@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.89
+ * @version 5.92
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -2928,6 +2928,51 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "spotstyl.myshopify.com") {
         $jq321("head").append('<style type="text/css"> .counter-text-carecartbysalespop-2020 { min-height: 35px !important; } .visitor-counter-content-box-carecartbysalespop-2020 { height: 25px !important; }</style>');
+    }
+    if (Shopify.shop == "heather-freitas.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css">' +
+            '.notificationPreview-box .card-body h5.card-title{letter-spacing: normal;text-transform: capitalize; font-weight: normal;}' +
+            '@media only screen and (max-width:524px) {.notifyjs-corner{transform: translateX(-65%) !important;}}' +
+            '@media screen and (max-width: 575px){.notifyjs-corner{left: 64% !important;}}' +
+            '@media screen and (max-width: 500px){' +
+            '.notificationPreview-box{width:356px !important;}' +
+            '.notifyjs-corner{margin:0px !important;}' +
+            '#wa-chat-btn-root + .notifyjs-corner{left: 45% !important;}' +
+            '.notifyjs-corner{margin: 18px !important;}' +
+            '.notificationPreview-box .np-col-img{width:50px !important;height:50px!important;margin-right:10px}' +
+            '.notificationPreview-box-inner{width:338px !important; height:85px !important;}' +
+            '.notificationPreview-box .card-body p.card-text{font-size:10px !important;}' +
+            '.notificationPreview-box .card-body h5.card-title{font-size:12px!important;height: auto !important;line-height: 15px;margin: 0px 0;}' +
+            '.notificationPreview-box .card-body .pur-time{margin:0px !important;}' +
+            '.notificationPreview-box .np-col-right{float:none;}' +
+            '.notifyjs-corner .notifyjs-wrapper{margin:0px;}' +
+            '}' +
+            '@media only screen and (max-width: 423px){' +
+            '.notificationPreview-box {width: 300px !important;}' +
+            '.notificationPreview-box-inner {width: 303px !important;}' +
+            '.notificationPreview-box .np-col-right { width: 221px !important;}' +
+            '.notifyjs-corner { transform: translateX(-63%) !important;}' +
+            '}' +
+            '@media only screen and (max-width: 400px){' +
+            '.notifyjs-corner { transform: translateX(-64%) !important;}' +
+            '.notificationPreview-box {width: 276px !important;}' +
+            '.notificationPreview-box-inner {width: 257px !important;}' +
+            '.notificationPreview-box .np-col-right {width: 175px !important;}' +
+            '}' +
+            '@media only screen and (max-width:360px){' +
+            '.notificationPreview-box .np-col-right {width: 166px !important;}' +
+            '.notifyjs-corner {transform: translateX(-59%) !important;}' +
+            '}' +
+            '@media screen and (max-width: 375px){' +
+            '#noti-rsn-id .notificationPreview-box-inner {width: 287px !important;}' +
+            '#noti-rsn-id.notificationPreview-box { width: 294px !important;}' +
+            '.notificationPreview-box .np-col-right {width: 193px !important;}' +
+            '#wa-chat-btn-root + .notifyjs-corner {left: 45% !important;}' +
+            '.notificationPreview-box .card-body h5.card-title{line-height: 11px;}' +
+            '.notifyjs-salesPopStyle-base .notificationPreview-box .card-body p.card-text {line-height: 11px !important;}' +
+            '}</style>'
+        );
     }
     if (Shopify.shop == "madee-boutique.myshopify.com") {
         $jq321("head").append(
