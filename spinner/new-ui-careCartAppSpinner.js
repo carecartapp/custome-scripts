@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.91 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 5.95 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3209,7 +3209,22 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-                  if (Shopify.shop == 'rforrabbit1.myshopify.com') {
+
+                 if (Shopify.shop == 'importikaah.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">' +
+                        '.wheelify-cc-spin-a-sale-couponwheel_offers_text , #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .wheelify-signupContainer .wheelify-text-description , #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview span#cc-spin-a-sale-consent-text{letter-spacing: normal !important; line-height: normal !important;}' +
+                        '.wheelify-signupContainer .checkbox input{margin-top:5px !important;}' +
+                        '@media only screen and (max-width:575px){' +
+                        'div#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview {' +
+                        'height: 700px !important;' +
+                        '}' +
+                        '#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .wheelify-ContentRight {' +
+                        'min-height: 496px !important;' +
+                        '}' +
+                        '#wheelify-spin_a_sale_cc_store_front_module .checkbox{ padding: 5px 0 4px 1px !important;}' +
+                        '}</style>');
+                }
+                if (Shopify.shop == 'rforrabbit1.myshopify.com') {
                      carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input {width: 20px;height: 18px;position: static;display: block;appearance: auto;}</style>');
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelLogo:empty{display:block !important;}.wheelText tspan{font-weight: 400;}</style>');
                 }
