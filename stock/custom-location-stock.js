@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.86
+ * @version 5.95
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1278,7 +1278,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelector[0];
     }
     if (Shopify.shop == "306933-2.myshopify.com") {
-        $jq321("head").append('<style type="text/css">.colon{top: -1px !important;}</style>');
+        $jq321("head").append('<style type="text/css">.colon{top: -1px !important;} .stock-top{padding-top:10px !important;}</style>');
         customSelector = $jq321(".product-form__buttons");
         finalSelector = customSelector[0];
     }
@@ -1376,7 +1376,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer4 = $jq321("form[action='/cart/add']:first");
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
-        
+
+        if (Shopify.shop == "c034c6-3.myshopify.com") {
+            customSelector = $jq321(".announcement-bar-section");
+            finalSelector = customSelector[0];
+        }
         if (Shopify.shop == "6bccd5.myshopify.com") {
                 customSelector = $jq321("._rsi-buy-now-button");
                 finalSelector = customSelector[0];
