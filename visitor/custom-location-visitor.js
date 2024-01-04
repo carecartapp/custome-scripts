@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.94
+ * @version 5.97
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -156,7 +156,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             else if (Shopify.shop == "shopcindel-com.myshopify.com") {
                 setTimeout(function () { visitorCounter(apiResponse.visitor) }, 1000);
             }
-                else if (Shopify.shop == "the-bob-store-india.myshopify.com") {
+            else if (Shopify.shop == "1ce7f6-2.myshopify.com") {
+                setTimeout(function () { visitorCounter(apiResponse.visitor) }, 2000);
+            }
+            else if (Shopify.shop == "the-bob-store-india.myshopify.com") {
                 setTimeout(function () { visitorCounter(apiResponse.visitor) }, 2000);
             }
             else {
