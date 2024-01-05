@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.00
+ * @version 6.01
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -793,6 +793,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "1ce7f6-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "zuerafashion.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     
     $jq321.ajax({
         type: "GET",
@@ -823,6 +826,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+     if (Shopify.shop == "zuerafashion.myshopify.com") {
+        customSelctor = $jq321(".t4s-product-form__buttons");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "1ce7f6-2.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 35px !important;  margin-top: -10px !important;}</style>');
         customSelctor = $jq321("#swatch-option2");
