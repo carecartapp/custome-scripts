@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.04
+ * @version 6.05
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1505,9 +1505,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelctor[0];
         console.log(finalSelector);
     }
-    if (Shopify.shop == "commonfurnitureproject-2.myshopify.com") {
-        customSelctor = $jq321(".buy-buttons--multiple");
-        finalSelector = customSelctor[0];
+      if (Shopify.shop == "commonfurnitureproject-2.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 62px !important;}</style>');
+        customSelctor = $jq321(".shopify-product-form");
+        finalSelector = customSelctor[1];
     }
     if (Shopify.shop == "bfab1c.myshopify.com") {
         $jq321("head").append('<style type="text/css">#gurentee_icon_3 + div{margin-bottom: 12px !important;}.visitor-counter-content-box-carecartbysalespop-2020 { height: 26px !important; margin-top: -14px !important; } .counter-text-carecartbysalespop-2020{min-height:42px !important;}.ProductForm{margin-top:14px !important;}.ProductForm__Variants{margin-top:26px !important;}</style>');
