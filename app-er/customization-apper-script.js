@@ -1,6 +1,6 @@
 // js-storefront-script GH v.2.0.7
 // Updated at: 20-05-2021 - 12:56 pm
-// CDN ver 2.0.7
+// CDN ver 6.06
 
 var isAjax = 0;
 var isCartLoading = 0;
@@ -1240,7 +1240,10 @@ function AbandonedCart() {
              '.ccswal2-title h2 p {color:#000 !important;}'+
              '</style>');
         }
-
+        if (Shopify.shop == "24bbc2.myshopify.com") 
+        {
+            carecartJquery('head').append('<style type="text/css">#spin-trigger-cc, #spin-trigger-cc:active, #spin-trigger-cc:focus, #spin-trigger-cc:hover, #spin-trigger-cc:visited {margin-bottom:80px !important;}</style>');
+        }
 
         /*Support for whole sales app*/
         carecartJquery('body').find('#wh-whModal-container').find('form#net-order-form').on('click', 'button', function (e) {
