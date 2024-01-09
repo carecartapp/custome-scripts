@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.03
+ * @version 6.07
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1827,7 +1827,10 @@
      if (Shopify.shop == "230408-2.myshopify.com") {
         productID = 8023077322994;
      }
-
+     if (Shopify.shop == "alluxurious.myshopify.com")
+     {
+        productID = 7985994465529;
+     }
      $jq321.ajax({
          type: "GET",
          url: salespoplib_vars_obj.backend_url + 'checkStore/',
