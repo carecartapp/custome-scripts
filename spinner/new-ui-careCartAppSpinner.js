@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.08 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.12 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3210,6 +3210,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+                if (Shopify.shop == '5f4ad4.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">span#cc-spin-a-sale-consent-text {font-size: 14px !important;} .wheelify-signupContainer .checkbox input {margin-top: 5px !important;}</style>');
+                }
                  if (Shopify.shop == 'importikaah.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">' +
                         '.wheelify-cc-spin-a-sale-couponwheel_offers_text , #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .wheelify-signupContainer .wheelify-text-description , #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview span#cc-spin-a-sale-consent-text{letter-spacing: normal !important; line-height: normal !important;}' +
