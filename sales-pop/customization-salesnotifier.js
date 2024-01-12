@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.10
+ * @version 6.11
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -2164,6 +2164,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+   if (Shopify.shop == "5828dc-2.myshopify.com") {
+        var windowWidth = window.screen.width < window.outerWidth ? window.screen.width : window.outerWidth;
+        if (windowWidth < 575) {
+        $jq321("head").append(
+            '<style type="text/css">.notificationPreview-box-inner {margin-top : -28px !important;}</style>'
+        );
+        }
+    }
     if (Shopify.shop == "elle-fit-active.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css">' +
