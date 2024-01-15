@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.12 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.14 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -3210,6 +3210,10 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+                if (Shopify.shop == 'balikbayan-store-5002.myshopify.com') {
+                    console.log('here faheem');
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{height:auto;} * , *:before, *:after {transform-origin:revert-layer;}#wheelify-spin_a_sale_cc_store_front_module .centerCircle, #wheelify-spin_a_sale_cc_store_front_module .valueContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelOutline, #wheelify-spin_a_sale_cc_store_front_module .wheelText{transform-origin: inherit;}</style>');
+                }
                 if (Shopify.shop == '5f4ad4.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">span#cc-spin-a-sale-consent-text {font-size: 14px !important;} .wheelify-signupContainer .checkbox input {margin-top: 5px !important;}</style>');
                 }
