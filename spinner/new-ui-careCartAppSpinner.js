@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.15 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.16 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -1406,9 +1406,6 @@
                             
                             /* New custom fixes added from here */
 
-                            if (Shopify.shop == '201d65.myshopify.com') {
-                                carecartSpinnerJquery("body").append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview{height: 628px!important;}}</style>');
-                            }
                             if (Shopify.shop == 'por3mx.myshopify.com') {
                                 carecartSpinnerJquery("body").append('<style type="text/css">input#cc-spin-a-sale-consent-checkbox{appearance: auto !important;} input#cc-spin-a-sale-consent-checkbox[type=checkbox]{position:relative; width:auto; height:auto; overflow:inherit; display:block; margin-top:3px;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-closeButton i{display:block!important; color: #fff !important} #wheelify-spin_a_sale_cc_store_front_module .wheelLogo , .btn-submit-form i , .copy-button i{display: inline-block !important;} @media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .wheelify-ContentRight {min-height: 526px;}#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview{height: 559px!important;}}</style>');
                             }
@@ -3213,6 +3210,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+                if (Shopify.shop == '201d65.myshopify.com') {
+                    carecartSpinnerJquery("body").append('<style type="text/css">@media only screen and (max-width: 576px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview { height: 628px!important; }}</style>');
+                }
                 if (Shopify.shop == 'balikbayan-store-5002.myshopify.com') {
                     console.log('here faheem');
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button{height:auto;} * , *:before, *:after {transform-origin:revert-layer;}#wheelify-spin_a_sale_cc_store_front_module .centerCircle, #wheelify-spin_a_sale_cc_store_front_module .valueContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelOutline, #wheelify-spin_a_sale_cc_store_front_module .wheelText{transform-origin: inherit;}</style>');
