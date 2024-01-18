@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify - Rehan Azaz *******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.20 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.21 *******************
 //****** Updated at: 18-Feb-2022, 11:52 AM  ********************************************************
 
 (function () {
@@ -924,6 +924,14 @@
                         */
                     }
                     /*Custom fix*/
+                    if (Shopify.shop == 'just-golf-stuff.myshopify.com') {
+                        var targetElement = document.querySelector('.checkbox');
+                        var html = '<a class="hyperlinks" href="https://justgolfstuff.ca/pages/privacy"><span style="display: contents; float: left; color:white !important">By joining you will receive exclusive offers from Just Golf Stuff and other Emerge Commerce brands. You can unsubscribe at any time.</span> </a>';
+                        if (!targetElement.querySelector('.hyperlinks')) {
+                            targetElement.insertAdjacentHTML('beforeend', html);
+                        }
+                        carecartSpinnerJquery("#cc-spin-a-sale-consent-text").remove();
+                    }
                     if (Shopify.shop == 'presha-luxury.myshopify.com') {
                         carecartSpinnerJquery("#NewsletterPopup-newsletter-popup").removeAttr("tabindex");
                     }
@@ -3217,7 +3225,9 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-
+                if (Shopify.shop == 'just-golf-stuff.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.checkbox{border: none;background: transparent;box-shadow: none;width: auto; height: auto; display:flex;}.wheelify-signupContainer .checkbox label{margin-top:3px;}</style>');
+                }
                 if (Shopify.shop == '201d65.myshopify.com') {
                     carecartSpinnerJquery("body").append('<style type="text/css">@media only screen and (max-width: 576px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview { height: 628px!important; }}</style>');
                 }
