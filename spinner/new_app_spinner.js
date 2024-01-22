@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.26 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.27 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -2959,6 +2959,10 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
+		if (Shopify.shop == '5f5123-2.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-ContentRight{min-height: 482px;display: flex;flex-direction: column;align-items: center;justify-content: center;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight {min-height: 412px!important;}.wheelify-ContentRight{display:block;}}</style>');
+                }
 		if (Shopify.shop == 'just-golf-stuff.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">.checkbox{border: none;background: transparent;box-shadow: none;width: auto; height: auto; display:flex;}.wheelify-signupContainer .checkbox label{margin-top:3px;}</style>');
                 }
