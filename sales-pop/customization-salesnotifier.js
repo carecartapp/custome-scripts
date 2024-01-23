@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.32
+ * @version 6.31
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3345,10 +3345,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
-	if (Shopify.shop == "jetty-bra.myshopify.com") {
+	    if (Shopify.shop == "jetty-bra.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
-            masterSelector = $jq321(".form-control");
-            finalSelector = masterSelector[1];
+            masterSelector = $jq321(".quantity-selector");
+            finalSelector = masterSelector[0];
         }
         if (Shopify.shop == "atmosphear.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
@@ -3614,6 +3614,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 	    
+        if (Shopify.shop == "jetty-bra.myshopify.com") {
+            masterSelector = $jq321(".quantity-selector");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "8481bc-2.myshopify.com") {
             masterSelector = $jq321(".product-form__buttons");
             finalSelector = masterSelector[0];
@@ -3850,6 +3854,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+        if (Shopify.shop == "jetty-bra.myshopify.com") {
+            masterSelector = $jq321(".quantity-selector");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "36e838.myshopify.com") {
 		$jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 38px; margin-top: -19px !important;}</style>');
 		masterSelector = $jq321(".product-meta__text");
@@ -4434,17 +4442,17 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     // ---------------------------------- <TRUST BADGES MODULE> --------------------------------
     function trustBadges(trustBadgesResponse) {
+        
+        if (Shopify.shop == "myautopartsbsit.myshopify.com") {
+              let text = window.location.pathname;
+              let result = text.indexOf("products");
+  
+              if (result == -1) {
+                  return;
+              }
+          }
 
-	if (Shopify.shop == "myautopartsbsit.myshopify.com") {
-            let text = window.location.pathname;
-            let result = text.indexOf("products");
-
-            if (result == -1) {
-                return;
-            }
-        }
-	    
-        if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
+          if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
             let text = window.location.pathname;
             let result = text.indexOf("products");
 
@@ -4586,10 +4594,6 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             var selectorTrustBadges3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
             var selectorTrustBadges4 = $jq321("form[action='/cart/add']:first");
 
-	    if (Shopify.shop == "myautopartsbsit.myshopify.com") {
-        	masterSelector = $jq321(".bsit_product_info .shopify-section .bsit_product_info_block ul");
-        	finalSelector = masterSelector[0];
-            }
             if (Shopify.shop == "la-china-fitness.myshopify.com") {
                 masterSelectortr = $jq321(".product__accordion");
                 finalSelectortr = masterSelectortr[3];
