@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.11
+ * @version 6.31
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3345,6 +3345,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+	if (Shopify.shop == "jetty-bra.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
+            masterSelector = $jq321(".form-control");
+            finalSelector = masterSelector[1];
+        }
         if (Shopify.shop == "atmosphear.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
             masterSelector = $jq321(".t4s-product-form__buttons");
