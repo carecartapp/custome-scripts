@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.33 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.35 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -2965,7 +2965,7 @@
                     carecartSpinnerJquery('head').append('<style type="text/css"> @media only screen and (max-width:575px){.wheelify-ContentRight{display: block;}}</style>');
                 }
 		if (Shopify.shop == '262d85.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{background-color: transparent;border: none;width: auto;height: auto;} .wheelify-signupContainer .checkbox input{margin-top:4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div {text-align: center;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{background-color: transparent;border: none;width: auto;height: auto;} .wheelify-signupContainer .checkbox input{margin-top:4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div {text-align: center!important; }#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight{min-height:auto !important;}.wheelify-text-heading{color: black !important;}.wheelify-text-description{color: black !important;}span#cc-spin-a-sale-consent-text{color: black !important;}.wheelify-cc-spin-a-sale-couponwheel_offers_text{color: black !important;}</style>');               
                 }
 		if (Shopify.shop == 'wjl-new-store.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css"> .wheelLogo{display:none;}</style>');
