@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.31
+ * @version 6.32
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -4434,8 +4434,17 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     // ---------------------------------- <TRUST BADGES MODULE> --------------------------------
     function trustBadges(trustBadgesResponse) {
-        
-          if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
+
+	if (Shopify.shop == "myautopartsbsit.myshopify.com") {
+            let text = window.location.pathname;
+            let result = text.indexOf("products");
+
+            if (result == -1) {
+                return;
+            }
+        }
+	    
+        if (Shopify.shop == "black-diamonds-new-york.myshopify.com") {
             let text = window.location.pathname;
             let result = text.indexOf("products");
 
@@ -4577,6 +4586,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             var selectorTrustBadges3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
             var selectorTrustBadges4 = $jq321("form[action='/cart/add']:first");
 
+	    if (Shopify.shop == "myautopartsbsit.myshopify.com") {
+        	masterSelector = $jq321(".bsit_product_info .shopify-section .bsit_product_info_block ul");
+        	finalSelector = masterSelector[0];
+            }
             if (Shopify.shop == "la-china-fitness.myshopify.com") {
                 masterSelectortr = $jq321(".product__accordion");
                 finalSelectortr = masterSelectortr[3];
