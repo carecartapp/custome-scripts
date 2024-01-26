@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.43
+ * @version 6.44
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1888,22 +1888,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                     timeDifference = Math.floor(timeDifference / 24);
                     timeDifference = Math.abs(timeDifference) + " day(s) ago";
                 }
-             else {
+                else {
                     timeDifference = Math.abs(timeDifference) + " hour(s) ago";
                 }
-        } else { timeDifference = Math.abs(timeDifference) + " minute(s) ago" }
+            } else { timeDifference = Math.abs(timeDifference) + " minute(s) ago" }
         }
-        if (timeDifference >= 60) {
-            timeDifference = Math.floor(timeDifference / 60);
-            if (timeDifference >= 24) {
-                timeDifference = Math.floor(timeDifference / 24);
-                timeDifference = Math.abs(timeDifference) + " day(s) ago";
-            }
-            else {
-                timeDifference = Math.abs(timeDifference) + " hour(s) ago";
-            }
-        } else { timeDifference = Math.abs(timeDifference) + " minute(s) ago" }
-
+	    
         if (isHidePopupCookieSet()) {
             return false;
         }
