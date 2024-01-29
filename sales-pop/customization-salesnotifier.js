@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.44
+ * @version 6.49
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3866,6 +3866,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "agent11mporex.myshopify.com") {
+            masterSelector = $jq321(".product-form__info-content");
+            finalSelector = masterSelector[0];
+            console.log(finalSelector);
+            $jq321("head").append(
+                "<style type='text/css'> .product-form__info-item{display:flex; align-items:center;} .product-form__info-content{width:auto;} .visitor-counter-content-box-carecartbysalespop-2020{margin-top:0px;}" + 
+                "@media only screen and (max-width:575px){ .product-form__info-item {display:inline !important;} .visitor-counter-content-box-carecartbysalespop-2020{margin:4px 0 12px 0;}}</style>"
+            );
+        }
 	if (Shopify.shop == "a0bb54-3.myshopify.com") {
             $jq321("head").append(
                 "<style type='text/css'>.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -30px !important;}</style>"
