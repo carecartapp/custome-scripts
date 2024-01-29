@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.35 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.45*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3000,6 +3000,9 @@
                 }
                 //*********************** Custom Fix - sugar-ruff.myshopify.com ***** Make Slices Text Color Black **********************************
                 if (Shopify.shop == 'sugar-ruff.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelText {fill: #000;}</style>');
+                }
+		if (Shopify.shop == 'detectivebox.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelText {fill: #000;}</style>');
                 }
                 //********************** In mobile view, hide the Spinner Trigger Text and display ONLY the wheel ***********************************
