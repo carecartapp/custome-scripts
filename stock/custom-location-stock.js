@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.46
+ * @version 6.51
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1297,6 +1297,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.colon{top: -1px !important;}</style>');
         customSelector = $jq321(".product-form__buttons");
         finalSelector = customSelector[0];
+    }
+     if (Shopify.shop == "aventystore.myshopify.com") {
+        $jq321("head").append('<style type="text/css">div.stock-top:nth-child(2) { display: none !important; }</style>');
     }
     if (Shopify.shop == "306933-2.myshopify.com") {
         $jq321("head").append('<style type="text/css">.colon{top: -1px !important;} .stock-top{padding-top:10px !important;}</style>');
