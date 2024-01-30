@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.53*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.54*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -921,6 +921,11 @@
                                                 }
                         */
                     }
+			// add customized logo
+                    if (Shopify.shop == 'detectivebox.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@6.52/spinner/CTI-3094.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
                     /*Custom fix*/
 		    if (Shopify.shop == 'just-golf-stuff.myshopify.com') {
                         var targetElement = document.querySelector('.checkbox');
@@ -942,11 +947,6 @@
                                         }
                     */
                 }
-                    // add customized logo
-                    if (Shopify.shop == 'detectivebox.myshopify.com') {
-                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@6.52/spinner/CTI-3094.png';
-                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
-                    }
                 function hideSpinASaleModule() {
                     ///carecartSpinnerJquery("body").find("#wheelify-spin_a_sale_cc_store_front_module").hide();
                     carecartSpinnerJquery("body").find("#wheelify-spin_a_sale_cc_store_front_module").fadeOut();
