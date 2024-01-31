@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.56
+ * @version 6.60
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -2163,7 +2163,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector = '';
     var masterSelector2 = '';
     var finalSelector2 = '';
-
+	
+  if (Shopify.shop == "brodbeck-ironworks.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.announcement-bar-font-size-inherit{margin: auto !important;}</style>"
+        );
+    }
+	
     if (Shopify.shop == "e89fa0-4.myshopify.com") {
         masterSelector = $jq321(".product__tax.caption.rte");
         finalSelector = masterSelector[0];
