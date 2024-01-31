@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.59*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.61*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -1344,25 +1344,7 @@
                                             console.log(iti.getSelectedCountryData());
                                             phoneNumber.value = iti.getSelectedCountryData().dialCode;
                                         });
-					    
-					if (Shopify.shop == "9c6b3f.myshopify.com"){
-	                                    // Get the style element
-	                                    var styleElement = document.getElementById('custom-styles');
-	
-	                                    // Create a new style element if it doesn't exist
-	                                    if (!styleElement) {
-	                                    styleElement = document.createElement('style');
-	                                    styleElement.id = 'custom-styles';
-	                                    document.head.appendChild(styleElement);
-	                                    }
-	
-	                                    // Remove the existing CSS rule
-	                                    styleElement.innerHTML = styleElement.innerHTML.replace(/#wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight\s*{[^}]*}/g, '');
-	
-	                                    // Add the new CSS rule
-	                                    styleElement.innerHTML += '#wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight { min-height: 517px!important; }';
-	
-	                                    }
+					
 
 					var isMobile = window.innerWidth <= 575;
                                         if (isMobile) {
@@ -1404,6 +1386,26 @@
                                 }else{
                                     carecartSpinnerJquery("#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight").css("min-height","520px");
                                 }
+
+				if (Shopify.shop == "9c6b3f.myshopify.com"){
+                                    // Get the style element
+                                    var styleElement = document.getElementById('custom-styles');
+
+                                    // Create a new style element if it doesn't exist
+                                    if (!styleElement) {
+                                    styleElement = document.createElement('style');
+                                    styleElement.id = 'custom-styles';
+                                    document.head.appendChild(styleElement);
+                                    }
+
+                                    // Remove the existing CSS rule
+                                    styleElement.innerHTML = styleElement.innerHTML.replace(/#wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight\s*{[^}]*}/g, '');
+
+                                    // Add the new CSS rule
+                                    styleElement.innerHTML += '#wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight { min-height: 517px!important; }';
+
+                                }
+				    
                                     
                                 var isMobile = window.innerWidth <= 575;
                                     if (isMobile) {
