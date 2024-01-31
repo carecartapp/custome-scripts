@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.60
+ * @version 6.62
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3872,6 +3872,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+      if (Shopify.shop == "pirri-the-plug.myshopify.com") {
+            masterSelector = $jq321(".product__grid");
+            finalSelector = masterSelector[0];
+            $jq321("head").append(
+                "<style type='text/css'>.content-div-visitor-detail-carecartbysalespop-2020.visitor-center{margin-top: 20px !important;}</style>");
+	}
 	if (Shopify.shop == "agent11mporex.myshopify.com") {
             masterSelector = $jq321(".product-form__info-content");
             finalSelector = masterSelector[0];
