@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.63
+ * @version 6.65
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3639,7 +3639,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
 	if (Shopify.shop == "d64940-2.myshopify.com") {
-            masterSelector = $jq321(".pf-732_");
+            masterSelector = $jq321(".sc-cQMzAB");
             finalSelector = masterSelector[0];
         }    
         if (Shopify.shop == "jetty-bra.myshopify.com") {
