@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.62
+ * @version 6.63
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1128,6 +1128,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         var b_url = true;
 
+	if (Shopify.shop == "alan-richard-textiles-ltd.myshopify.com") {
+            if (window.location.href.includes('thank_you')) {
+                b_url = false;
+                console.log('SP Sales Notification Block on "Thank You" page');
+            }
+        }
         if (Shopify.shop == "elusionist.myshopify.com") {
             if (block_url_store == 'https://ellusionist.com/apps/downloads/') {
                 b_url = false;
@@ -3631,7 +3637,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer4 = $jq321("form[action='/cart/add']:first");
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
-	    
+
+	if (Shopify.shop == "d64940-2.myshopify.com") {
+            masterSelector = $jq321(".pf-732_");
+            finalSelector = masterSelector[0];
+        }    
         if (Shopify.shop == "jetty-bra.myshopify.com") {
             masterSelector = $jq321(".quantity-selector");
             finalSelector = masterSelector[0];
