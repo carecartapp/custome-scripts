@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.68*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.69*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -2988,7 +2988,7 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 		if (Shopify.shop == 'mysteryfootballkitco.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">.checkbox{width: auto;height: auto;} .wheelify-signupContainer .checkbox input{margin-top:4px;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div{text-align:center;} .checkbox{width: auto;height: auto;background: transparent;box-shadow: none;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {display: flex;flex-direction: column;justify-content: center;min-height: 444px !important;} .wheelify-signupContainer .checkbox input{margin-top:4px;}</style>');
                 }     
 		if (Shopify.shop == 'wjl-new-store.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css"> .wheelify-ContentRight{min-height: 482px!important;display: flex;flex-direction: column;align-items: center;justify-content: center;}</style>');
