@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.74*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.79*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -924,6 +924,10 @@
 			// add customized logo
                     if (Shopify.shop == 'detectivebox.myshopify.com') {
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@6.52/spinner/CTI-3094.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
+		    if (Shopify.shop == 'lilash-new-zealand.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@6.78/spinner/logo.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
                     /*Custom fix*/
