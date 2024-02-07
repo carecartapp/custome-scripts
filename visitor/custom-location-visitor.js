@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.72
+ * @version 6.73
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -802,6 +802,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "7ba0b2-2.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "grozavushop.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     else{
         var meta = { "product": { "id": __st.rid } };
     }
@@ -835,6 +838,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "grozavushop.myshopify.com") {
+        customSelctor = $jq321(".submit.m10 ");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "aa660c-3.myshopify.com") {
         customSelector = $jq321(".sc-bQtKYq.iUzbOz.pf-801_");
         finalSelector = customSelector[0];
