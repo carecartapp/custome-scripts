@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 5.99
+ * @version 6.84
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -88,6 +88,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     /* Hard coded product id's for homa page */
     let productID = 0;
+    if (Shopify.shop == "dreamgift-1242.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+        productID = 8773044896080;
+    }
     if (Shopify.shop == "behappyfr.myshopify.com") {
         productID = 6887512703140;
     }
