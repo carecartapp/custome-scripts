@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 6.85
+ * @version 6.88
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -668,6 +668,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let finalSelector = '';
     let masterSelector = '';
 
+    if (Shopify.shop == "vlas-cure-fr.myshopify.com") {
+        customSelector = $jq321(".product-single__add-to-cart"); 
+        finalSelector = customSelector[0];
+    }
     if (Shopify.shop == "aa601b-3.myshopify.com") {
         customSelector = $jq321(".product-single__add-to-cart");
         finalSelector = customSelector[0];
@@ -1412,6 +1416,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "vlas-cure-fr.myshopify.com") {
+            customSelector = $jq321(".product-single__add-to-cart"); 
+            finalSelector = customSelector[0];
+        }
         if (Shopify.shop == "c034c6-3.myshopify.com") {
             customSelector = $jq321(".announcement-bar-section");
             finalSelector = customSelector[0];
