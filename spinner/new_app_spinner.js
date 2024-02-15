@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.82*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.92*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -922,6 +922,10 @@
                         */
                     }
 			// add customized logo
+		    if (Shopify.shop == 'primequalitymeats-com-au.myshopify.com') {
+                        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@6.89/spinner/3171.png';
+                        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                    }
                     if (Shopify.shop == 'detectivebox.myshopify.com') {
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@6.52/spinner/CTI-3094.png';
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
@@ -2991,6 +2995,9 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
+		if (Shopify.shop == 'primequalitymeats-com-au.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#page-transition-overlay{background-color: transparent;}</style>');
+                }
 		if (Shopify.shop == 'kumaliparis.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{background-color:transparent;border: none;width: auto;height: auto;}.wheelify-signupContainer .checkbox input{ margin-top: 4px;}#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div{text-align:center;}</style>');
                 }
