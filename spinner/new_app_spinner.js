@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.92*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.93*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -2996,7 +2996,7 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 		if (Shopify.shop == 'primequalitymeats-com-au.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">#page-transition-overlay{background-color: transparent;}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelLogo {transform: rotate(0deg);}}</style>');
                 }
 		if (Shopify.shop == 'kumaliparis.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{background-color:transparent;border: none;width: auto;height: auto;}.wheelify-signupContainer .checkbox input{ margin-top: 4px;}#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div{text-align:center;}</style>');
