@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.93*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 6.95*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -2995,6 +2995,12 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
+		if (Shopify.shop == 'e84a62-2.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc{left: -8px !important;}</style>');
+                } 
+		if (Shopify.shop == 'bysakwellness.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input{margin-top: 4px; display: block;position: static;width: 20px;height: auto;appearance: auto;}</style>');
+                }
 		if (Shopify.shop == 'primequalitymeats-com-au.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#page-transition-overlay{background-color: transparent;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelLogo {transform: rotate(0deg);}</style>');
                 }
