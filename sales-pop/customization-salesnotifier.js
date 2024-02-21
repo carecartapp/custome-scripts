@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.00
+ * @version 7.01
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -3665,6 +3665,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+	if (Shopify.shop == "the-knotty-ones.myshopify.com") {
+            masterSelector = $jq321(".size___wrapper");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "modern-makerie.myshopify.com") {
             masterSelector = $jq321(".product-form__buttons");
             finalSelector = masterSelector[0];
@@ -3917,6 +3921,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "the-knotty-ones.myshopify.com") {
+            masterSelector = $jq321(".size___wrapper");
+            finalSelector = masterSelector[0];
+        }
       if (Shopify.shop == "pirri-the-plug.myshopify.com") {
             masterSelector = $jq321(".product__grid");
             finalSelector = masterSelector[0];
