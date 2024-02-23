@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.01
+ * @version 7.05
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -2170,6 +2170,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+  if (Shopify.shop == "safetykit-in.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.annFullsection h1.getDiscoundText{padding-bottom: 0px !important;}" + 
+            "@media only screen and (max-width: 575px){.banner-Close-CC{top:18px !important;}}</style>"
+        );
+    }
   if (Shopify.shop == "dreamsleep-australia.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.stock-top{display: block !important;}</style>"
