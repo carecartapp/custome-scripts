@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.03*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.09*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3002,7 +3002,7 @@
                     carecartSpinnerJquery('head').append('<style type="text/css">.wheelify-signupContainer .checkbox input{margin-top: 4px; display: block;position: static;width: 20px;height: auto;appearance: auto;}</style>');
                 }
 		if (Shopify.shop == 'primequalitymeats-com-au.myshopify.com') {
-                    carecartSpinnerJquery('head').append('<style type="text/css">#page-transition-overlay{background-color: transparent;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelLogo {transform: rotate(0deg);}#wheelify-spin-trigger-cc{padding:110px}</style>');
+                    carecartSpinnerJquery('head').append('<style type="text/css">#page-transition-overlay{background-color: transparent;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight{min-height: 479px !important;display: flex;align-items: center;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelLogo {transform: rotate(0deg);}#wheelify-spin-trigger-cc{padding:110px}</style>');
                 }
 		if (Shopify.shop == 'kumaliparis.myshopify.com') {
                     carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .checkbox{background-color:transparent;border: none;width: auto;height: auto;}.wheelify-signupContainer .checkbox input{ margin-top: 4px;}#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div{text-align:center;}</style>');
