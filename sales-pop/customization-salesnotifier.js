@@ -3,8 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.16
- *
+ * @version 7.17
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -3679,7 +3678,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
 	if (Shopify.shop == "483238-2.myshopify.com") {
-            masterSelector = $jq321(".product__tax");
+            masterSelector = $jq321(".form__label");
             finalSelector = masterSelector[0];
         }
 	if (Shopify.shop == "the-knotty-ones.myshopify.com") {
