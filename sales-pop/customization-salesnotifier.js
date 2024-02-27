@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.15
+ * @version 7.16
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -2170,6 +2170,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+   if (Shopify.shop == "mont-laurent.myshopify.com") {
+        masterSelector = $jq321(".product-title.h3");
+        finalSelector = masterSelector[0];
+        $jq321("head").append(
+            "<style type='text/css'>.stock-top{display: block !important;}</style>"
+        );
+    }
   if (Shopify.shop == "safetykit-in.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.annFullsection h1.getDiscoundText{padding-bottom: 0px !important;}" + 
