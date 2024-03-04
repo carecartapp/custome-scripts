@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.20
+ * @version 7.24
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2169,6 +2169,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+   if (Shopify.shop == "crazywo.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.stock-top{display: block !important;}</style>"
+        );
+    }
    if (Shopify.shop == "mont-laurent.myshopify.com") {
         masterSelector = $jq321(".product-title.h3");
         finalSelector = masterSelector[0];
@@ -3937,6 +3942,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "crazywo.myshopify.com") {
+            masterSelector = $jq321(".total-price");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "f6786c-2.myshopify.com") {
             masterSelector = $jq321(".ecom-product-single__add-to-cart");
             finalSelector = masterSelector[0];
