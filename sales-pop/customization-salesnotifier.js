@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.34
+ * @version 7.41
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2169,6 +2169,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+
+    if (Shopify.shop == "3f20ae.myshopify.com") {
+        masterSelector = $jq321(".form div.product-form__buttons");
+        finalSelector = masterSelector[0];
+    }
+    if (Shopify.shop == "timeless-vintage-co.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px !important;}</style>"
+        );
+    }
     if (Shopify.shop == "cca341.myshopify.com") {
         masterSelector = $jq321(".product-form__input.product-form__quantity");
         finalSelector = masterSelector[0];
