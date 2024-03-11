@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver v7.38 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver v7.39 *******************
 //****** Updated at: 06-MARCH-2024, 12:44 PM  ********************************************************
 
 (function () {
@@ -915,6 +915,7 @@
                         */
                     }
                     /*Custom fix*/
+
 
                     if (Shopify.shop == 'flowyline-official.myshopify.com') {
                         var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.36/spinner/3263.png';
