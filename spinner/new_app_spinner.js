@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.30*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.39*******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -927,7 +927,7 @@
                         carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
                     }
 		   if (Shopify.shop == 'flowyline-official.myshopify.com') {
-			var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.29/spinner/CTI-3246.png';
+			var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.36/spinner/3263.png';
 			carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
 		    }
 		    if (Shopify.shop == 'primequalitymeats-com-au.myshopify.com') {
