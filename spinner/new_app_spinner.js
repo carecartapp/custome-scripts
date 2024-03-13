@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.40*******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.47 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -1194,9 +1194,6 @@
                             }
                             /* New custom fixes added from here */
 
-			    if (Shopify.shop == 'flowyline-official.myshopify.com') {
-                                carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox{background-color: transparent;border: none;width: auto;height: auto;}</style>");
-                            }
 			    if (Shopify.shop == '66bf4c-2.myshopify.com') {
                                 carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner{width: 86%;min-width: 86%;left: 50%;top: 50%;transform: translate(-50%, -50%);} #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner{height: 95%;}}</style>');
                             }
@@ -3008,6 +3005,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'flowyline-official.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;}</style>");
+                }
 		if (Shopify.shop == 'e1ff05-3.myshopify.com') {
 			carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight{display:flex ; align-items: center ;}</style>');                    
 			carecartSpinnerJquery('head').append('<style type="text/css"> * ,*:before, :after{transform-origin: revert;}</style>');
