@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.54 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.56 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3010,6 +3010,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'jobobike-pl.myshopify.com') {
+                    carecartSpinnerJquery('head').append("<style type='text/css'> .wheelText {font-size: 26px !important;}</style>");
+                }
 		if (Shopify.shop == 'killcliff.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'> .wheelify-content-spinner input {color: black !important;}</style>");
                 }
