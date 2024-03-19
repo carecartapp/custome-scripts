@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.56 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.57 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -1199,6 +1199,9 @@
                             }
                             /* New custom fixes added from here */
 
+			    if (Shopify.shop == 'opopopshop.myshopify.com') {
+                                carecartSpinnerJquery('head').append("<style type='text/css'>.wheelify-signupContainer{font-family: 'Barlow Condensed Semi Bold' !important;}</style>");
+                            }
 			    if (Shopify.shop == '66bf4c-2.myshopify.com') {
                                 carecartSpinnerJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner{width: 86%;min-width: 86%;left: 50%;top: 50%;transform: translate(-50%, -50%);} #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner{height: 95%;}}</style>');
                             }
@@ -3098,6 +3101,9 @@
                     if (carecartSpinnerJquery.browser.mobile) {
                         carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc {bottom: 2vh !important;}</style>');
                     }
+                }
+		if (Shopify.shop == 'toyotress.myshopify.com') {
+                    carecartSpinnerJquery('head').append("<style type='text/css'> @media screen and (-webkit-min-device-pixel-ratio: 0) {input:focus,select:focus,textarea:focus {background-color: transparent !important;}/style>");
                 }
             });
 
