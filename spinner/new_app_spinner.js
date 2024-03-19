@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.57 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.58 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3012,7 +3012,10 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-
+		    
+                if (Shopify.shop == 'toyotress.myshopify.com') {
+                    carecartSpinnerJquery('head').append("<style type='text/css'> @media screen and (-webkit-min-device-pixel-ratio: 0) {input:focus,select:focus,textarea:focus {background-color: transparent !important;}/style>");
+                }
 		if (Shopify.shop == 'jobobike-pl.myshopify.com') {
                     carecartSpinnerJquery('head').append("<style type='text/css'> .wheelText {font-size: 26px !important;}</style>");
                 }
@@ -3101,9 +3104,6 @@
                     if (carecartSpinnerJquery.browser.mobile) {
                         carecartSpinnerJquery('head').append('<style type="text/css">#wheelify-spin-trigger-cc {bottom: 2vh !important;}</style>');
                     }
-                }
-		if (Shopify.shop == 'toyotress.myshopify.com') {
-                    carecartSpinnerJquery('head').append("<style type='text/css'> @media screen and (-webkit-min-device-pixel-ratio: 0) {input:focus,select:focus,textarea:focus {background-color: transparent !important;}/style>");
                 }
             });
 
