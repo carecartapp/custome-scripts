@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.58 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.61 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3012,7 +3012,14 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-		    
+		if (Shopify.shop == 'toyotress.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-signupContainer .checkbox label {align-items: center;}  #cc-spin-a-sale-consent-checkbox{ width: auto;} #wheelify-spin_a_sale_cc_store_front_module .checkbox { padding: 0px 10px;}</style>");
+                 }
+
+		if (Shopify.shop == 'hayes-detail-products.myshopify.com') {
+            	    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;}</style>");
+                }
+
                 if (Shopify.shop == 'toyotress.myshopify.com') {
                     carecartSpinnerJquery('head').append("<style type='text/css'> @media screen and (-webkit-min-device-pixel-ratio: 0) {input:focus,select:focus,textarea:focus {background-color: transparent !important;}/style>");
                 }
