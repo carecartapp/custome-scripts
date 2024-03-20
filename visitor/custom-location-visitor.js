@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.50
+ * @version 7.58
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1847,10 +1847,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         finalSelector = customSelctor[0];
     }
     if (Shopify.shop == "neom-organics.myshopify.com") {
-        $jq321("head").append('<style type="text/css">.NE-690 .visitor-counter-content-box-carecartbysalespop-2020{display:block !important;}</style>');
+        $jq321("head").append('<style type="text/css">.NE-690.NE-690-1 .visitor-counter-content-box-carecartbysalespop-2020{display:block !important;}</style>');
         customSelctor = $jq321(".product__actions-container");
         finalSelector = customSelctor[0];
-        console.log(finalSelector);
     }
     if (Shopify.shop == "the-style-trader-co.myshopify.com") {
         $jq321("head").append('<style type="text/css">.content-div-visitor-detail-carecartbysalespop-2020{padding-left: 0px!important; }.tis-product-default .visitor-counter-content-box-carecartbysalespop-2020{position:static !important; max-width: 100% !important; margin: 0 !important;}.tis-product-default .counter-text-carecartbysalespop-2020{border:none!important;max-width:100% !important;}.close-visitor{display:none !important;}.tis-product-default .counter-text-carecartbysalespop-2020::after{display:none !important;} .tis-product-default .counter-text-carecartbysalespop-2020 span i, .gift-card-page .counter-text-carecartbysalespop-2020 span i{display: inline-block !important;padding-right: 8px;}</style>');
@@ -1915,8 +1914,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "7ba0b2-2.myshopify.com") {
         customSelctor = $jq321(".g5urUZBDSt");
         finalSelector = customSelctor[0];
-    }
-
+    }  
     function visitorCounter(responseVisitor) {
        var selectorVisitor1 = $jq321("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor2 = $jq321("form[action='/cart/add']");
