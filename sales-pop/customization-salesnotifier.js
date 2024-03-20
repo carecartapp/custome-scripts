@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.55
+ * @version 7.60
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -4743,6 +4743,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             var selectorTrustBadges3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
             var selectorTrustBadges4 = $jq321("form[action='/cart/add']:first");
 
+	    if (Shopify.shop == "nordic-peace.myshopify.com") {
+            	$jq321("head").append(
+                "<style type='text/css'>.background-store-front { background-color: transparent !important; } .BadgesImgBox .BorderBox {  border: none; } #CloneBox .BorderBox { height:22px; padding:0px !important; } .badg-box { margin-right : 0px; }</style>"
+            	);
+             }
             if (Shopify.shop == "la-china-fitness.myshopify.com") {
                 masterSelectortr = $jq321(".product__accordion");
                 finalSelectortr = masterSelectortr[3];
