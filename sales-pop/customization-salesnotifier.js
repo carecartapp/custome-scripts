@@ -2172,7 +2172,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     if (Shopify.shop == "3f20ae.myshopify.com") {
         $jq321("head").append(
-            "<style type='text/css'>.visitor-center {padding: 10px !important;}</style>"
+            "<style type='text/css'>.visitor-center {padding: 10px !important;} .stock-top{display: block !important; margin-top: 14px; !important;}</style>"
         );
     }
     if (Shopify.shop == "timeless-vintage-co.myshopify.com") {
