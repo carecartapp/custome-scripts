@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.64
+ * @version 7.71
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -668,6 +668,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let finalSelector = '';
     let masterSelector = '';
 
+    if (Shopify.shop == "f985c7-2.myshopify.com") {
+        customSelector = $jq321(".product__submit__buttons");
+        finalSelector = customSelector[0];
+    }
+    if (Shopify.shop == "js-sport-prints.myshopify.com") {
+        customSelector = $jq321(".ultimateTrustBadgesInnerContainer");
+        finalSelector = customSelector[0];
+    }
     if (Shopify.shop == "f22ce2-85.myshopify.com") {
         $jq321("head").append('<style type="text/css">.stock-top{margin-top: 14px; !important}</style>');
         customSelector = $jq321(".product-form__buttons");
