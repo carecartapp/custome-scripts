@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.72 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.81 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -502,17 +502,27 @@
                                 })
                             }),
                             t.fadeIn()
-                    } else {
-                        e.fadeOut(), n.text(i.results[0].msg), t.css({
-                            paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
-                        }),
-                            carecartSpinnerJquery(window).resize(function () {
-                                t.css({
-                                    // paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
-                                })
-                            }),
-                            l.fadeIn()
                     }
+		    else if (Shopify.shop == 'almowear.myshopify.com') {
+                            i.results[0].userData.coupon;
+                            e.fadeOut(), n.text(i.results[0].msg), a.text(i.results[0].userData.coupon), t.find("input").val("SPIN20"), t.css({
+                                paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
+                            }),
+                                carecartSpinnerJquery(window).resize(function () {
+                                    t.css({
+                                    })
+                                }),
+                                t.fadeIn()
+                    } else {
+                            e.fadeOut(), n.text(i.results[0].msg), t.css({
+                                paddingTop: (carecartSpinnerJquery(window).height() - t.height()) / 2
+                            }),
+                                carecartSpinnerJquery(window).resize(function () {
+                                    t.css({
+                                    })
+                                }),
+                                l.fadeIn()
+                        }
 
                 }
 
