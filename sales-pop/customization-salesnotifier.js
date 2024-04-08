@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.79
+ * @version v7.84
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2170,6 +2170,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector2 = '';
 
 
+    if (Shopify.shop == "bold-goodly.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.notificationPreview-box .card-body h5.card-title {text-transform: none;letter-spacing: normal; font-weight: 400;}</style>"
+        );
+    }
     if (Shopify.shop == "3f20ae.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.visitor-center {padding: 10px !important;} .stock-top{display: block !important; margin-top: 14px; !important;}</style>"
@@ -3408,6 +3413,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+	if (Shopify.shop == "72ecc2-4b.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display: block !important;}</style>');
+            masterSelector = $jq321(".ButtonBlockButton");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "92e52b-8b.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display: block !important;}</style>');
             masterSelector = $jq321(".ButtonBlockButton");
@@ -4168,6 +4178,29 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "62fd13-e5.myshopify.com") {
+        	masterSelector = $jq321(".addCart");
+        	finalSelector = masterSelector[0];
+    	}
+	if (Shopify.shop == "e7b112-69.myshopify.com") {
+            masterSelector = $jq321(".timer-store-front");
+            $jq321("head").append(
+                "<style type='text/css'>.sold-counter-content-box {height: 45px !important;} .timer-store-front {height: 50px !important;} .trust-badges-header-center { margin-top:15px; margin-bottom:0px !important; }</style>"
+            );
+            finalSelector = masterSelector[0];
+        }
+
+	if (Shopify.shop == "31aab9-a0.myshopify.com") {
+            masterSelector = $jq321(".timer-store-front");
+            $jq321("head").append(
+                "<style type='text/css'>.sold-counter-content-box {height: 45px !important;} .timer-store-front {height: 50px !important;} </style>"
+            );
+            finalSelector = masterSelector[0];
+        }
+	if (Shopify.shop == "72ecc2-4b.myshopify.com") {
+            masterSelector = $jq321(".product__tax");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "5ec605.myshopify.com") {
             masterSelector = $jq321(".product-form__quantity");
             finalSelector = masterSelector[0];
