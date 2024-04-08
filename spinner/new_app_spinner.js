@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.81 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.85 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -932,7 +932,10 @@
                         */
                     }
 			// add customized logo
-
+		     if (Shopify.shop == '659ad3-4.myshopify.com') {
+                	var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.82/spinner/3378.png';
+                	carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+            	     }
 		    if (Shopify.shop == 'killcliff.myshopify.com') {
                 	var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.53/spinner/3307.png';
                 	carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
