@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.85 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.86 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3026,6 +3026,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == '3dd0ba.myshopify.com') {
+            	    carecartSpinnerJquery('body').append("<style type='text/css'>.checkbox{border: none !important;background: transparent !important;box-shadow: none !important;width: auto !important; height: auto !important; display:flex !important;}.wheelify-signupContainer .checkbox label{margin-top:3px !important;} .checkbox input[type=checkbox]{width: auto; height: 20px;}</style>");
+        	}
 		if (Shopify.shop == 'fc0a8f-b6.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;}</style>");
                 }
