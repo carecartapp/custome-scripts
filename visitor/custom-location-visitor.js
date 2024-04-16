@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.89
+ * @version 7.90
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -844,6 +844,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {display: block !important;}</style>');
     }
     if (Shopify.shop == "oceansalivehealth.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: 0px !important; margin-bottom: -25px !important;}</style>');
         customSelctor = $jq321(".product__price");
         finalSelector = customSelctor[0];
     }
