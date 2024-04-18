@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.86 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.91 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3026,6 +3026,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == '4mommynl.myshopify.com') {
+        	    carecartSpinnerJquery('body').append("<style type='text/css'>.checkbox input[type=checkbox]{position: static; height: 24px; width: 30px; z-index: 1; opacity: 1 !important;} .checkbox label:after{display: none;} span#cc-spin-a-sale-consent-text{display: block !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading{margin-top: 14px; line-height: 1.1;} .wheelify-cc-spin-a-sale-couponwheel_offers_progressbar {margin-top: 0.5em}</style>");
+        	}
 		if (Shopify.shop == '3dd0ba.myshopify.com') {
             	    carecartSpinnerJquery('body').append("<style type='text/css'>.checkbox{border: none !important;background: transparent !important;box-shadow: none !important;width: auto !important; height: auto !important; display:flex !important;}.wheelify-signupContainer .checkbox label{margin-top:3px !important;} .checkbox input[type=checkbox]{width: auto; height: 20px;}</style>");
         	}
