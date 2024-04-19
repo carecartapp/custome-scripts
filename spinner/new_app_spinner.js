@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.91 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.94 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -932,6 +932,10 @@
                         */
                     }
 			// add customized logo
+		     if (Shopify.shop == '55c4f2-6.myshopify.com') {
+                          var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.92/spinner/image.png';
+                          carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                 }
 		     if (Shopify.shop == '659ad3-4.myshopify.com') {
                 	var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.82/spinner/3378.png';
                 	carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
@@ -3026,6 +3030,12 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'coucou-club.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-text-heading{color: black !important;} .wheelify-text-description{color: black !important;} span#cc-spin-a-sale-consent-text{color: black !important;} .wheelify-cc-spin-a-sale-couponwheel_offers_text{color: black !important;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form{color: black !important;} .wheelText{fill: black !important;}</style>");
+                }
+		    if (Shopify.shop == 'mighty-paw.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;}</style>");
+                }
 		if (Shopify.shop == '4mommynl.myshopify.com') {
         	    carecartSpinnerJquery('body').append("<style type='text/css'>.checkbox input[type=checkbox]{position: static; height: 24px; width: 30px; z-index: 1; opacity: 1 !important;} .checkbox label:after{display: none;} span#cc-spin-a-sale-consent-text{display: block !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading{margin-top: 14px; line-height: 1.1;} .wheelify-cc-spin-a-sale-couponwheel_offers_progressbar {margin-top: 0.5em}</style>");
         	}
