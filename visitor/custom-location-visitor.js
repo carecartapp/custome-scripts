@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.96
+ * @version 7.98
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1543,7 +1543,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "saintmuze2.myshopify.com") {
         customSelctor = $jq321(".sc-fTQvRK");
         finalSelector = customSelctor[0];
-        $jq321("head").append('<style type="text/css">' + '.visitor-counter-content-box-carecartbysalespop-2020{height:32px !important;}.visitor-left{padding-left:30px !important;}' +
+        $jq321("head").append('<style type="text/css">' + '.visitor-counter-content-box-carecartbysalespop-2020{margin-top:-30px !important;height:32px !important;}.visitor-left{padding-left:30px !important;}' +
             '</style>');
     }
     if (Shopify.shop == "aee2a8.myshopify.com") {
