@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v7.97
+ * @version v7.99
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2169,7 +2169,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
-
+    if (Shopify.shop == "snugaholic.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.stock-top{display: block !important;}</style>"
+        );
+    }
     if (Shopify.shop == "bold-goodly.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.notificationPreview-box .card-body h5.card-title {text-transform: none;letter-spacing: normal; font-weight: 400;}</style>"
