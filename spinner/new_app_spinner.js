@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 7.94 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.04 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3030,6 +3030,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == '2a44e6-2.myshopify.com') {
+            	    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight{display: flex; flex-direction: column;justify-content: center;} #page-transition-overlay{background-color: transparent;}</style>");
+        	}
 		if (Shopify.shop == 'coucou-club.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-text-heading{color: black !important;} .wheelify-text-description{color: black !important;} span#cc-spin-a-sale-consent-text{color: black !important;} .wheelify-cc-spin-a-sale-couponwheel_offers_text{color: black !important;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form{color: black !important;} .wheelText{fill: black !important;}</style>");
                 }
