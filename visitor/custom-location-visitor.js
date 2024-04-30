@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 8.09
+ * @version 8.10
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -838,6 +838,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "16f537-2b.myshopify.com") {
+        customSelctor = $jq321(".product__tax");
+        finalSelector = customSelctor[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height : 40px !important; margin-top: -10px !important;}</style>');
+    }
     if (Shopify.shop == "quellabicycle.myshopify.com") {
         customSelctor = $jq321(".product__media-list");
         finalSelector = customSelctor[0];
