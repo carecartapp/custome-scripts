@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.01
+ * @version v8.11
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2168,6 +2168,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector = '';
     var masterSelector2 = '';
     var finalSelector2 = '';
+
+    if (Shopify.shop == "comiso-coffee.myshopify.com") {
+        masterSelector = $jq321(".inventory_qty_info");
+        finalSelector = masterSelector[0];
+    }
 
     if (Shopify.shop == "memorystitch.myshopify.com") {
         $jq321("head").append(
