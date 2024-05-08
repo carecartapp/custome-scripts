@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.08 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.18 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3030,6 +3030,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'eleganzaattire.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; }</style>");
+                }
 		if (Shopify.shop == 'sopo-soap.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div{text-align: center !important;} #wheelify-spin_a_sale_cc_store_front_module .checkbox :where(:not(iframe,canvas,img,svg,video):not(svg ,symbol *)) { all: revert-layer !important; display: flex !important;} div.checkbox { margin-bottom: 25px; border: none; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer { padding: 25px !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { padding-top:100px !important; }</style>");
                 }
