@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.18 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.25 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3030,6 +3030,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'illstinct.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-text-heading , .wheelify-text-description , span#cc-spin-a-sale-consent-text  , .wheelify-cc-spin-a-sale-couponwheel_offers_text {color: black !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelText { fill : black; } @media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-closeButton { padding-top: 0px; }  #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer { margin-top: 50px; }}</style>");
+                }
 		if (Shopify.shop == 'eleganzaattire.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; }</style>");
                 }
