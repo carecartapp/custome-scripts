@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.29 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.30 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3030,6 +3030,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'c7ecea-69.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 45px; border: none; background: transparent; } #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form , #wheelify-spin_a_sale_cc_store_front_module .copy-button { text-align: center ; } </style>");
+                }
 		if (Shopify.shop == 'bathware-direct.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;}</style>");
                 }
