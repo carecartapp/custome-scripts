@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.28
+ * @version v8.35
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2168,6 +2168,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector = '';
     var masterSelector2 = '';
     var finalSelector2 = '';
+
+	
+    if (Shopify.shop == "feeling-floral.myshopify.com") {
+        masterSelector = $jq321(".product__submit__item.product__submit__item--inline");
+        finalSelector = masterSelector[0];
+        $jq321("head").append(
+            "<style type='text/css'>.visitor-counter-content-box-carecartbysalespop-2020{height: 10px !important; margin-top: 0px !important; margin-bottom: 30px !important} .sold-counter-content-box{margin-top: 10px !important;} .clone-box{padding-top: 0px !important} .BadgesImgBox{padding-top: 0px !important; padding-bottom: 0px !important; margin-bottom: 0px !important}</style>"
+        );
+    }
 
     if (Shopify.shop == "comiso-coffee.myshopify.com") {
         masterSelector = $jq321(".inventory_qty_info");
