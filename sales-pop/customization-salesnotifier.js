@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.35
+ * @version v8.39
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -1234,6 +1234,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         if (Shopify.shop == "upcycle-with-jing.myshopify.com");
         {
             if (block_url_store.slice(0, -1) == 'https://upcyclewithjing.com/pages/10-off') {
+                b_url = false;
+                console.log('SP Sales Notification Block on this page');
+            }
+        }
+	if (Shopify.shop == "ocean-queen-hong-kong.myshopify.com") {
+            if (window.location.href == 'https://oceanqueen.hk/zh') {
                 b_url = false;
                 console.log('SP Sales Notification Block on this page');
             }
