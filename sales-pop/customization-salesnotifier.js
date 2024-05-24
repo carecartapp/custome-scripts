@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.39
+ * @version v8.43
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2175,7 +2175,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
-	
+
+    if (Shopify.shop == "oyeah-cpap.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.notifyjs-corner {bottom: 45px !important;}</style>"
+        );
+    }
     if (Shopify.shop == "feeling-floral.myshopify.com") {
         masterSelector = $jq321(".product__submit__item.product__submit__item--inline");
         finalSelector = masterSelector[0];
