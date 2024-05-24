@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 7.73
+ * @version 8.42
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -307,6 +307,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "e4110e-3.myshopify.com") {
         productID = 8611757293847;
     }
+    if (Shopify.shop == "87c6d8-41.myshopify.com") {
+        productID = 8759240163658;
+    }
     
     /**
      * check the status of cart page
@@ -368,6 +371,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
           
         
 
+    }
+    if (Shopify.shop == "87c6d8-41.myshopify.com") {
+        customSelector = $jq321(".product-info__quantity-selector");
+        finalSelector = customSelector[0];
     }
     if (Shopify.shop == "grandcruvinhos-teste.myshopify.com") {
         customSelector = $jq321(".new-buy");
@@ -849,6 +856,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 */
                 let firstSelector = $jq321("form[action='/cart']").parent();
                 //let firstSelector = $jq321(".cart");
+                  if (Shopify.shop == "87c6d8-41.myshopify.com") {
+                    firstSelector = $jq321(".shopify-section--main-cart");
+                } else {
+                    firstSelector = $jq321("form[action='/cart']").parent();
+                }
                 if (Shopify.shop == "3da54d.myshopify.com") {
                     $jq321("head").append('<style type="text/css">.cart-countdown-mobile-top{margin-top: 60px!important;}</style>');
                 }
