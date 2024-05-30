@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.46
+ * @version v8.47
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2175,7 +2175,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
-
+ if (Shopify.shop == "6d683a-8a.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.visitor-counter-content-box-carecartbysalespop-2020{margin-top: -5px !important; height:40px !important;}</style>"
+        );
+    }
     if (Shopify.shop == "oyeah-cpap.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.notifyjs-corner {bottom: 45px !important;}</style>"
@@ -4700,6 +4704,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             if (result == -1) {
                 return;
             }
+	}
 	    
         if (Shopify.shop == "e6fb03-3.myshopify.com") {
             let text = window.location.pathname;
