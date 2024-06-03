@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.44 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.49 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3030,6 +3030,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'imperial-homes-pk.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{ width: auto; margin-bottom: 35px; border: none; background: transparent; box-shadow: none !important;} .wheelify-signupContainer .checkbox input{margin-top:5px !important;}</style>");
+        	}  
 		if (Shopify.shop == 'love-depot-india.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading {font-size: 22px; !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {margin-top: -5px !important;} .wheelify-cc-spin-a-sale-spinner-progress-bar {margin-top: -20px;}#wheelify-spin_a_sale_cc_store_front_module .checkbox {margin-top: -15px;margin-bottom: -9px;} .fa {font-family: 'Font Awesome 5 Free' !important;}</style>");
         	}
