@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.49 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.51 *******************
 //****** Updated at: 18-Jan-2024, 07:55 AM  ********************************************************
 
 (function () {
@@ -3030,6 +3030,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		 if (Shopify.shop == '8889b6-4.myshopify.com') {
+                        carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight {min-height: 450px !important;}}</style>");
+                }
 		if (Shopify.shop == 'imperial-homes-pk.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{ width: auto; margin-bottom: 35px; border: none; background: transparent; box-shadow: none !important;} .wheelify-signupContainer .checkbox input{margin-top:5px !important;}</style>");
         	}  
