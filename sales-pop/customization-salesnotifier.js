@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.50
+ * @version v8.53
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -1242,6 +1242,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             if (window.location.href == 'https://oceanqueen.hk/zh') {
                 b_url = false;
                 console.log('SP Sales Notification Block on this page');
+            }
+        }
+	if (Shopify.shop == "casa-beyond.myshopify.com") {
+            if (window.location.href == 'https://casaandbeyond.co.nz/') {
+                b_url = false;
+                console.log('SP Block on this page');
             }
         }
 
