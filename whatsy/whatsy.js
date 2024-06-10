@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 8.36
+ * @version 8.55
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -228,6 +228,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	/**
 	 * Custom fixes starts from here
 	 */
+	if(Shopify.shop == "af1fb8-29-2.myshopify.com") {
+		carecartWhatsApp("head").append('<style type="text/css">.wa-custom-icon {display:inline-block !important;}</style>');
+	}
 	if(Shopify.shop == "fussionfashion-shop.myshopify.com") {
 		carecartWhatsApp("head").append('<style type="text/css">.wa-custom-icon {display:inline-block !important;}</style>');
 	}
