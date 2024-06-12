@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.56
+ * @version v8.62
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2180,7 +2180,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector = '';
     var masterSelector2 = '';
     var finalSelector2 = '';
-
+  
+  if (Shopify.shop == "naturessource42.myshopify.com"){
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}.visitor-counter-content-box-carecartbysalespop-2020{height: 34px !important;margin-top: 0px !important;}.counter-text-carecartbysalespop-2020{min-height: 13px !important;}</style>');
+        masterSelector = $jq321(".pvGroup-row");
+        finalSelector = masterSelector[0];
+   }
+	
   if (Shopify.shop == "dce5a7.myshopify.com") {
         masterSelector = $jq321(".product-form__buttons");
         finalSelector = masterSelector[0];
@@ -3263,11 +3269,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         masterSelector = $jq321(".sc-ekrjqK.iqLIcp");
         finalSelector = masterSelector[0];
     }
-     if (Shopify.shop == "naturessource42.myshopify.com"){
-	$jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}.visitor-counter-content-box-carecartbysalespop-2020{height: 34px !important;margin-top: 0px !important;}.counter-text-carecartbysalespop-2020{min-height: 13px !important;}</style>');
-	masterSelector = $jq321(".product-info-row");
-	finalSelector = masterSelector[2];
-     }
+    
      if (Shopify.shop == "614d41-3.myshopify.com") {
         $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}</style>');
         masterSelector = $jq321(".shopify-payment-button");
@@ -4105,11 +4107,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             masterSelector = $jq321(".t4s-product-form__buttons");
             finalSelector = masterSelector[0];
         }
-	if (Shopify.shop == "naturessource42.myshopify.com") {
-            $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 34px !important;margin-top: 0px !important;}.counter-text-carecartbysalespop-2020{min-height: 13px !important;}</style>');
-            masterSelector = $jq321(".product-info-row");
-            finalSelector = masterSelector[2];
-        }
+	
         if (Shopify.shop == "f9e8d5.myshopify.com") {
             $jq321("head").append(
                 "<style type='text/css'>.fa-eye:before {content: '\\f06e' !important;} .visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -20px !important;}</style>"
@@ -4307,10 +4305,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             masterSelector = $jq321(".t4s-product-form__buttons");
             finalSelector = masterSelector[0];
         }
-	if (Shopify.shop == "naturessource42.myshopify.com") {
-            masterSelector = $jq321(".product-info-row");
-            finalSelector = masterSelector[2];
-        }
+	
         if (Shopify.shop == "wellshave.myshopify.com") {
             masterSelector = $jq321(".product-form__submit");
             finalSelector = masterSelector[0];
