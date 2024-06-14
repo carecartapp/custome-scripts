@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.61 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.63 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3034,6 +3034,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'we-do-better-dk.myshopify.com') {
+	            carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG{transform-origin: center center !important;} ,*::before, ::after {transform-origin: revert-layer;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight{display: flex;flex-direction: column;justify-content: center;min-height: 484px !important;}</style>");
+	        }
 		if (Shopify.shop == 'wildsideco.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelLogo{display:none !important;} #wheelify-spin_a_sale_cc_store_front_module .centerCircle circle{fill: #98D8BA !important;}</style>");
                 }
