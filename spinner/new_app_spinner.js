@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.67 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.69 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3041,7 +3041,7 @@
 	            carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-content-spinner{color: #1F443C !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer{padding-top: 89px !important;}</style>");
 	        }
 		if (Shopify.shop == 'xdrycarbon.myshopify.com') {
-                    carecartSpinnerJquery('head').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelText {font-family: monospace ;}</style>");
+                    carecartSpinnerJquery('head').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelText {font-family: monospace ;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .form-group input {background: #fff !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { padding-top: 23px !important; } #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div { margin-top: -2px !important;} .wheelify-cc-spin-a-sale-spinner-progress-bar { margin-top: -20px !important; }</style>");
                 }
 		if (Shopify.shop == 'we-do-better-dk.myshopify.com') {
 	            carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG{transform-origin: center center !important;} *,*::before, *::after {transform-origin: revert-layer;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight{display: flex;flex-direction: column;justify-content: center;min-height: 484px !important;}</style>");
