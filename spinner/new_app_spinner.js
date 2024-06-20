@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.66 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.67 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3034,6 +3034,12 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == '81d61d-2.myshopify.com') {
+		    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;}</style>");
+	   	}
+		if (Shopify.shop == 'maaji-co.myshopify.com') {
+	            carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-content-spinner{color: #1F443C !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer{padding-top: 89px !important;}</style>");
+	        }
 		if (Shopify.shop == 'xdrycarbon.myshopify.com') {
                     carecartSpinnerJquery('head').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelText {font-family: monospace ;}</style>");
                 }
