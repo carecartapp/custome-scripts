@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.62
+ * @version v8.73
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -4055,6 +4055,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+	 if (Shopify.shop == "youthiconz.myshopify.com") {
+            masterSelector = $jq321("#ProductSubmitButton-template--16560256221357__main");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "crazywo.myshopify.com") {
             masterSelector = $jq321(".total-price");
             finalSelector = masterSelector[0];
