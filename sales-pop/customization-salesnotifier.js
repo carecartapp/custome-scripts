@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.73
+ * @version v8.74
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2180,7 +2180,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector = '';
     var masterSelector2 = '';
     var finalSelector2 = '';
-  
+
+  if (Shopify.shop == "tanchui-8556.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.notificationPreview-box .card-body p.card-text{width: 196px; white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}</style>"
+        );
+    }
   if (Shopify.shop == "naturessource42.myshopify.com"){
         $jq321("head").append('<style type="text/css">.stock-top{display: block !important; margin-top:10px !important;}.visitor-counter-content-box-carecartbysalespop-2020{height: 34px !important;margin-top: 0px !important;}.counter-text-carecartbysalespop-2020{min-height: 13px !important;}</style>');
         masterSelector = $jq321(".pvGroup-row");
