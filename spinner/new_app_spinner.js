@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.75 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.77 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3080,6 +3080,7 @@
                     carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;}</style>");
                 }
 		if (Shopify.shop == 'illstinct.myshopify.com') {
+           	    carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner{ z-index: 999 !important;} #wheelify-spin-trigger-cc, #wheelify-spin-trigger-cc:active, #wheelify-spin-trigger-cc:focus, #wheelify-spin-trigger-cc:hover, #wheelify-spin-trigger-cc:visited{ z-index: 998 !important; }}</style>");
                     carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-text-heading , .wheelify-text-description , span#cc-spin-a-sale-consent-text  , .wheelify-cc-spin-a-sale-couponwheel_offers_text {color: black !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelText { fill : black; } @media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-closeButton { padding-top: 0px; }  #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer { margin-top: 50px; }} #wheelify-spin-trigger-cc span { color:black !important; } </style>");
                 }
 		if (Shopify.shop == 'eleganzaattire.myshopify.com') {
