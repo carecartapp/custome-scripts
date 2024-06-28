@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.81 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.86 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3038,7 +3038,7 @@
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button { color: #384f66 !important; } #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form .fa , #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok .fa , #wheelify-spin_a_sale_cc_store_front_module .copy-button .fa { color: #384f66 !important; padding-right: 4px !important; padding-bottom: 3px !important;</style>");
             	}
 		if (Shopify.shop == 'lefeetscooter.myshopify.com') {
-		    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div {text-align: center;}</style>");
+		    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button, .cc-spin-a-sale-clock-div {text-align: center;} #wheelify-spin-trigger-cc span { color: #161616 !important; } .wheelify-text-heading {color: #161616 !important; } span#cc-spin-a-sale-consent-text { color: #161616 !important; } .wheelify-text-description { color: #161616 !important; } .wheelify-cc-spin-a-sale-couponwheel_offers_text { color: #161616 !important; } .wheelText { fill: #161616 !important; }   </style>");
 	   	}
 		if (Shopify.shop == 'bloggersre.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>span#cc-spin-a-sale-consent-text{letter-spacing: normal !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight{min-height:482px !important; display:flex !important; align-items: center !important;}</style>");
