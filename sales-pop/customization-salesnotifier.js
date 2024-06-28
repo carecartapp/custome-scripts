@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v8.83
+ * @version v8.84
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -4904,12 +4904,6 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             var selectorTrustBadges3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
             var selectorTrustBadges4 = $jq321("form[action='/cart/add']:first");
 
-	    if (Shopify.shop == "ccc1fe-32.myshopify.com") {
-                masterSelectortr = $jq321(".ProductForm__AddToCart");
-                finalSelectortr = masterSelectortr[0];
-
-                $jq321(trustBadgesResponse.view).insertBefore(finalSelectortr);
-            }
 	    if (Shopify.shop == "31aab9-a0.myshopify.com") {
             	$jq321("head").append(
             	"<style type='text/css'>.trust-badges-header-center { margin-top:20px; margin-bottom:0px !important; } .clone-box { padding: 0.5rem !important;}</style>");
@@ -4926,6 +4920,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 console.log(masterSelectortr);
 
                 $jq321(trustBadgesResponse.view).insertAfter(finalSelectortr);
+            }
+	    if (Shopify.shop == "ccc1fe-32.myshopify.com") {
+                masterSelectortr = $jq321(".ProductForm__AddToCart");
+                finalSelectortr = masterSelectortr[0];
+
+                $jq321(trustBadgesResponse.view).insertBefore(finalSelectortr);
             }
             else if (Shopify.shop == "d67b73-2.myshopify.com") {
                 $jq321("head").append('<style type="text/css">.shopify-product-form .BadgesImgBox label{visibility: visible !important;}#CloneBox{margin-top: -80px;}</style>');
