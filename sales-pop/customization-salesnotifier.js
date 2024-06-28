@@ -3785,7 +3785,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	if (Shopify.shop == "ccc1fe-32.myshopify.com") {
             masterSelector = $jq321(".ProductForm__AddToCart");
             finalSelector = masterSelector[0];
-        }
+        } 
 	if (Shopify.shop == "squishfiddle.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">.timer-store-front {margin-top: -30px !important;}</style>'
