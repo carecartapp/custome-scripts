@@ -2181,7 +2181,7 @@
 	                            is_page = true;
 	                        }
 	                        return is_page;
-                    	}
+                    	} 
                     //console.log('SAS inside checkThanksYouCcSpinASale');
                     var is_page = !(!window.location.pathname.match("(.*)/orders/(.*)") && !window.location.pathname.match("(.*)/orders") || window.location.pathname.match("(.*)/checkouts/(.*)") || window.location.pathname.match("(.*)/thank_you"));
                     //console.log(is_page);
