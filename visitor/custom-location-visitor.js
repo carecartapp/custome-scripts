@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 8.90
+ * @version 8.92
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -847,6 +847,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+     if (Shopify.shop == "amanda-campisi.myshopify.com") {
+        customSelctor = $jq321(".product-buy-buttons--primary");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "shinplex.myshopify.com") {
         customSelctor = $jq321(".rio-options");
         finalSelector = customSelctor[0];
