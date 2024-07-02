@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.89 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.91 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -2171,6 +2171,17 @@
                 }
 
                 function checkThanksYouCcSpinASale() {
+			if (Shopify.shop == 'u-tec.myshopify.com') {
+	                        var is_page = false;
+	                        var currentPageUrl = window.location.href;
+	                        if (currentPageUrl.indexOf("thank_you") !== -1) {
+	                            is_page = true;
+	                        }
+	                        if (currentPageUrl.indexOf("orders") !== -1) {
+	                            is_page = true;
+	                        }
+	                        return is_page;
+                    	}
                     //console.log('SAS inside checkThanksYouCcSpinASale');
                     var is_page = !(!window.location.pathname.match("(.*)/orders/(.*)") && !window.location.pathname.match("(.*)/orders") || window.location.pathname.match("(.*)/checkouts/(.*)") || window.location.pathname.match("(.*)/thank_you"));
                     //console.log(is_page);
