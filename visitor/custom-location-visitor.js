@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 8.92
+ * @version 8.96
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -814,6 +814,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "55685d-e7.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "identitadonna.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     else{
         var meta = { "product": { "id": __st.rid } };
     }
@@ -851,10 +854,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         customSelctor = $jq321(".product-buy-buttons--primary");
         finalSelector = customSelctor[0];
     }
-    if (Shopify.shop == "shinplex.myshopify.com") {
-        customSelctor = $jq321(".rio-options");
+    if (Shopify.shop == "identitadonna.myshopify.com") {
+        customSelctor = $jq321(".buy-buttons--multiple");
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -15px !important; height: 50px !important;}</style>');
         finalSelector = customSelctor[0];
-        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-left: -130px ;}</style>');
+    }
+    if (Shopify.shop == "shinplex.myshopify.com") {
+        customSelctor = $jq321(".js-product-add-to-cart");
+        finalSelector = customSelctor[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {width: 70% !important;} @media only screen and (max-width: 575px){ .visitor-counter-content-box-carecartbysalespop-2020 {width: 100% !important;}</style>');
     }
     
     if (Shopify.shop == "6a0f21-2.myshopify.com") {
