@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.93 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 8.99 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3045,6 +3045,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == '4b687d-3.myshopify.com') {
+	            carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-signupContainer .checkbox label {margin-bottom: 12px;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{display: contents;} .wheelify-signupContainer .checkbox input {margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button {text-align: center;}</style>");
+	        }
 		if (Shopify.shop == 'relx-fr.myshopify.com') {
 	            carecartSpinnerJquery('head').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {padding-top: 40px !important}; @media only screen and (max-width: 575px) {#wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight {min-height: 533px !important}} </style>");
 	        }
