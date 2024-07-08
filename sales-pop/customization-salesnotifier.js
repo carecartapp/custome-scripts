@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v9.00
+ * @version v9.01
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2181,6 +2181,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+   if (Shopify.shop == "label-aarna.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>@media only screen and (max-width: 575px){.notifyjs-corner{margin-top: 50px !important;}}</style>"
+        );
+    }
   if (Shopify.shop == "tanchui-8556.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.notificationPreview-box .card-body p.card-text{width: 196px; white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}</style>"
@@ -3788,7 +3793,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
 	if (Shopify.shop == "ccc1fe-32.myshopify.com") {
-            masterSelector = $jq321(".ProductForm__AddToCart");
+            masterSelector = $jq321(".stock-top");
             finalSelector = masterSelector[0];
         } 
 	if (Shopify.shop == "squishfiddle.myshopify.com") {
