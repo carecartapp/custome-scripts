@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.06 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.09 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3045,6 +3045,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'petes-paleo.myshopify.com' && window.location.href == 'https://www.petesrealfood.com/products/petes-paleo-5-lunch-trial') {
+                        carecartSpinnerJquery('head').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module {display : none !important ; } #wheelify-spin-trigger-cc { display: none !important; } </style>");
+                }
 		if (Shopify.shop == 'es-waka.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer { padding-top: 25px !important; }  @media only screen and (max-width: 575px) { #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG { transform: translateY(-130px)!important; } } </style>");
         	}
