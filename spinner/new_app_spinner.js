@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.09 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.12 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3103,7 +3103,7 @@
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{ width: auto; margin-bottom: 35px; border: none; background: transparent; box-shadow: none !important;} .wheelify-signupContainer .checkbox input{margin-top:5px !important;}</style>");
         	}
 		if (Shopify.shop == 'c7ecea-69.myshopify.com') {
-                    carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 45px; border: none; background: transparent; } #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form , #wheelify-spin_a_sale_cc_store_front_module .copy-button { text-align: center ; } </style>");
+                    carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 45px; border: none; background: transparent; } #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form , #wheelify-spin_a_sale_cc_store_front_module .copy-button { text-align: center ; }@media only screen and (max-width: 575px){.wheelify-signupContainer {margin-top: 30px !important;}#wheelify-spin_a_sale_cc_store_front_module .checkbox {margin-bottom: 20px !important;} .wheelify-winContainer {margin-top: 100px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -25px !important;}} </style>");
                 }
 		if (Shopify.shop == 'bathware-direct.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;}</style>");
