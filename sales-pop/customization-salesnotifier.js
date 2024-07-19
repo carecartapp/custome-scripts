@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v9.10
+ * @version v9.14
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2181,6 +2181,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "absolute-collagen-fr.myshopify.com") {
+	masterSelector = $jq321(".product-form__row");
+	finalSelector = masterSelector[0];
+   }
    if (Shopify.shop == "f0c4b5.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.notificationPreview-box .card-body h5.card-title{margin-top: 10px; width: 220px;}.notificationPreview-box .card-body h5.card-title a{letter-spacing: 0px; font-size: 14px;}.notificationPreview-box .card-body {padding: 3px !important;}</style>"
