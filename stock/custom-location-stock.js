@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.13
+ * @version 9.18
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -672,8 +672,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let masterSelector = '';
 
     if (Shopify.shop == "9e7b93-3.myshopify.com") {
-        customSelector = $jq321(".sc-eJRTFu");
+        customSelector = $jq321(".sc-gLDmcm.jObQRN.pf-23_");
         finalSelector = customSelector[0];
+        if (customSelector.length <= 0 && $jq321(".sc-eJRTFu.dgSwCD.pf-322_")[0] != undefined) {
+            customSelector = $jq321(".sc-eJRTFu.dgSwCD.pf-322_");
+            finalSelector = customSelector[0];
+        }
+        if (customSelector.length <= 0 && $jq321(".sc-gLDmcm.bxLGod.pf-26_")[0] != undefined) {
+            customSelector = $jq321(".sc-gLDmcm.bxLGod.pf-26_");
+            finalSelector = customSelector[0];
+        }
     }
     if (Shopify.shop == "vitality-glow-2.myshopify.com") {
         customSelector = $jq321(".product-form__buttons");
