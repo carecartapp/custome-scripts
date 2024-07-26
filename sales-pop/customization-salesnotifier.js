@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v9.21
+ * @version v9.23
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -4591,18 +4591,6 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	
         if (product_id == '') {
             if (($jq321.inArray("collections", currentPageHandle) != -1)) {
-
-		if (Shopify.shop == "zhenzhu-shop.myshopify.com") {
-                    $jq321(".lazy-image").each(function () {
-                        var href = $jq321(this).attr('href');
-                        var url = href.split("/");
-
-                        if ($jq321.inArray("products", url) != -1) {
-                            allLinks.push(href);
-                        }
-                    });
-                }
-
                 if (Shopify.shop == "naturally-you-me.myshopify.com") {
                     $jq321(".lazy-image").each(function () {
                         var href = $jq321(this).attr('href');
@@ -4669,6 +4657,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                     });
 
                     console.log(allLinks);
+                }
+		else if (Shopify.shop == "zhenzhu-shop.myshopify.com") {
+                    $jq321(".full-unstyled-link").each(function () {
+                        var href = $jq321(this).attr('href');
+                        var url = href.split("/");
+
+                        if ($jq321.inArray("products", url) != -1) {
+                            allLinks.push(href);
+                        }
+                    });
                 }
                 else if (Shopify.shop == "lucianne-boutique-store.myshopify.com") {
                     $jq321(".grid-product__link").each(function () {
