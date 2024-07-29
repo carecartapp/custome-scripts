@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.24 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.25 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3046,29 +3046,38 @@
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
 		if (Shopify.shop == 'zuber-tr.myshopify.com') {
-                    function translateToTurkish() {
-                        var elements = carecartSpinnerJquery("#wheelify-cc-spin-invalid-email");
-                        elements.each(function() {
-                            var element = carecartSpinnerJquery(this);
-                            if (element.text().trim() === "Please enter a valid email address") {
-                                element.text("Lütfen geçerli bir e-posta adresi girin");
-                            }
-                        });
-                    }
-                    carecartSpinnerJquery(document).ready(function() {
-                        translateToTurkish();
-                        var targetNode = document.body;
-                        var config = { childList: true, subtree: true };
-                        var observer = new MutationObserver(function(mutationsList, observer) {
-                            for (var mutation of mutationsList) {
-                                if (mutation.type === 'childList') {
-                                    translateToTurkish();
-                                }
-                            }
-                        }); 
-                        observer.observe(targetNode, config);
-                    });
-                }
+	            function translateToTurkish() {
+	                var elements = carecartSpinnerJquery("#wheelify-cc-spin-invalid-email");
+	                elements.each(function() {
+	                    var element = carecartSpinnerJquery(this);
+	                    if (element.text().trim() === "Please enter a valid email address") {
+	                        element.text("Lütfen geçerli bir e-posta adresi girin");
+	                    }
+	                });
+	        
+	                var consentCheckbox = document.querySelector('#cc-spin-a-sale-consent-checkbox');
+	                if (consentCheckbox) {
+	                    consentCheckbox.setAttribute('required', 'required');
+	                }
+	            }
+	        
+	            carecartSpinnerJquery(document).ready(function() {
+	                translateToTurkish();
+	                
+	                var targetNode = document.body;
+	                var config = { childList: true, subtree: true };
+	                
+	                var observer = new MutationObserver(function(mutationsList, observer) {
+	                    for (var mutation of mutationsList) {
+	                        if (mutation.type === 'childList') {
+	                            translateToTurkish();
+	                        }
+	                    }
+	                });
+	                
+	                observer.observe(targetNode, config);
+	            });
+	        }
 		if (Shopify.shop == 'bfee71-c6.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-signupContainer .checkbox label {margin-bottom: 12px;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{display: contents;} .wheelify-signupContainer .checkbox input {margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button {text-align: center;}</style>");
                 }
