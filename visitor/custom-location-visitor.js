@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.07
+ * @version 9.26
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "664a58-ca.myshopify.com") {
+        customSelctor = $jq321(".product-buy-buttons--primary");
+        finalSelector = customSelctor[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -3px !important; height: 55px !important;}</style>');
+    }
     if (Shopify.shop == "my-huevos-mx.myshopify.com") {
         customSelctor = $jq321(".product-form__buy-buttons");
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -3px !important; height: 40px !important;}</style>');
