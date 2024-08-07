@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v9.38
+ * @version v9.40
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2186,6 +2186,21 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "maverick-concept.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.card-title {letter-spacing: 0px; word-spacing: 0px; font-weight: normal; text-transform: none;}</style>"
+        );
+    }
+    if (Shopify.shop == "marjjan.myshopify.com") {
+        masterSelector = $jq321(".t4s-product-form__buttons");
+        finalSelector = masterSelector[0];
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; }</style>');
+    }
+    if (Shopify.shop == "kleren-dd.myshopify.com") {
+        masterSelector = $jq321(".t4s-product-form__buttons");
+        finalSelector = masterSelector[0];
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important;} .visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important;} </style>');
+    }
     if (Shopify.shop == "e6fb03-3.myshopify.com") {
         masterSelector = $jq321(".t4s-product-form__buttons");
         finalSelector = masterSelector[0];
@@ -3833,6 +3848,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+	if (Shopify.shop == "marjjan.myshopify.com") {
+            masterSelector = $jq321(".t4s-product-form__buttons");
+            finalSelector = masterSelector[0];
+        } 
 	if (Shopify.shop == "0e3896-ee.myshopify.com") {
             masterSelector = $jq321(".product-form__buy-buttons");
             finalSelector = masterSelector[0];
@@ -4331,6 +4350,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "yonaguni-fiesta.myshopify.com") {
+        	masterSelector = $jq321(".product__submit__buttons");
+        	finalSelector = masterSelector[0];
+    	}
 	if (Shopify.shop == "taptagnfc.myshopify.com") {
             masterSelector = $jq321(".product-info__buy-buttons");
             $jq321("head").append(
