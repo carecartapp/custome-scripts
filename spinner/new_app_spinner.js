@@ -2171,7 +2171,8 @@
                 }
 
                 function checkThanksYouCcSpinASale() {
-			if (Shopify.shop == 'u-tec.myshopify.com') {
+			
+			if (Shopify.shop == 'u-tec.myshopify.com' || Shopify.shop == 'athena-comfelie.myshopify.com') {
 	                        var is_page = false;
 	                        var currentPageUrl = window.location.href;
 	                        if (currentPageUrl.indexOf("thank_you") !== -1) {
