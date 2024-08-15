@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v9.48
+ * @version v9.51
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2185,7 +2185,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector = '';
     var masterSelector2 = '';
     var finalSelector2 = '';
-
+    
+    if (Shopify.shop == "the-clothing-factory-shop.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top{display: block !important; }</style>');
+    }
     if (Shopify.shop == "laduora.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.notifyjs-corner{bottom:30px !important;}</style>"
