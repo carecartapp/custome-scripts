@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v9.55
+ * @version v9.56
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2186,11 +2186,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
-   if (Shopify.shop == "e025c5-c0.myshopify.com") {
-	masterSelector = $jq321("#AddToCartForm--template--17079330242740__main");
-	finalSelector = masterSelector[0];
-	$jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important; margin-left: -3px;} </style>');
-     }
+   
+    if (Shopify.shop == "e025c5-c0.myshopify.com") {
+        masterSelector = $jq321("#AddToCartForm--template--17079330242740__main");
+        finalSelector = masterSelector[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important; margin-left: -3px;} .stock-top{display: block !important; } </style>');
+    }
     if (Shopify.shop == "the-clothing-factory-shop.myshopify.com") {
         $jq321("head").append('<style type="text/css">.stock-top{display: block !important; }</style>');
     }
