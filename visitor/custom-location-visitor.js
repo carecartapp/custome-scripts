@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.54
+ * @version 9.57
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -852,8 +852,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     /* Custom script goes from here */
     let customSelctor = "";
     let finalSelector = "";
-    
-     if (Shopify.shop == "maria-t-joyeria.myshopify.com") {
+
+    if (Shopify.shop == "minnie-threads.myshopify.com") {
+        customSelctor = $jq321(".t4s-d-flex.t4s-flex-wrap");
+        finalSelector = customSelctor[0];
+    }
+    if (Shopify.shop == "maria-t-joyeria.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-left: -16px ;}</style>');
     }
     if (Shopify.shop == "108a02-e7.myshopify.com") {
