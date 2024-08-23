@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.57
+ * @version 9.58
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "8f5634-d1.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.counter-text-carecartbysalespop-2020 {margin-left: 130px ; margin-top: 7px;}</style>');
+    }
+    if (Shopify.shop == "country-liberty-1.myshopify.com") {
+        customSelctor = $jq321(".product__submit__buttons");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "minnie-threads.myshopify.com") {
         customSelctor = $jq321(".t4s-d-flex.t4s-flex-wrap");
         finalSelector = customSelctor[0];
