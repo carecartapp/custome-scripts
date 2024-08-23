@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.39 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.59 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3046,6 +3046,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'dineamic.myshopify.com') {
+	            carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-winContainer .wheelify-text-description {padding-bottom: 8px;} .wheelify-text-heading { font-family: 'Lektorat Condensed Extra Bold' !important; text-transform:uppercase;} </style>"); 
+	        }
 		if (Shopify.shop == 'wolfboxdashcamera.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-signupContainer .checkbox label {margin-bottom: 12px;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{display: contents;} .wheelify-signupContainer .checkbox input {margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button {text-align: center;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {margin-top: 50px !important;} </style>"); 
                 }
