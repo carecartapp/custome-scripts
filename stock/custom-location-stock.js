@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.61
+ * @version 9.62
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -671,6 +671,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let finalSelector = '';
     let masterSelector = '';
 
+    if (Shopify.shop == "748ad8-76.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-progress-background{display: none !important;}</style>');
+    }
     if (Shopify.shop == "a2ca98-3f.myshopify.com") {
         customSelector = $jq321("div.product-price-container");
         finalSelector = customSelector[0];
