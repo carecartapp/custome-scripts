@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.60
+ * @version 9.63
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "daniella-lehavi-usa.myshopify.com") {
+        customSelctor = $jq321(".btn--large.add-to-cart");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "naturalhealthmx.myshopify.com") {
         customSelctor = $jq321(".buy-buttons--multiple");
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important; margin-top: -30px !important;}</style>');
