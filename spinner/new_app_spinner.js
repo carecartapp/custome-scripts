@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.59 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.64 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3046,6 +3046,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'evridwearus.myshopify.com') {
+                    carecartSpinnerJquery('head').append('<style type="text/css">.PageTransition{opacity: 0 !important;} </style>');
+                }
 		if (Shopify.shop == 'dineamic.myshopify.com') {
 	            carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-winContainer .wheelify-text-description {padding-bottom: 8px;} .wheelify-text-heading { font-family: 'Lektorat Condensed Extra Bold' !important; text-transform:uppercase;} </style>"); 
 	        }
