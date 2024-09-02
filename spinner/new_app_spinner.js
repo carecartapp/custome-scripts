@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.71 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.77 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3045,7 +3045,10 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-
+		
+		if (Shopify.shop == 'graywind-smarthome.myshopify.com') {
+	            carecartSpinnerJquery('body').append("<style type='text/css'>#cc-spin-a-sale-consent-checkbox{display: block !important; margin-top: 4px;} </style>");
+	        }
  		if (Shopify.shop == 'ngurrbulbaadhinclothing.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin-trigger-cc span { color: #161616 !important; } .wheelify-text-heading {color: #161616 !important; } span#cc-spin-a-sale-consent-text { color: #161616 !important; } .wheelify-text-description { color: #161616 !important; } div#wheelify-cc-spin-a-sale-powered-by-carecart {color: #161616 !important; } #wheelify-spin_a_sale_cc_store_front_module a:link {color: #161616 !important; } .wheelify-cc-spin-a-sale-couponwheel_offers_text {color: #161616 !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p{color: #161616 !important; }</style>");
                 }
