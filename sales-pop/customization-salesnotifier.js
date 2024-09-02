@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v9.73
+ * @version v9.74
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2185,7 +2185,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector = '';
     var masterSelector2 = '';
     var finalSelector2 = '';
-
+    
+    if (Shopify.shop == "d561da-75.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.stock-top {display: block !important;}</style>');
+        masterSelector = $jq321(".gGLx_BwvWZ");
+        finalSelector = masterSelector[0];
+    }
     if (Shopify.shop == "ozoneayurvedics.myshopify.com") {
         $jq321("head").append('<style type="text/css">.sold-light-icon {width: 11px !important;} .svg-inline--fa.fa-eye{height: 12px !important;} .fa.fa-eye{display: inline-block !important; }</style>');
         masterSelector = $jq321(".variations_button");
