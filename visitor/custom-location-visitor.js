@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.76
+ * @version 9.80
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "b1d118.myshopify.com") {
+        customSelctor = $jq321(".kaching-bundles__block-title");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "d2a6b0-4b.myshopify.com") {
         customSelctor = $jq321(".pf-41_");
         finalSelector = customSelctor[0];
