@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.77 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.82 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3045,7 +3045,13 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-		
+
+		if (Shopify.shop == 'superlovedoll.myshopify.com') {
+		    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-signupContainer .checkbox label {margin-bottom: 12px;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{display: contents;} .wheelify-signupContainer .checkbox input {margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button {text-align: center;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {margin-top: 50px !important;} </style>"); 
+		}
+		if (Shopify.shop == 'kiiroo-amsterdam.myshopify.com') {
+			carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-couponwheel_notice_content{margin-bottom: 47px; z-index: 0 !important;} </style>");
+		}
 		if (Shopify.shop == 'graywind-smarthome.myshopify.com') {
 	            carecartSpinnerJquery('body').append("<style type='text/css'>#cc-spin-a-sale-consent-checkbox{display: block !important; margin-top: 4px;} </style>");
 	        }
