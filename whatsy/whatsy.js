@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.47
+ * @version 9.84
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -38,7 +38,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	let dialogue;
 	let greetingWidgetOption;
 
-	//custom fix 
+	//custom fix
+	if(Shopify.shop == "yofeely.myshopify.com") {
+		carecartWhatsApp("head").append('<style type="text/css"> .share-widget-custom-right {z-index: 2 !important;} .share-widget-custom-right .wa-chat-btn-base-cta {transform: rotate(90deg) !important;}</style>');
+	}
 	if(Shopify.shop == "c9a97d-4.myshopify.com") {
 		carecartWhatsApp("head").append('<style type="text/css"> .wa-chat-btn-icon-cta-small:empty{display: inline-block; !important} </style>');
 	}
