@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.83 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.86 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3045,7 +3045,10 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-		
+
+		if (Shopify.shop == 'brassbee.myshopify.com') {
+	            carecartSpinnerJquery('body').append("<style type='text/css'> @media only screen and (max-wdith:575px) { #wheelify-spin-trigger-cc, #wheelify-spin-trigger-cc:active, #wheelify-spin-trigger-cc:focus, #wheelify-spin-trigger-cc:hover, #wheelify-spin-trigger-cc:visited { margin-bottom: -210px;} }</style>"); 
+	        }
 		if (Shopify.shop == 'shop-teddyrose.myshopify.com') {
 	            carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {padding-top: 60px !important;} </style>"); 
 	        }
