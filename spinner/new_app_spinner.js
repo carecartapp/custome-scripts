@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.87 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.88 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3047,7 +3047,7 @@
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
 		if (Shopify.shop == 'brassbee.myshopify.com') {
-			carecartSpinnerJquery('body').append("<style type='text/css'> @media only screen and (max-wdith:575px) { #wheelify-spin-trigger-cc { margin-bottom: -90px;} }</style>");         
+			carecartSpinnerJquery('body').append("<style type='text/css'> @media only screen and (max-width:575px) { .triggerButtonRotate { bottom: -120px !important;} }</style>");         
 		}
 		if (Shopify.shop == 'shop-teddyrose.myshopify.com') {
 	            carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {padding-top: 60px !important;} </style>"); 
