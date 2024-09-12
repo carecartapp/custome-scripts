@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v9.90
+ * @version v9.93
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -4408,6 +4408,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "5star-stickers.myshopify.com") {
+            masterSelector = $jq321("#ProductSubmitButton-template--16634113982600__main");
+            finalSelector = masterSelector[0];
+            $jq321("head").append(
+                "<style type='text/css'>.sold-counter-content-box {height: 60px !important; margin-top: -20px !important;}</style>"
+            );
+        }
 	if (Shopify.shop == "a4fed2.myshopify.com") {
 		masterSelector = $jq321("div.product-form__buttons");
 		finalSelector = masterSelector[0];
