@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.92 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.96 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -2171,6 +2171,18 @@
                 }
 
                 function checkThanksYouCcSpinASale() {
+
+			if (Shopify.shop == 'libasdelhi.myshopify.com') {
+                            var is_page = false;
+                            var currentPageUrl = window.location.href;
+                            if (currentPageUrl.indexOf("thank_you") !== -1) {
+                                is_page = true;
+                            }
+                            if (currentPageUrl.indexOf("orders") !== -1) {
+                                is_page = true;
+                            }
+                            return is_page;
+                        }
 			
 			if (Shopify.shop == 'u-tec.myshopify.com' || Shopify.shop == 'athena-comfelie.myshopify.com') {
 	                        var is_page = false;
@@ -3046,7 +3058,10 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
-		 if (Shopify.shop == 'biotique-store.myshopify.com') {
+		if (Shopify.shop == 'junaperiod.myshopify.com') {
+	                carecartSpinnerJquery('body').append("<style type='text/css'> @media only screen and (max-width:575px) { #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer { margin: -143px !important ;} }.wheelify-signupContainer .checkbox label {margin-bottom: 12px;} .wheelify-signupContainer .checkbox label {margin-bottom: 12px;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{display: contents;} .wheelify-signupContainer .checkbox input {margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button {text-align: center;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {margin-top: 50px !important;}</style>");         
+	        }
+		if (Shopify.shop == 'biotique-store.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'> @media only screen and (max-width:575px) { #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer { margin: -85px ;} }</style>");         
                 }    
 		if (Shopify.shop == 'brassbee.myshopify.com') {
