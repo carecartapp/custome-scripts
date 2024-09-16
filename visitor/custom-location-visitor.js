@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.97
+ * @version 10.0
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "dev2-gringa.myshopify.com") {
+        customSelctor = $jq321(".variant-selector");
+        finalSelector = customSelctor[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 10px !important; margin-top: 5px !important;}</style>');
+    }
     if (Shopify.shop == "anna-furnitures.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-bottom: -22px !important; margin-top: -22px !important; margin-left: -5px;}</style>');
         customSelctor = $jq321(".product-form__payment-container");
