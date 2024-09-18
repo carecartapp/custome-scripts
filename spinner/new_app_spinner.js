@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 9.96 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.02 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -2172,6 +2172,19 @@
 
                 function checkThanksYouCcSpinASale() {
 
+			if (Shopify.shop == 'imou-store-1018.myshopify.com') {
+                            var is_page = false;
+                            var currentPageUrl = window.location.href;
+                            if (currentPageUrl.indexOf("thank_you") !== -1) {
+                                is_page = true;
+                            }
+                            if (currentPageUrl.indexOf("orders") !== -1) {
+                                is_page = true;
+                            }
+                            return is_page;
+                        }
+
+			
 			if (Shopify.shop == 'libasdelhi.myshopify.com') {
                             var is_page = false;
                             var currentPageUrl = window.location.href;
