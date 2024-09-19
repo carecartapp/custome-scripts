@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.02 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.04 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -932,6 +932,11 @@
                         */
                     }
 			// add customized logo
+		 
+		  if (Shopify.shop == 'steps-2-life.myshopify.com') {
+	                var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@10.03/spinner/CTI-3976.png';
+	                carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+                  }
 		  if (Shopify.shop == '20366b-34.myshopify.com') {
                 	 var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@8.60/spinner/CTI-3623.png';
                 	carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
@@ -3071,6 +3076,12 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'steps-2-life.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelText { font-weight: normal;} </style>"); 
+                    carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
+                        event.preventDefault();
+                    });
+                }
 		if (Shopify.shop == 'junaperiod.myshopify.com') {
 	                carecartSpinnerJquery('body').append("<style type='text/css'> @media only screen and (max-width:575px) { #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer { margin: -143px !important ;} }.wheelify-signupContainer .checkbox label {margin-bottom: 12px;} .wheelify-signupContainer .checkbox label {margin-bottom: 12px;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{display: contents;} .wheelify-signupContainer .checkbox input {margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button {text-align: center;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {margin-top: 50px !important;}</style>");         
 	        }
