@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.0
+ * @version 10.8
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,51 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+     if (Shopify.shop == "apoio-b6b2.myshopify.com") {
+        $jq321(function() {
+            // Fix for translating widget store based
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                        var currentText = $jq321(this).html();
+                        var newText = currentText.replace('people are currently browsing this site.', 'Pessoas estão a ver este artigo');
+                        $jq321(this).html(newText);
+                    });
+                });
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+            $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                var currentText = $jq321(this).html();
+                var newText = currentText.replace('people are currently browsing this site.', 'Pessoas estão a ver este artigo');
+                $jq321(this).html(newText);
+            });
+        });
+    }
+    if (Shopify.shop == "6fd430-8d.myshopify.com") {
+        $jq321(function() {
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                        var currentText = $jq321(this).html();
+                        var newText = currentText.replace(
+                            'people are currently browsing this site.', 
+                            'Person&nbsp;hat&nbsp;es&nbsp;in&nbsp;den&nbsp;letzten&nbsp;Stunden&nbsp;in&nbsp;den&nbsp;Warenkorb&nbsp;gelegt'
+                        );
+                        $jq321(this).html(newText);
+                    });
+                });
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+            $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                var currentText = $jq321(this).html();
+                var newText = currentText.replace(
+                    'people are currently browsing this site.', 
+                    'Person&nbsp;hat&nbsp;es&nbsp;in&nbsp;den&nbsp;letzten&nbsp;Stunden&nbsp;in&nbsp;den&nbsp;Warenkorb&nbsp;gelegt'
+                );
+                $jq321(this).html(newText);
+            });
+        });
+    }
     if (Shopify.shop == "dev2-gringa.myshopify.com") {
         customSelctor = $jq321(".variant-selector");
         finalSelector = customSelctor[0];
