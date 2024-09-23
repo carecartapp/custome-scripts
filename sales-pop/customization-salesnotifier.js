@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v10.01
+ * @version v10.06
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2186,6 +2186,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "vanyaclothing.myshopify.com") {
+        $jq321("head").append('<style type="text/css">@media only screen and (max-width: 575px) {.notifyjs-corner {z-index: 468 !important;}} </style>');
+    }
     if (Shopify.shop == "b2115a-e1.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css"> .PageTransition {background: transparent !important;} </style>'
