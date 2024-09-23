@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.05 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.10 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3076,6 +3076,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		 if (Shopify.shop == 'true-goddess-beauty-supply.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;}</style>");       
+	        }
 		if (Shopify.shop == 'steps-2-life.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelText { font-weight: normal;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 30px !important;}.wheelify-cc-spin-a-sale-spinner-progress-bar {margin-top: -20px !important;}</style>"); 
                     carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
