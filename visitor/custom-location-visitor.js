@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.8
+ * @version 10.14
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -852,7 +852,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     /* Custom script goes from here */
     let customSelctor = "";
     let finalSelector = "";
-
+    
+    if (Shopify.shop == "variedades-karybello.myshopify.com") {
+        customSelctor = $jq321(".shipping-checkpoints");
+        finalSelector = customSelctor[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { letter-spacing: -0.5px; height: 35px !important; margin-top: -15px !important; } </style>');
+    }
      if (Shopify.shop == "apoio-b6b2.myshopify.com") {
         $jq321(function() {
             // Fix for translating widget store based
