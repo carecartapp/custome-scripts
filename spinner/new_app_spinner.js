@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.12 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.13 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3075,7 +3075,12 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-
+		
+		if (Shopify.shop == 'fd50fe-07.myshopify.com') {
+                    carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
+                        event.preventDefault();
+                    });
+                }
 		if (Shopify.shop == 'true-goddess-beauty-supply.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p {font-weight: bold; color: #eaa221 !important;}span#cc-spin-a-sale-consent-text {font-weight: bold; color: #eaa221 !important;}div#wheelify-cc-spin-a-sale-powered-by-carecart {font-weight: bold; color: #eaa221;}#wheelify-spin_a_sale_cc_store_front_module .wheelText {fill: black; font-weight: 600;}</style>");       
 	        }
