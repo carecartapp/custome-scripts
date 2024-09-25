@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.13 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.15 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3075,7 +3075,10 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-		
+
+		if (Shopify.shop == 'lulus-body-jewelry.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelText { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer { font-family: Montserrat !important; } .wheelify-signupContainer .checkbox input { margin-top: 2px; width: 30px; height: 16px; position: relative; opacity: 1;}</style>"); 
+                }
 		if (Shopify.shop == 'fd50fe-07.myshopify.com') {
                     carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
                         event.preventDefault();
