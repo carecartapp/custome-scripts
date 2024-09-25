@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.07
+ * @version 10.16
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -671,6 +671,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let finalSelector = '';
     let masterSelector = '';
 
+    if (Shopify.shop == "ortho-confort.myshopify.com") {
+        customSelector = $jq321(".btn--add-to-cart");
+        finalSelector = customSelector[0];
+    }
      if (Shopify.shop == "9baa3a-7b.myshopify.com") {
         customSelector = $jq321(".product-form__buttons");
         finalSelector = customSelector[0];
@@ -1943,6 +1947,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
                 let firstSelector;
 
+                if (Shopify.shop == "ortho-confort.myshopify.com") {
+                    $jq321(document).ready(function () {
+                        if (window.location.pathname === '/cart') {
+                            $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center{display: block !important;}</style>');
+                        } else {
+                            $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center{display: none !important;}</style>');
+                        }
+                    });
+                }
                 if (Shopify.shop == "navvimate.myshopify.com") {
                     $jq321("head").append('<style type="text/css">.cart-countdown-desktop-top-center{margin-bottom:15px;}</style>');
                     firstSelector = $jq321(".cart-drawer__form");
