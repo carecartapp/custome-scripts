@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v10.11
+ * @version v10.19
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -3585,6 +3585,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+	if (Shopify.shop == "2914c8-4.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
+            masterSelector = $jq321(".rfq-product-form");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "justoverthetop-testing.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
             masterSelector = $jq321(".product-form__buttons");
@@ -3909,6 +3914,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+	if (Shopify.shop == "2914c8-4.myshopify.com") {
+	        masterSelector = $jq321(".rfq-product-form");
+	        finalSelector = masterSelector[0];
+        }
 	 if (Shopify.shop == "aa2c8c-a9.myshopify.com") {
             masterSelector = $jq321(".product-info__buy-buttons");
             finalSelector = masterSelector[0];
@@ -4212,6 +4221,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "2914c8-4.myshopify.com") {
+            masterSelector = $jq321(".rfq-product-form");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "laduora.myshopify.com") {
             $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{height: 42px; margin-top: -19px !important; margin-left: -7px !important;}</style>');
             masterSelector = $jq321(".modal_price");
@@ -4424,6 +4437,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "2914c8-4.myshopify.com") {
+            masterSelector = $jq321(".rfq-product-form");
+            finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "5star-stickers.myshopify.com") {
             masterSelector = $jq321("#ProductSubmitButton-template--16634113982600__main");
             finalSelector = masterSelector[0];
@@ -5146,6 +5163,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             }
 	    if (Shopify.shop == "ccc1fe-32.myshopify.com") {
                 $jq321(trustBadgesResponse.view).insertAfter('.shopify-payment-button');
+            }
+	    if (Shopify.shop == "2914c8-4.myshopify.com") {
+                $jq321(trustBadgesResponse.view).insertAfter('.rfq-product-form');
             }
             else if (Shopify.shop == "d67b73-2.myshopify.com") {
                 $jq321("head").append('<style type="text/css">.shopify-product-form .BadgesImgBox label{visibility: visible !important;}#CloneBox{margin-top: -80px;}</style>');
