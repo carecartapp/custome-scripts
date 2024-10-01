@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.22
+ * @version 10.23
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,26 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "laura-testa.myshopify.com") {
+        $jq321(function() {
+            // Fix for translating widget store based
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                        var currentText = $jq321(this).html();
+                        var newText = currentText.replace('people are currently browsing this site.', 'Persone stanno guardando questo prodotto ora');
+                        $jq321(this).html(newText);
+                    });
+                });
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+            $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                var currentText = $jq321(this).html();
+                var newText = currentText.replace('people are currently browsing this site.', 'Persone stanno guardando questo prodotto ora');
+                $jq321(this).html(newText);
+            });
+        });
+    }
     if (Shopify.shop == "2b53d1-cf.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-bottom: -40px !important; margin-top: 0px !important;}</style>');
         customSelctor = $jq321(".js.product-form__input.bottom-space.js-product-option-form");
