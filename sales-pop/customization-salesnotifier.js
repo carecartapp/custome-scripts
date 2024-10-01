@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v10.24
+ * @version v10.29
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -1127,6 +1127,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         var b_url = true;
 
+	if (Shopify.shop == "shirt-revolte.myshopify.com") {
+            if (block_url[1] == 'products') {
+                b_url = false;
+                console.log('SP Sales Notification Block on "Product" pages');
+            }
+        }
 	if (Shopify.shop == "alan-richard-textiles-ltd.myshopify.com") {
             if (window.location.href.includes('thank_you')) {
                 b_url = false;
