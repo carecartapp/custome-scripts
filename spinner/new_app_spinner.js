@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.21 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.27 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -932,7 +932,11 @@
                         */
                     }
 			// add customized logo
-		 
+			
+		 if (Shopify.shop == 'e227b6-3.myshopify.com') {
+	                var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@10.26/spinner/CTI-4021.png';
+	                carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+	        }
 		  if (Shopify.shop == 'steps-2-life.myshopify.com') {
 	                var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@10.03/spinner/CTI-3976.png';
 	                carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
