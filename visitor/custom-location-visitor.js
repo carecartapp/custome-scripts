@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.34
+ * @version 10.36
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,10 +853,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
-    if (Shopify.shop == "5d8b91-c0.myshopify.com") {
+        if (Shopify.shop == "5d8b91-c0.myshopify.com") {
         // Append custom styles
-        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -15px !important;margin-bottom: -23px !important;}</style>');
-        customSelctor = $jq321(".quantity-breaks");
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 60px !important; margin-top: 5px! important;}</style>');
+        customSelctor = $jq321(".price__sale");
         finalSelector = customSelctor[0];
     
         // Fix for translating widget store based
