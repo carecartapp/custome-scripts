@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.25
+ * @version 10.34
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,33 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "5d8b91-c0.myshopify.com") {
+        // Append custom styles
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {margin-top: -15px !important;margin-bottom: -23px !important;}</style>');
+        customSelctor = $jq321(".quantity-breaks");
+        finalSelector = customSelctor[0];
+    
+        // Fix for translating widget store based
+        $jq321(function() {
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                        var currentText = $jq321(this).html();
+                        var newText = currentText.replace('people are currently browsing this site.', 'personas acaban de llegar a la pantalla de pago');
+                        $jq321(this).html(newText);
+                    });
+                });
+            });
+            observer.observe(document.body, { childList: true, subtree: true });  
+            
+            // Replace text on initial load
+            $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                var currentText = $jq321(this).html();
+                var newText = currentText.replace('people are currently browsing this site.', 'personas acaban de llegar a la pantalla de pago');
+                $jq321(this).html(newText);
+            });
+        });
+    }
     if (Shopify.shop == "naturalhealthmx.myshopify.com") {
         $jq321(function() {
             // Fix for translating widget store based
