@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.37
+ * @version 10.39
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -853,6 +853,26 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "gaya-astorina.myshopify.com") {
+        $jq321(function() {
+            // Fix for translating widget store based
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                        var currentText = $jq321(this).html();
+                        var newText = currentText.replace('people are currently browsing this site.', 'Persone stanno guardando questo prodotto ora');
+                        $jq321(this).html(newText);
+                    });
+                });
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+            $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                var currentText = $jq321(this).html();
+                var newText = currentText.replace('people are currently browsing this site.', 'Persone stanno guardando questo prodotto ora');
+                $jq321(this).html(newText);
+            });
+        });
+    }
     if (Shopify.shop == "dalgodao.myshopify.com") {
         // Append custom styles
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 58px !important; margin-top: 7px !important; margin-left: -5px !important;} .light-icon {color: #fb0202 !important;}</style>');
