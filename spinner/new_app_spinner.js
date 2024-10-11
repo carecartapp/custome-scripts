@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.41 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.43 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3080,6 +3080,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'cat-the-fiddle-dev.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelText { fill: black !important;}</style>");    
+	        }
 		if (Shopify.shop == 'dr-nuzum.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;}</style>");    
 	        }
