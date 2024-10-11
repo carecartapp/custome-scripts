@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v10.42
+ * @version v10.44
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -3910,7 +3910,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         function updateClock() {
             var t = getTimeRemaining(endtime);
-
+		
             daysSpan.innerHTML = t.days;
             hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
             minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
@@ -3934,6 +3934,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+	if (Shopify.shop == "27089e.myshopify.com") {
+		masterSelector = $jq321(".sold-counter-content-box");
+	        finalSelector = masterSelector[0];
+	}
 	if (Shopify.shop == "2914c8-4.myshopify.com") {
 	        masterSelector = $jq321(".rfq-product-form");
 	        finalSelector = masterSelector[0];
@@ -4457,6 +4461,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "27089e.myshopify.com") {
+		masterSelector = $jq321(".product__selector");
+	        finalSelector = masterSelector[0];
+	}
 	if (Shopify.shop == "11622b-2.myshopify.com") {
             masterSelector = $jq321(".btn--primary");
             $jq321("head").append(
