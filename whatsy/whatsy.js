@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.40
+ * @version 10.45
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -232,6 +232,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	 * Custom fixes starts from here
 	 */
 
+	if(Shopify.shop == "vintageessences.myshopify.com") {
+		carecartWhatsApp("head").append('<style type="text/css"> #chat-box-icon  {height: 105px !important;} </style>');
+	}
 	if(Shopify.shop == "4229c8-23.myshopify.com") {
 		carecartWhatsApp("head").append('<style type="text/css"> .snd-action-btn button {background: transparent !important;} </style>');
 	}
