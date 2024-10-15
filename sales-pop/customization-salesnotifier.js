@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v10.47
+ * @version v10.51
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2192,6 +2192,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "q1c1xf-bq.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.sold-counter-content-box {height: 38px !important; margin-left: 5px !important;}</style>');
+    }
     if (Shopify.shop == "2ff0f3-2.myshopify.com") {
         masterSelector = $jq321("product-form.product-form");
         finalSelector = masterSelector[0];
@@ -4996,7 +4999,20 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     // ---------------------------------- <TRUST BADGES MODULE> --------------------------------
     function trustBadges(trustBadgesResponse) {
-	    
+
+	if (Shopify.shop == "q1c1xf-bq.myshopify.com") {
+            let text = window.location.pathname;
+            let result = text.indexOf("products");
+
+            if (result == -1) {
+                return;
+            }
+            var block_url = window.location.pathname.split("/");
+
+            if (block_url[1] == 'collections') {
+                return;
+            }
+        }
 	if (Shopify.shop == "aaizel.myshopify.com") {
 		let text = window.location.pathname;
 		let result = text.indexOf("products");
