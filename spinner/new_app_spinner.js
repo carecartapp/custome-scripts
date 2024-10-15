@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.46 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.50 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -932,23 +932,27 @@
                         */
                     }
 			// add customized logo
-			
-		 if (Shopify.shop == 'e227b6-3.myshopify.com') {
+
+		   if (Shopify.shop == '02be74-d2.myshopify.com') {
+	               var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v10.48/spinner/CTI-4080.png';
+	               carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+	           }
+		   if (Shopify.shop == 'e227b6-3.myshopify.com') {
 	                var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@10.26/spinner/CTI-4021.png';
 	                carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
-	        }
-		  if (Shopify.shop == 'steps-2-life.myshopify.com') {
+	           }
+		   if (Shopify.shop == 'steps-2-life.myshopify.com') {
 	                var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@10.03/spinner/CTI-3976.png';
 	                carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
-                  }
-		  if (Shopify.shop == '20366b-34.myshopify.com') {
+                    }
+		    if (Shopify.shop == '20366b-34.myshopify.com') {
                 	 var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@8.60/spinner/CTI-3623.png';
                 	carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
-                   }
+                     }
 		     if (Shopify.shop == '55c4f2-6.myshopify.com') {
                           var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.92/spinner/image.png';
                           carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
-                   }
+                     }
 		     if (Shopify.shop == '659ad3-4.myshopify.com') {
                 	var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@7.82/spinner/3378.png';
                 	carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
@@ -3080,6 +3084,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == '02be74-d2.myshopify.com') {
+	                carecartSpinnerJquery('body').append("<style type='text/css'> .wheelify-text-heading{ color: black !important;} .wheelify-text-description{ color: black !important;} span#cc-spin-a-sale-consent-text{ color: black !important;}</style>");
+	        }
 		if (Shopify.shop == '02be74-d2.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelText { fill: black !important;}</style>");    
 	        }
