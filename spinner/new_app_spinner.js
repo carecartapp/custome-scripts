@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.50 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.54 *******************
 //****** Updated at: 12-June-2024, 04:35 PM  ********************************************************
 
 (function () {
@@ -3084,6 +3084,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'frankie4-united-states-store.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelLogo {display:none !important;}</style>");    
+	        }
 		if (Shopify.shop == '02be74-d2.myshopify.com') {
 	                carecartSpinnerJquery('body').append("<style type='text/css'> .wheelify-text-heading{ color: black !important;} .wheelify-text-description{ color: black !important;} span#cc-spin-a-sale-consent-text{ color: black !important;}</style>");
 	        }
