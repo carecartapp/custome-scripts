@@ -1,6 +1,6 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.57 *******************
-//****** Updated at: 16-OCT-2024, 03:35 PM  ********************************************************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.60 *******************
+//****** Updated at: 17-OCT-2024, 05:54 PM  ********************************************************
 
 (function () {
     var d = new Date();
@@ -932,7 +932,11 @@
                         */
                     }
 			// add customized logo
-		
+
+		   if (Shopify.shop == 'djanet-bijoux.myshopify.com') {
+			var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v10.58/spinner/CTI-4112.png';
+			carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+             	   }
 		   if (Shopify.shop == 'brassbee.myshopify.com') {
 		      var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v10.56/spinner/CTI-4100.png';
 		      carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
@@ -3088,6 +3092,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'djanet-bijoux.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent; border: none; width: auto; height: auto; box-shadow: none;} .btn-submit-form{text-align: center;}#cc-spin-a-sale-consent-checkbox{ width: auto; margin-top: 2px;} input[type='checkbox']:checked {accent-color: black;}</style>");    
+	        }
 		if (Shopify.shop == 'premiere-sales-dev-nm.myshopify.com') {
 	            carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
 	                event.preventDefault();
