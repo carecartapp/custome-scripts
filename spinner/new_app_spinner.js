@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.60 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.62 *******************
 //****** Updated at: 17-OCT-2024, 05:54 PM  ********************************************************
 
 (function () {
@@ -3101,8 +3101,8 @@
 	            });
 	        }
 		if (Shopify.shop == 'frankie4-united-states-store.myshopify.com') {
-            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelLogo {display:none !important;}</style>");    
-	        }
+                carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelLogo {display:none !important;}.checkbox label:before { display: none !important;} .checkbox input {position: static !important; opacity: 1 !important; height: 22px !important; width: 13px !important;}</style>");    
+       		}
 		if (Shopify.shop == '02be74-d2.myshopify.com') {
 	                carecartSpinnerJquery('body').append("<style type='text/css'> .wheelify-text-heading{ color: black !important;} .wheelify-text-description{ color: black !important;} span#cc-spin-a-sale-consent-text{ color: black !important;}</style>");
 	        }
