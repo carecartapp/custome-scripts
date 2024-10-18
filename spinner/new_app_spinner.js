@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.62 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.63 *******************
 //****** Updated at: 17-OCT-2024, 05:54 PM  ********************************************************
 
 (function () {
@@ -2192,6 +2192,18 @@
                 }
 
                 function checkThanksYouCcSpinASale() {
+			
+			if (Shopify.shop == 'modvel-com.myshopify.com') {
+                            var is_page = false;
+                            var currentPageUrl = window.location.href;
+                            if (currentPageUrl.indexOf("thank_you") !== -1) {
+                                is_page = true;
+                            }
+                            if (currentPageUrl.indexOf("orders") !== -1) {
+                                is_page = true;
+                            }
+                            return is_page;
+                        }
 
 			if (Shopify.shop == 'imou-store-1018.myshopify.com') {
                             var is_page = false;
@@ -3092,6 +3104,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+	        if (Shopify.shop == 'modvel-com.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 55px !important;}<style>");    
+	        }
 		if (Shopify.shop == 'djanet-bijoux.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent; border: none; width: auto; height: auto; box-shadow: none;} .btn-submit-form{text-align: center;}#cc-spin-a-sale-consent-checkbox{ width: auto; margin-top: 2px;} input[type='checkbox']:checked {accent-color: black;}</style>");    
 	        }
