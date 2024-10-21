@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.65 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.66 *******************
 //****** Updated at: 17-OCT-2024, 05:54 PM  ********************************************************
 
 (function () {
@@ -1772,6 +1772,17 @@
                                 /* *********************************************** Start - Display Urgency Timer Bar ********************************** */
                                 if (response.records.store_settings.conversion_booster_settings != null && response.records.store_settings.conversion_booster_settings.is_urgency_timer_bar_enabled != null && parseInt(response.records.store_settings.conversion_booster_settings.is_urgency_timer_bar_enabled) == 1) {
                                     window.localStorage.setItem('urgencyTimerBarEnabled', 1);
+
+				    if (Shopify.shop == 'djanet-bijoux.myshopify.com' && window.localStorage.getItem('cc-sas-spinner-cached-coupon-code')) {
+                                        setTimeout(function() {
+                                            console.log('SAS Urgency Bar is Active');
+                                            var urgencyTimeBarT = carecartSpinnerJquery('#wheelify-spin_a_sale_cc_urgency_time_bar_text').html();
+                                            var couponCode = '<strong>' + window.localStorage.getItem('cc-sas-spinner-cached-coupon-code') + '</strong>';
+                                            var urgencyTimeBarT = urgencyTimeBarT.replace('{{coupon_code}}', couponCode);
+                                            carecartSpinnerJquery('#wheelify-spin_a_sale_cc_urgency_time_bar_text').html(urgencyTimeBarT);
+                                            carecartSpinnerJquery('#wheelify-couponwheel_notice_content').show();
+                                        }, 1000);
+                                    }
                                     //console.log('SAS Urgency Bar is Active');
                                     //carecartSpinnerJquery('#wheelify-couponwheel_notice_content').show();
                                     var spinASaleCcUrgencyTimeBarTextHtml = '<span class="cc-spin-a-sale-clock-div" id="cc-spin-a-sale-clock-div-preview">' + response.records.store_settings.conversion_booster_settings.urgency_timer_bar_text + '</span>';
