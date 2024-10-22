@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.67 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.70 *******************
 //****** Updated at: 17-OCT-2024, 05:54 PM  ********************************************************
 
 (function () {
@@ -933,6 +933,10 @@
                     }
 			// add customized logo
 
+		   if (Shopify.shop == 'ulanka-9089.myshopify.com') {
+	                var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v10.68/spinner/CTI-4143.png';
+	                carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+	           }
 		   if (Shopify.shop == 'djanet-bijoux.myshopify.com') {
 			var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v10.58/spinner/CTI-4112.png';
 			carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
@@ -3119,7 +3123,7 @@
                     carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px) {.wheelify-content-spinner{height: 80% !important;} #wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight{min-height:450px !important;}}</style>");    
         	}
 		if (Shopify.shop == 'ulanka-9089.myshopify.com') {
-            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelText { font-size: 30px !important; font-weight: 600 !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG {opacity: 1 !important;}</style>");    
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelText { font-size: 30px !important; font-weight: 700 !important; color: #fff !important; font-family: 'neue haas grotesk display pro';} #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG {opacity: 1 !important;} @media only screen and (max-width: 576px) {#wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .wheelify-wheelContainer {width: 100% !important; margin-top: -84px;}#wheelify-spin_a_sale_cc_store_front_module .wheelText { font-size: 25px !important; color: #fff !important;}</style>");    
 	        }
 	        if (Shopify.shop == 'modvel-com.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 55px !important;}<style>");    
