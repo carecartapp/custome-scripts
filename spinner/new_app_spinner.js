@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.73 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.74 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -1196,6 +1196,21 @@
                                                             }
                                                         }
                             */
+			    if (Shopify.shop == 'garter-girl.myshopify.com') {
+				    var currentUrl = window.location.href;
+				    var baseUrl = "https://thegartergirl.com/blogs/custom-garter-designs";
+				
+				    var thisStatus = currentUrl.startsWith(baseUrl);
+				
+				    console.log('checkStoreSpecificUrlCcSpinASale Status: ' + thisStatus);
+				
+				    if (thisStatus) {
+				        console.log('SAS Block Page Matched for store: ' + Shopify.shop);
+				        return;
+				    } else {
+				        console.log('SAS Custom Page NOT Matched for store: ' + Shopify.shop);
+				    }
+				}
                             if (Shopify.shop == 'geniani-products.myshopify.com') {
                                 var thisStatus = checkStoreSpecificUrlCcSpinASale("https://geniani.com/pages/geniani-rewards-club");
                                 //console.log('checkStoreSpecificUrlCcSpinASale Status: ' + thisStatus);
