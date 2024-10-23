@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.78 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.79 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -3138,6 +3138,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'exalt-london.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px) {.wheelify-content-spinner{height: 100% !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 35px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 134px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -100px !important;}}</style>");    
+        	}
 		if (Shopify.shop == 'stagehotmilk.myshopify.com' || Shopify.shop == 'hotmilkau.myshopify.com' || Shopify.shop == 'hotmilkuk.myshopify.com' || Shopify.shop == 'hotmilknz.myshopify.com') {
 	                carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{fill: black;}</style>");    
 	        }
