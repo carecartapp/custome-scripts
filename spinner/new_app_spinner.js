@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.74 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.75 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -3134,6 +3134,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'stagehotmilk.myshopify.com' || Shopify.shop == 'hotmilkau.myshopify.com' || Shopify.shop == 'hotmilkuk.myshopify.com' || Shopify.shop == 'hotmilknz.myshopify.com') {
+	                carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{fill: black;}</style>");    
+	        }
 		if (Shopify.shop == 'ad7fd2-2.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px) {.wheelify-content-spinner{height: 80% !important;} #wheelify-spin_a_sale_cc_store_front_module:not(.popupview) .wheelify-ContentRight{min-height:450px !important;}}</style>");    
         	}
