@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.83 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.84 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -3139,7 +3139,7 @@
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
 		if (Shopify.shop == 'jewelsforwoman.myshopify.com') {
-                    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p {color: black !important;}span#cc-spin-a-sale-consent-text { color: black !important; } div#wheelify-cc-spin-a-sale-powered-by-carecart { color: black !important; }</style>");    
+                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p {color: black !important;}span#cc-spin-a-sale-consent-text { color: black !important; } div#wheelify-cc-spin-a-sale-powered-by-carecart { color: black !important; }</style>");    
         	}
 		if (Shopify.shop == '95b163-cf.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{fill: black;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p {color: black;}#wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description {color: black;}span#cc-spin-a-sale-consent-text {color: black !important;}#wheelify-spin-trigger-cc span {color: black;}</style>");    
