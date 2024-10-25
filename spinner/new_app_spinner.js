@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.84 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.86 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -2226,7 +2226,18 @@
                 }
 
                 function checkThanksYouCcSpinASale() {
-			
+
+			if (Shopify.shop == 'nthankyou.myshopify.com') {
+                            var is_page = false;
+                            var currentPageUrl = window.location.href;
+                            if (currentPageUrl.indexOf("thank_you") !== -1) {
+                                is_page = true;
+                            }
+                            if (currentPageUrl.indexOf("orders") !== -1) {
+                                is_page = true;
+                            }
+                            return is_page;
+                        }
 			if (Shopify.shop == 'modvel-com.myshopify.com') {
                             var is_page = false;
                             var currentPageUrl = window.location.href;
