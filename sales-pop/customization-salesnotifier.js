@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v10.87
+ * @version v10.88
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2192,6 +2192,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "6ef7b3-75.myshopify.com") {
+        masterSelector = $jq321("lb-vd-qty-selector.hydrated");
+        finalSelector = masterSelector[0];
+    }
     if (Shopify.shop == "fe769a-24.myshopify.com") {
         masterSelector = $jq321(".product-info__buy-buttons");
         finalSelector = masterSelector[0];
@@ -3945,6 +3949,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+	if (Shopify.shop == "6ef7b3-75.myshopify.com") {
+		masterSelector = $jq321(".product-form__quantity");
+	        finalSelector = masterSelector[0];
+	}
         if (Shopify.shop == "9m12dq-mc.myshopify.com") {
             	masterSelector = $jq321(".product__tax");
         	finalSelector = masterSelector[0];
