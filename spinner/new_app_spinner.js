@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.86 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.89 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -3168,7 +3168,7 @@
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelText { font-size: 30px !important; font-weight: 700 !important; color: #fff !important; font-family: 'neue haas grotesk display pro';} #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG {opacity: 1 !important;} @media only screen and (max-width: 576px) {#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG {margin-top: -170px !important; opacity: 1 !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 20px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 80px !important;}}</style>");    
 	        }
 	        if (Shopify.shop == 'modvel-com.myshopify.com') {
-            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 55px !important;}<style>");    
+	                carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 55px !important;} .copy-button{width: 107% !important;} .wheelify-text-heading{white-space: nowrap;}<style>");    
 	        }
 		if (Shopify.shop == 'djanet-bijoux.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent; border: none; width: auto; height: auto; box-shadow: none;} .btn-submit-form{text-align: center;}#cc-spin-a-sale-consent-checkbox{ width: auto; margin-top: 2px;} input[type='checkbox']:checked {accent-color: black;}</style>");    
