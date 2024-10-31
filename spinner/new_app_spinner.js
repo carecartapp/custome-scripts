@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.89 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.91 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -933,6 +933,10 @@
                     }
 			// add customized logo
 
+		   if (Shopify.shop == 'tyiwsc-ga.myshopify.com') {
+		        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v10.90/spinner/CTI-4184.jpg';
+		        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+		   }
 		   if (Shopify.shop == 'the-smilist.myshopify.com') {
 	                var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v10.80/spinner/CTI-4162-R.png';
 	                carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
@@ -3149,6 +3153,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'les-petits-monaco.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{fill: black; font-size: 30px !important; font-weight: 700 !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p {color: black;}#wheelify-spin_a_sale_cc_store_front_module p.wheelify-text-description {color: black;}span#cc-spin-a-sale-consent-text {color: black !important;}#wheelify-spin-trigger-cc span {color: black;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 70px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 100px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading {color: black !important;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 40px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -140px !important;}}</style>");    
+        	}
 		if (Shopify.shop == 'jewelsforwoman.myshopify.com') {
                      carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer p {color: black !important;}span#cc-spin-a-sale-consent-text { color: black !important; } div#wheelify-cc-spin-a-sale-powered-by-carecart { color: black !important; }</style>");    
         	}
@@ -3168,7 +3175,7 @@
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelText { font-size: 30px !important; font-weight: 700 !important; color: #fff !important; font-family: 'neue haas grotesk display pro';} #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG {opacity: 1 !important;} @media only screen and (max-width: 576px) {#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG {margin-top: -170px !important; opacity: 1 !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 20px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 80px !important;}}</style>");    
 	        }
 	        if (Shopify.shop == 'modvel-com.myshopify.com') {
-	                carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 55px !important;} .copy-button{width: 107% !important;} .wheelify-text-heading{white-space: nowrap;}<style>");    
+	                carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 55px !important; width: 96%;} .wheelify-text-heading{white-space: nowrap;} #cc-spin-a-sale-consent-checkbox{background-color: white !important; width: 12px; height:12px; margin-top:5px; margin-right: 2px;} #wheelify-spin_a_sale_cc_store_front_module .form-group input{width: 93%;} #cc-spin-a-sale-consent-checkbox{-webkit-appearance: checkbox !important;} .wheelify-winContainer{margin: 125px 0px; width: 100%;}<style>");
 	        }
 		if (Shopify.shop == 'djanet-bijoux.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent; border: none; width: auto; height: auto; box-shadow: none;} .btn-submit-form{text-align: center;}#cc-spin-a-sale-consent-checkbox{ width: auto; margin-top: 2px;} input[type='checkbox']:checked {accent-color: black;}</style>");    
