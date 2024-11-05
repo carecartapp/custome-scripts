@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version v10.88
+ * @version v10.93
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
  */
@@ -2192,6 +2192,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "tec2go.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css"> @media only screen and (max-width: 575px) {.notifyjs-corner {z-index: 0 !important;}} </style>'
+        );
+    }
     if (Shopify.shop == "6ef7b3-75.myshopify.com") {
         masterSelector = $jq321("lb-vd-qty-selector.hydrated");
         finalSelector = masterSelector[0];
@@ -4489,6 +4494,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+	if (Shopify.shop == "69ea5d-59.myshopify.com") {
+		masterSelector = $jq321(".atc-button");
+	        finalSelector = masterSelector[0];
+	}
 	if (Shopify.shop == "27089e.myshopify.com") {
 		masterSelector = $jq321(".product__selector");
 	        finalSelector = masterSelector[0];
