@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.59
+ * @version 10.97
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -91,7 +91,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         apiResponse = response;
 
         // VISITOR COUNTER CALL
-        if (apiResponse && apiResponse.visitor && apiResponse.visitor !== null) {  
+        if (apiResponse && apiResponse.visitor && apiResponse.visitor !== null) {
+            if (Shopify.shop == "naturalhealthmx.myshopify.com") {
+                var block_url = window.location.pathname.split("/");
+
+                if (block_url[1] == 'collections') {
+                    console.log('Block visitor counter on collection pages');
+                    return;
+                }
+            } 
             if (Shopify.shop == "720419.myshopify.com") {
                 var block_url = window.location.pathname.split("/");
 
