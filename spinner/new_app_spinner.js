@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.96 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 10.99 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -3153,6 +3153,11 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+		if (Shopify.shop == 'pavidas-atelier.myshopify.com') {
+                    carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
+                        event.preventDefault();
+                    });
+                }
 		if (Shopify.shop == '6z0aba-en.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>.pegContainer { transform: matrix(1.70666, 0, 0, 1.70666, -374.604, 62.2927) !important;}</style>");       
         	}
