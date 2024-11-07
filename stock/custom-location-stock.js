@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 10.38
+ * @version 10.98
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -671,6 +671,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let finalSelector = '';
     let masterSelector = '';
 
+    if (Shopify.shop == "kawaiigiftland.myshopify.com") {
+        customSelector = $jq321(".product-form__buttons");
+        finalSelector = customSelector[0];
+        $jq321("head").append('<style type="text/css">.stock-top { margin-bottom: 20px !important; width: 80% !important;    padding-left: 3px !important; } @media only screen and (max-width: 575px) { .stock-top { width: auto !important; } }</style>');
+    }
     if (Shopify.shop == "c4ee91-07.myshopify.com") {
         $jq321("head").append('<style type="text/css">.timer-font-family-inherit{margin-top: 20px;} .colon{position: static !important;}</style>');
     }
