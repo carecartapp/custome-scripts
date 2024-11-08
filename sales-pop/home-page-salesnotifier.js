@@ -3,7 +3,7 @@
  * @author CareCart
  * @link https://apps.shopify.com/partners/care-cart
  * @link https://carecart.io/
- * @version 9.11
+ * @version 11.03
  *
  * Any unauthorized use and distribution of this and related files, is strictly forbidden.
  * In case of any inquiries, please contact here: https://carecart.io/contact-us/
@@ -1697,7 +1697,9 @@
      var finalSelector = '';
      
      let productID = 0;
-  
+  if (Shopify.shop == "z8dqt1-gw.myshopify.com") {
+        productID = 9303255744838;
+   } 
   if (Shopify.shop == "south-asian-strong.myshopify.com")
   {
         productID = 42847704023234;
