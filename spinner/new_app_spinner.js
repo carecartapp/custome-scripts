@@ -1,5 +1,5 @@
 //******* @author: CareCart App-Wheelify*******************************************
-//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 11.00 *******************
+//****** Store Frontend JS - carecartSpinnerApp.js GH v.6.0.0 - Build ver 11.01 *******************
 //****** Updated at: 23-OCT-2024, 12:42 AM  ********************************************************
 
 (function () {
@@ -3152,7 +3152,9 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
-
+		 if (Shopify.shop == 'wolf-muscle.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;}</style>");    
+	        }
 		if (Shopify.shop == 'pavidas-atelier.myshopify.com') {
                     carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
                         event.preventDefault();
@@ -3162,7 +3164,7 @@
                     carecartSpinnerJquery('body').append("<style type='text/css'>.pegContainer { transform: matrix(1.70666, 0, 0, 1.70666, -374.604, 62.2927) !important;}</style>");       
         	}
 		if (Shopify.shop == 'zuber-tr.myshopify.com') {
-                    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{font-size: 60px !important; font-weight: 700 !important;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -140px !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 20px !important;} .wheelText{font-size: 60px !important; font-weight: 700 !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { padding-top: 90px !important; }}</style>");       
+                carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{font-size: 60px !important; font-weight: 700 !important;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -140px !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 20px !important;} .wheelText{font-size: 60px !important; font-weight: 700 !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { padding-top: 90px !important; }} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer { padding-top: 58px !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { padding-top: 90px !important; }</style>");       
         	}
 		if (Shopify.shop == 'upsonic.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px) { #wheelify-spin-trigger-cc { display: none !important; } }</style>");       
