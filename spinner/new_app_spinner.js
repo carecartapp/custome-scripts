@@ -3155,10 +3155,10 @@
 		if (Shopify.shop == '647b96-14.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;} input[type='checkbox']:checked {accent-color: black;}</style>");  
                 }
-		if (Shopify.shop == 'kalaya-ca.myshopify.com') {
-            		carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -70px !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 20px !important;}} .wheelify-signupContainer .checkbox input{width:auto;} #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .copy-button, #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .form-group input { color: black !important; }</style>");    
+        if (Shopify.shop == 'kalaya-ca.myshopify.com') {
+            	carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -70px !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 20px !important;}#wheelify-spin_a_sale_cc_store_front_module .form-group input{color: black !important;}} .wheelify-signupContainer .checkbox input{width:auto;} #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .copy-button, #wheelify-spin_a_sale_cc_store_front_module.wheelify-wrapper-spinner.popupview .form-group input { color: black !important; }</style>");    
 	        }
-		 if (Shopify.shop == 'wolf-muscle.myshopify.com') {
+		if (Shopify.shop == 'wolf-muscle.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;}</style>");    
 	        }
 		if (Shopify.shop == 'pavidas-atelier.myshopify.com') {
