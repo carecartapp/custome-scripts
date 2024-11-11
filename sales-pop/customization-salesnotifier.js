@@ -2192,6 +2192,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "venicol.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css"> @media only screen and (max-width: 575px) {.notifyjs-corner {z-index: 468 !important;}} </style>'
+        );
+    }
     if (Shopify.shop == "tec2go.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css"> @media only screen and (max-width: 575px) {.notifyjs-corner {z-index: 0 !important;}} </style>'
