@@ -3177,8 +3177,8 @@
 		if (Shopify.shop == '6z0aba-en.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>.pegContainer { transform: matrix(1.70666, 0, 0, 1.70666, -374.604, 62.2927) !important;}</style>");       
         	}
-		if (Shopify.shop == 'zuber-tr.myshopify.com') {
-                carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{font-size: 60px !important; font-weight: 700 !important;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -140px !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 20px !important;} .wheelText{font-size: 60px !important; font-weight: 700 !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { padding-top: 90px !important; }} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer { padding-top: 58px !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { padding-top: 90px !important; }</style>");       
+            if (Shopify.shop == 'zuber-tr.myshopify.com') {
+                carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px) {#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -120px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 0px !important;} .wheelText {font-size: 60px !important;font-weight: 700 !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {padding-top: 90px !important;}} .wheelText {font-size: 60px !important;font-weight: 700 !important;}  #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { padding-top: 90px !important; }</style>");       
         	}
 		if (Shopify.shop == 'upsonic.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px) { #wheelify-spin-trigger-cc { display: none !important; } }</style>");       
