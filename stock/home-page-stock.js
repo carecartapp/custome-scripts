@@ -141,6 +141,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     /* Hard coded product id's for home page */
     let productID = 0;
+    if (Shopify.shop == "4pmvjw-1x.myshopify.com") {
+        productID = 9600145981779;
+    }
     if (Shopify.shop == "d37f27-2.myshopify.com") {
         productID = 7631842836677;
     }
