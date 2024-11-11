@@ -3152,6 +3152,11 @@
                 //***************** End - Countdown Timer function min & sec ********************
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
+                if (Shopify.shop == 'altogirobr.myshopify.com') {
+                    carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
+                        event.preventDefault();
+                    });
+                }
         if (Shopify.shop == '1rc7ek-h2.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{fill: black;}</style>");
         }
