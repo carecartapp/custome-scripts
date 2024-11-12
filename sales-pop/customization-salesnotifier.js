@@ -3960,10 +3960,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
         if (Shopify.shop == "46549b-d5.myshopify.com") {
-            $jq321("head").append(
-                '<style type="text/css">.timer-store-front {margin-top: 10px !important;}</style>'
-            );
-            masterSelector = $jq321(".loox-rating-content");
+            masterSelector = $jq321(".price.price--large.price--on-sale.price--show-badge");
                 finalSelector = masterSelector[0];
         }
 	if (Shopify.shop == "6ef7b3-75.myshopify.com") {
