@@ -3158,7 +3158,7 @@
                     });
                 }
         if (Shopify.shop == '1rc7ek-h2.myshopify.com') {
-                    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{fill: black;}</style>");
+                    carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 768px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight { margin-bottom: -108px !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-content-spinner{font-size: x-small;}} .wheelText{fill: black;}</style>"); 
         }
 		if (Shopify.shop == '647b96-14.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;} input[type='checkbox']:checked {accent-color: black;}</style>");  
