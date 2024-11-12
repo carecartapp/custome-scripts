@@ -1214,6 +1214,24 @@ function AbandonedCart() {
             }, 2000);
         });
 
+        if (Shopify.shop == "boutdchou-officiel.myshopify.com") {
+            carecartJquery('head').append(`
+                <style type="text/css">
+                    #ccswal2-content {
+                        display: block;
+                        font-family: Open Sans, sans-serif;
+                        font-size: 12px;
+                        color: #000000;
+                        text-align: center;
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+                    #ccswal2-content p {
+                        text-transform: unset;
+                    }
+                </style>
+            `);
+        }
         if (Shopify.shop == "imarku-us.myshopify.com") 
         {
             carecartJquery('head').append('<style type="text/css"> :root{--customCare-background: transparent !important;} #spin_a_sale_cc_store_front_module .checkbox{background: var(--customCare-background); border:none; height:auto; width:auto; } #spin_a_sale_cc_store_front_module .checkbox label input{-moz-appearance: auto !important;display: flex;} @media only screen and (max-width: 575px){#spin_a_sale_cc_store_front_module .signupContainer{min-height: 530px !important;} #spin-trigger-cc, #spin-trigger-cc:active, #spin-trigger-cc:focus, #spin-trigger-cc:hover, #spin-trigger-cc:visited{left:20px !important;}}</style>');
