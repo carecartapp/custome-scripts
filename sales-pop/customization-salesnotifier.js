@@ -3959,6 +3959,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "46549b-d5.myshopify.com") {
+            masterSelector = $jq321(".price.price--large.price--on-sale.price--show-badge");
+                finalSelector = masterSelector[0];
+        }
 	if (Shopify.shop == "6ef7b3-75.myshopify.com") {
 		masterSelector = $jq321(".product-form__quantity");
 	        finalSelector = masterSelector[0];
