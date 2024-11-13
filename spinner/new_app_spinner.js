@@ -933,6 +933,10 @@
                     }
 			// add customized logo
 
+            if (Shopify.shop == 'evenpar-golf.myshopify.com') {
+		        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v11.15/spinner/CTI-4248.png';
+		        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+		   }
 		   if (Shopify.shop == 'tyiwsc-ga.myshopify.com') {
 		        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v10.90/spinner/CTI-4184.jpg';
 		        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
