@@ -3157,6 +3157,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == '9abc54-d3.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelText { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading { font-weight: bold; font-style: italic; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { margin-bottom: 60px !important; } </style>");  
+            }
         if (Shopify.shop == 'greencornerss.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;} .wheelify-signupContainer .checkbox input{margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer{margin-top: 30px !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelText { font-size: 20px !important; font-weight: 800; } </style>");       
             }
