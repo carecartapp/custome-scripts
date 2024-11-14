@@ -5067,6 +5067,19 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     // ---------------------------------- <TRUST BADGES MODULE> --------------------------------
     function trustBadges(trustBadgesResponse) {
 
+    if (Shopify.shop == "9d4a4d.myshopify.com") {
+        let text = window.location.pathname;
+        let result = text.indexOf("products");
+
+        if (result == -1) {
+            return;
+        }
+        var block_url = window.location.pathname.split("/");
+
+        if (block_url[1] == 'collections') {
+            return;
+        }
+    }
 	if (Shopify.shop == "94e73b.myshopify.com") {
             let text = window.location.pathname;
             let result = text.indexOf("products");
