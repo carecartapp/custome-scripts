@@ -2194,7 +2194,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     if (Shopify.shop == "b63b7a-3.myshopify.com") {
         $jq321("head").append(
-            '<style type="text/css"> .notificationPreview-box .np-col-img {height: 114% !important; margin-top: -7px;} .notificationPreview-box .card-body p.card-text{font-weight: bold; width: 102% !important;} .notificationPreview-box .card-body h5.card-title{font-weight: bold;} @media only screen and (max-width: 575px) {div.notifyjs-corner {margin-bottom: 70px !important;}}</style>'
+            '<style type="text/css"> .notificationPreview-box .np-col-img {height: 114% !important; margin-top: -7px;} .notificationPreview-box .card-body p.card-text{font-weight: bold;} .notificationPreview-box .card-body h5.card-title{font-weight: bold;} @media only screen and (max-width: 575px) {div.notifyjs-corner {margin-bottom: 70px !important;}} @media only screen and (max-width: 575px) {.notifyjs-corner {z-index: 468 !important;}}</style>'
         );
     }
     if (Shopify.shop == "venicol.myshopify.com") {
