@@ -3161,6 +3161,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'keliyakalender.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;}</style>");
+        }
         if (Shopify.shop == '9abc54-d3.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelText { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer { font-family: Montserrat !important; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-text-heading { font-weight: bold; font-style: italic; } #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer { margin-bottom: 60px !important; } </style>");  
             }
