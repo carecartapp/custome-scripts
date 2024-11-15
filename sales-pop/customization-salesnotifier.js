@@ -4292,6 +4292,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+    if (Shopify.shop == "carloronaldi.myshopify.com") {
+        $jq321(document).ready(function() {
+            let visitorNumber = $jq321("#carecart-salespop-visitor-number").text(); 
+            let visitorTextElement = $jq321("#carecart-salespop-visitor-number").closest('.visitor-font-family-inherit.visitor-font-weight-inherit');
+            if (visitorTextElement.length) {
+                visitorTextElement.html('<span id="carecart-salespop-visitor-number" style="color: #FF6666">' + visitorNumber + '</span> Actualmente hay personas navegando por este sitio.');
+            }
+        });
+    }
 	if (Shopify.shop == "testbutter-sg.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020{margin-left: 175px !important; margin-top: -41px !important;} .sold-counter-content-box {height: 60px !important; margin-top: 0px !important; }  @media only screen and (max-width: 480px) {.visitor-counter-content-box-carecartbysalespop-2020 { margin-left: 140px !important; margin-top: -38px !important; } .content-div-visitor-detail-carecartbysalespop-2020 { font-size: 9px !important;} }</style>');
             masterSelector = $jq321(".limited-edition");
