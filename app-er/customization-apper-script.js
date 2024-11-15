@@ -1214,6 +1214,10 @@ function AbandonedCart() {
             }, 2000);
         });
 
+        if (Shopify.shop == "argenispaul.myshopify.com") 
+        {
+            carecartJquery('head').append('<style type="text/css">@media only screen and (max-width: 575px){#spin-trigger-cc {bottom: 135px !important; right: 24px !important;}}</style>');
+        }
         if (Shopify.shop == "boutdchou-officiel.myshopify.com") {
             carecartJquery('head').append(`
                 <style type="text/css">
