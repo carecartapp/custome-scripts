@@ -3161,6 +3161,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'skollxvape.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 768px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight { margin-bottom: -152px !important; }} </style>");
+        }
         if (Shopify.shop == 'keliyakalender.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;}</style>");
         }
