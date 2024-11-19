@@ -2192,6 +2192,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "goat-boxco.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css"> .card-text.buyer-name {font-family: Arial !important;} .pur-time {font-family: Arial !important;} .card-title {font-family: Arial !important;}</style>'
+        );
+    }
     if (Shopify.shop == "lauraelizabeth.myshopify.com") {
         masterSelector = $jq321(".product-form__item");
         finalSelector = masterSelector[0];
