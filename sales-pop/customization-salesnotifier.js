@@ -2192,6 +2192,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "lauraelizabeth.myshopify.com") {
+        masterSelector = $jq321(".product-form__item");
+        finalSelector = masterSelector[0];
+        $jq321("head").append(
+            '<style type="text/css"> .stock-top.cc-sp-sc-stock-div {display: block !important;}</style>'
+        );
+    }
     if (Shopify.shop == "d8eba9-2.myshopify.com") {
         masterSelector = $jq321(".product-form__buttons");
         finalSelector = masterSelector[0];
