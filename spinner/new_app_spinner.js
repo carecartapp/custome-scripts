@@ -3161,6 +3161,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'bigme888.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG { margin-top: -130px !important}#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 40px !important;}}</style>");    
+	    }
         if (Shopify.shop == 'skollxvape.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 768px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight { margin-bottom: -152px !important; }} </style>");
         }
