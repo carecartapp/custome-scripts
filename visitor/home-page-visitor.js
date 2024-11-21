@@ -215,7 +215,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         productID = 8800541737295;
     }
-    
+    if (Shopify.shop == "a5ktna-pv.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+
+        productID = 7773449683001;
+    }
+
     $jq321.ajax({
         type: "GET",
         url: salespoplib_vars_obj.backend_url + 'checkStore/',
@@ -244,6 +249,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "a5ktna-pv.myshopify.com") {
+        customSelctor = $jq321(".product-form__buttons");
+        finalSelector = customSelctor[0];
+    }
      if (Shopify.shop == "386b82.myshopify.com") {
         customSelctor = $jq321("#price-template--20222314611022__05e31a1f-55f9-41d9-8d37-bd649716dd82");
         finalSelector = customSelctor[0];
