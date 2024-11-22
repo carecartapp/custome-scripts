@@ -4538,6 +4538,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+        if (Shopify.shop == "taraiga.myshopify.com") {
+            masterSelector = $jq321(".product__submit__buttons");
+                finalSelector = masterSelector[0];
+        }
         if (Shopify.shop == "vsdent.myshopify.com") {
             masterSelector = $jq321(".payment-buttons");
                 finalSelector = masterSelector[0];
