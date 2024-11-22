@@ -933,6 +933,10 @@
                     }
 			// add customized logo
 
+            if (Shopify.shop == 'pratimaskincarellc.myshopify.com') {
+		        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v11.33/spinner/CTI-4316.png';
+		        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+		   }
             if (Shopify.shop == '9abc54-d3.myshopify.com') {
 		        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v11.23/spinner/CTI-4255-modified.png';
 		        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
@@ -3161,9 +3165,6 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
-        if (Shopify.shop == 'princesshighway.myshopify.com') {
-            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{display: block;background: transparent; border: none; width: auto; height: auto; box-shadow: none;} .btn-submit-form{text-align: center;} .wheelify-signupContainer .checkbox input {display: block; appearance: auto; width: 13px; height: 15px;}</style>");    
-	    }
         if (Shopify.shop == 'bigme888.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG { margin-top: -130px !important}#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 40px !important;}}</style>");    
 	    }
