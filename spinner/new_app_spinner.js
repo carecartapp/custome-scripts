@@ -933,6 +933,10 @@
                     }
 			// add customized logo
 
+            if (Shopify.shop == 'pratimaskincarellc.myshopify.com') {
+		        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v11.33/spinner/CTI-4316.png';
+		        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
+		   }
             if (Shopify.shop == '9abc54-d3.myshopify.com') {
 		        var newValue = 'https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v11.23/spinner/CTI-4255-modified.png';
 		        carecartSpinnerJquery('.wheelLogo').attr("xlink:href", newValue);
