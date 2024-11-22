@@ -3169,6 +3169,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'btralt.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>.checkbox>label:before {display: none;}@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelText {font-size: xxx-large !important; font-weight: 700 !important;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelSVG { margin-left: -16px !important; margin-top: -100px !important; width: 110% !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 40px !important;}#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;} .wheelify-signupContainer .checkbox input{margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer{margin-top: 30px !important;}.wheelify-signupContainer .checkbox input {margin-left: -20px; width: 12px; height: 12px;}</style>");    
+	    }
         if (Shopify.shop == 'shop-gorman-nz.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{display: block;background: transparent; border: none; width: auto; height: auto; box-shadow: none;} .btn-submit-form{text-align: center;} .wheelify-signupContainer .checkbox input {display: block; appearance: auto; width: 13px; height: 15px;}</style>");    
 	    }
