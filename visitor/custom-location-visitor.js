@@ -861,6 +861,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "nutrifoodz-2.myshopify.com") {
+        customSelctor = $jq321(".product-store-buttons");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "2qg0n1-xr.myshopify.com") {
         customSelctor = $jq321(".tigren-title");
         finalSelector = customSelctor[0];
