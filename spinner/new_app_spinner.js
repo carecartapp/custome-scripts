@@ -3161,6 +3161,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'kcguhs-dr.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 65px}#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent; border: none; width: auto; height: auto; box-shadow: none;} .btn-submit-form{text-align: center;}.wheelify-signupContainer .checkbox input {width: 20px; height: 17px;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 100px !important;}</style>");    
+	    }
         if (Shopify.shop == 'princesshighway.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox{display: block;background: transparent; border: none; width: auto; height: auto; box-shadow: none;} .btn-submit-form{text-align: center;} .wheelify-signupContainer .checkbox input {display: block; appearance: auto; width: 13px; height: 15px;}</style>");    
 	    }
