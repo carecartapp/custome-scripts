@@ -3169,6 +3169,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'saddle-creek-za.myshopify.com') {
+            		carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 10px}#wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 100px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -120px !important;}}</style>");
+	    }
         if (Shopify.shop == 'ritfitness.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;} .btn-submit-form{text-align: center;} #cc-spin-a-sale-consent-checkbox{margin-top: 7px;}</style>");
         }
