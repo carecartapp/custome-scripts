@@ -3169,6 +3169,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'cozmeticaa.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>input[type=checkbox] { display: block !important; height: 20px !important; position: static !important; width: 20px !important; appearance: auto; }</style>");
+        }
         if (Shopify.shop == 'saddle-creek-za.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>@media only screen and (max-width: 575px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-loseContainer, #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {margin-top: 10px}#wheelify-spin_a_sale_cc_store_front_module .wheelify-winContainer {margin-top: 100px !important;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-wheelContainer {margin-top: -120px !important;}}</style>");
 	    }
