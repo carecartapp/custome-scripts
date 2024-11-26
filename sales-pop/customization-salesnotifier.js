@@ -3646,6 +3646,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+    if (Shopify.shop == "kleverthing.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
+            masterSelector = $jq321("buy-buttons");
+            finalSelector = masterSelector[0];
+        }
     if (Shopify.shop == "46549b-d5.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display:block !important;}</style>');
             masterSelector = $jq321(".product-form__buttons");
@@ -3990,6 +3995,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+    if (Shopify.shop == "kleverthing.myshopify.com") {
+            masterSelector = $jq321("buy-buttons");
+            finalSelector = masterSelector[0];
+        }
         if (Shopify.shop == "46549b-d5.myshopify.com") {
             masterSelector = $jq321(".price.price--large.price--on-sale.price--show-badge");
                 finalSelector = masterSelector[0];
