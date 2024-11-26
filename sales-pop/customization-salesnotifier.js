@@ -2192,6 +2192,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "sun-full.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css"> .ccAnnouncmntBanner-bpop {height: 50px;} div.banner-Close-CC svg{fill: none;}</style>'
+        );
+    }
     if (Shopify.shop == "goat-boxco.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css"> .card-text.buyer-name {font-family: Arial !important;} .pur-time {font-family: Arial !important;} .notificationPreview-box .card-body h5.card-title a {font-family: Arial !important;}</style>'
