@@ -3169,6 +3169,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'davidguner-com.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin_a_sale_cc_store_front_module .checkbox { width: auto; margin-bottom: 40px; border: none; background: transparent; box-shadow: none;} .btn-submit-form{text-align: center;} #cc-spin-a-sale-consent-checkbox{margin-top: 7px;}</style>");
+        }
         if (Shopify.shop == 'cozmeticaa.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>input[type=checkbox] { display: block !important; height: 20px !important; position: static !important; width: 20px !important; appearance: auto; }</style>");
         }
