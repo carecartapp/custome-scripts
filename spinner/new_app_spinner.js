@@ -3169,6 +3169,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'c7ecea-69.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-signupContainer { margin-top: 70px !important;} @media only screen and (max-width: 768px){#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight { margin-bottom: -160px !important; }}</style>");
+        }
         if (Shopify.shop == 'ohora-us.myshopify.com') {
             		carecartSpinnerJquery('body').append("<style type='text/css'>.wheelText{fill: black !important; font-size: 30px !important;}#wheelify-spin_a_sale_cc_store_front_module .checkbox{background: transparent;border: none;width: auto;height: auto;box-shadow: none;} .btn-submit-form{text-align: center;} .wheelify-signupContainer .checkbox input{margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer{margin-top: 50px !important;}</style>");
 	    }
