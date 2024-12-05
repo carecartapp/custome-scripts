@@ -4897,6 +4897,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	
         if (product_id == '') {
             if (($jq321.inArray("collections", currentPageHandle) != -1)) {
+        if (Shopify.shop == "uum4qs-h0.myshopify.com") {
+            $jq321(".ProductItem__ImageWrapper").each(function () {
+                var href = $jq321(this).attr('href');
+                var url = href.split("/");
+
+                if ($jq321.inArray("products", url) != -1) {
+                    allLinks.push(href);
+                }
+            });
+        }
 		if (Shopify.shop == "hilaling.myshopify.com") {
                     $jq321(".product-item__image-wrapper").each(function () {
                         var href = $jq321(this).attr('href');
