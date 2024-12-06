@@ -3169,6 +3169,9 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'raworganics-dk.myshopify.com') {
+                    carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin-trigger-cc {margin-bottom: -77px ;} @media only screen and (max-width: 768px){#wheelify-spin-trigger-cc { z-index: 000000000 !important; }}</style>");
+        }
             if (Shopify.shop == 'my-best-oficial.myshopify.com') {
                 carecartSpinnerJquery('body').append(`
                     <style type='text/css'>
