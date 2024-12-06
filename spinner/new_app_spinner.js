@@ -3381,7 +3381,7 @@
 			carecartSpinnerJquery('body').append("<style type='text/css'> @media only screen and (max-width:575px) { .triggerButtonRotate { bottom: -120px !important;} }</style>");         
 		}
 		if (Shopify.shop == 'shop-teddyrose.myshopify.com') {
-	            carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {padding-top: 60px !important;} </style>"); 
+            carecartSpinnerJquery('body').append("<style type='text/css'> #wheelify-spin_a_sale_cc_store_front_module .wheelify-signupContainer {padding-top: 60px !important;} #cc-spinner-full-name::placeholder { color: #817777 !important; } #cc-spinner-email::placeholder { color: #817777 !important; }</style>"); 
 	        }
 		if (Shopify.shop == 'superlovedoll.myshopify.com') {
 		    carecartSpinnerJquery('body').append("<style type='text/css'>.wheelify-signupContainer .checkbox label {margin-bottom: 12px;} #wheelify-spin_a_sale_cc_store_front_module .checkbox{display: contents;} .wheelify-signupContainer .checkbox input {margin-top: 4px;} #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form, #wheelify-spin_a_sale_cc_store_front_module .btn-submit-form-ok, #wheelify-spin_a_sale_cc_store_front_module .copy-button {text-align: center;}#wheelify-spin_a_sale_cc_store_front_module .wheelify-ContentRight {margin-top: 50px !important;} </style>"); 
