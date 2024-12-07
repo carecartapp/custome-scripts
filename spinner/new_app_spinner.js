@@ -3169,6 +3169,25 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+        if (Shopify.shop == 'signature-syn-halo.myshopify.com') {
+            const observer = new MutationObserver(function(mutationsList) {
+                const element = carecartSpinnerJquery('#wheelify-spin-trigger-cc');
+                if (element.length > 0) {
+                    element.css('display', 'none');
+                    observer.disconnect(); // Stop observing once the element is hidden
+                }
+            });
+        
+            observer.observe(document.body, { childList: true, subtree: true });
+            carecartSpinnerJquery('body').append(`
+                <style type='text/css'>
+                    #wheelify-spin-trigger-cc {
+                        bottom: 70px !important;
+                        margin-left: 30px !important; 
+                    }
+                </style>
+            `);
+        } 
         if (Shopify.shop == 'raworganics-dk.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin-trigger-cc {margin-bottom: -77px ;} @media only screen and (max-width: 768px){#wheelify-spin-trigger-cc { z-index: 000000000 !important; }}</style>");
         }
