@@ -4326,6 +4326,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+    if (Shopify.shop == "331d1f-cd.myshopify.com") {
+        masterSelector = $jq321(".product-single__form");
+        finalSelector = masterSelector[0];
+    }
     if (Shopify.shop == "carloronaldi.myshopify.com") {
         $jq321(document).ready(function() {
             let visitorNumber = $jq321("#carecart-salespop-visitor-number").text(); 
