@@ -3169,6 +3169,11 @@
                 //***************************** Store Specific Styling ***********************************************************
                 //***************************** Fix Text Positioning of Store in Spinner Pop-up **********************************
 
+            if (Shopify.shop == 'nouraindia.myshopify.com') {
+                    carecartSpinnerJquery(document).on('click', '#spin_a_sale_cc_store_front_module_close_button, #wheelify-spin-trigger-cc', function(event) {
+                        event.preventDefault();
+                    });
+            }
         if (Shopify.shop == 'signature-syn-halo.myshopify.com') {
             const observer = new MutationObserver(function(mutationsList) {
                 const element = carecartSpinnerJquery('#wheelify-spin-trigger-cc');
