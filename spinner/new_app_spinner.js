@@ -3218,7 +3218,7 @@
         } 
  
         if (Shopify.shop == '063eb2-2.myshopify.com') {
-                    carecartSpinnerJquery('body').append("<style type='text/css'> #cc-spinner-full-name::placeholder { font-family: var(--font-body-family); } #cc-spinner-email::placeholder { font-family: var(--font-body-family); } #cc-spin-a-sale-consent-checkbox{margin-top: 4px;}</style>"); 
+            carecartSpinnerJquery('body').append("<style type='text/css'> #cc-spinner-full-name::placeholder { font-family: var(--font-body-family); } #cc-spinner-email::placeholder { font-family: var(--font-body-family); } #cc-spin-a-sale-consent-checkbox{margin-top: 4px;} @media only screen and (max-width: 768px){.wheelLogo { transform: none !important; }}</style>"); 
         }
         if (Shopify.shop == 'raworganics-dk.myshopify.com') {
                     carecartSpinnerJquery('body').append("<style type='text/css'>#wheelify-spin-trigger-cc {margin-bottom: -77px ;} @media only screen and (max-width: 768px){#wheelify-spin-trigger-cc { z-index: 000000000 !important; }}</style>");
