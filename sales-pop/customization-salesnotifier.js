@@ -2192,6 +2192,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "f7ec6a.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.notifyjs-corner {display: block !important;}</style>"
+        );
+    }
     if (Shopify.shop == "sun-full.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css"> .ccAnnouncmntBanner-bpop {height: 50px;} div.banner-Close-CC svg{fill: none;}</style>'
