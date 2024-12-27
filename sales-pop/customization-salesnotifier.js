@@ -2192,6 +2192,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "2afecb-36.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.stock-top {display: block !important;}</style>"
+        );
+    }
     if (Shopify.shop == "f7ec6a.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.notifyjs-corner {display: block !important;}</style>"
@@ -4000,6 +4005,26 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+    if (Shopify.shop == "2afecb-36.myshopify.com") {
+        $jq321(function() {
+            // Fix for translating widget store based
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    $jq321("body").find("*:contains('Hurry up!  Sale Ends in')").each(function() {
+                        var currentText = $jq321(this).html();
+                        var newText = currentText.replace('Hurry up!  Sale Ends in', 'Hurry up! 40% Sale Ends in');
+                        $jq321(this).html(newText);
+                    });
+                });
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+            $jq321("body").find("*:contains('Hurry up!  Sale Ends in')").each(function() {
+                var currentText = $jq321(this).html();
+                var newText = currentText.replace('Hurry up!  Sale Ends in.', 'Hurry up! 40% Sale Ends in');
+                $jq321(this).html(newText);
+            });
+        });
+    }
     if (Shopify.shop == "choozit.myshopify.com") {
             masterSelector = $jq321("purchase-details__buttons");
             finalSelector = masterSelector[0];
