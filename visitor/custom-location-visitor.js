@@ -861,6 +861,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "cequvq-11.myshopify.com") {
+        customSelctor = $jq321(".product-info__block.product-info__block--sm.product-inventory");
+        finalSelector = customSelctor[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 20px !important; margin-top: -3px !important;}</style>');
+    }
     if (Shopify.shop == "nutrifoodz-2.myshopify.com") {
         customSelctor = $jq321(".product-store-buttons");
         finalSelector = customSelctor[0];
