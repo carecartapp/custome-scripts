@@ -861,6 +861,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "naduvistore.myshopify.com") {
+        customSelctor = $jq321(".quantity_addToCart-wrap");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "cequvq-11.myshopify.com") {
         customSelctor = $jq321(".product-info__block.product-info__block--sm.product-inventory");
         finalSelector = customSelctor[0];
