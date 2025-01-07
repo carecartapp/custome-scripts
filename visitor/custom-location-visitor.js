@@ -828,6 +828,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "tumatera-co.myshopify.com") {
         var meta = { "product": { "id": __st.rid } };
     }
+    if (Shopify.shop == "wfpw25-xf.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+    }
     else{
         var meta = { "product": { "id": __st.rid } };
     }
@@ -861,6 +864,30 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "wfpw25-xf.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 42px !important; margin-top: 12px !important; margin-left: -5px !important;}</style>');
+        customSelctor = $jq321(".block__bottomtitle__total");
+        finalSelector = customSelctor[0];
+
+        // Fix for translating widget store based
+        $jq321(function() {
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                        var currentText = $jq321(this).html();
+                        var newText = currentText.replace('people are currently browsing this site.', ' personer surfar just nu på Zenora.');
+                        $jq321(this).html(newText);
+                    });
+                });
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+            $jq321("body").find("*:contains('people are currently browsing this site.')").each(function() {
+                var currentText = $jq321(this).html();
+                var newText = currentText.replace('people are currently browsing this site.', ' personer surfar just nu på Zenora.');
+                $jq321(this).html(newText);
+            });
+        });
+    }
     if (Shopify.shop == "naduvistore.myshopify.com") {
         customSelctor = $jq321(".quantity_addToCart-wrap");
         finalSelector = customSelctor[0];
