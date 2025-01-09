@@ -2192,6 +2192,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "outdoor-shop-venture.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.notificationPreview-box .card-body {margin-top: 23px;}</style>"
+        );
+    }
     if (Shopify.shop == "2afecb-36.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.stock-top {display: block !important;}</style>"
