@@ -867,6 +867,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "aysey0-3e.myshopify.com") {
+        customSelctor = $jq321(".price--show-badge");
+        finalSelector = customSelctor[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 25px !important; margin-top: 5px !important;}</style>');
+    }
     if (Shopify.shop == "5gwsqj-9w.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 50px !important; margin-top: -15px !important; margin-left: -5px !important;}</style>');
         customSelctor = $jq321(".product-form__error-message-wrapper");
