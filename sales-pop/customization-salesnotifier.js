@@ -2192,6 +2192,34 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "0661f1-5c.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css">' +
+            '@media screen and (max-width: 575px){.notifyjs-corner{left: 64% !important;}' + '}' +
+            '@media screen and (max-width: 500px){.notificationPreview-box{width:356px !important;}' +
+            '.notifyjs-corner{margin:0px !important;}' +
+            '#wa-chat-btn-root + .notifyjs-corner{left: 45% !important;}' +
+            '.notifyjs-corner{margin: 18px !important;}' +
+            '.notificationPreview-box .np-col-img{width:50px !important;height:50px!important;margin-right:10px}' +
+            '.notificationPreview-box-inner{width:338px !important; height:85px !important; right: -20px !important}' +
+            '.notificationPreview-box .card-body p.card-text{font-size:10px !important;}' +
+            '.notificationPreview-box .card-body h5.card-title{font-size:12px!important;height: auto !important;line-height: 15px;margin: 0px 0;}' +
+            '.notificationPreview-box .card-body .pur-time{margin:0px !important;}' +
+            '.notificationPreview-box .card-body {margin-top: -5px !important}' +
+            '.notificationPreview-box .np-col-right{float:none;}' +
+            '.notifyjs-corner .notifyjs-wrapper{margin:0px; margin-left: -10px !important}' +
+            '}' +
+            '@media screen and (max-width: 375px){ #noti-rsn-id .notificationPreview-box-inner {width: 287px !important;}' +
+            '#noti-rsn-id.notificationPreview-box { width: 294px !important;}' +
+            '.notificationPreview-box .np-col-right {width: 193px !important;}' +
+            '#wa-chat-btn-root + .notifyjs-corner {left: 45% !important;}' +
+            '.notificationPreview-box .card-body h5.card-title{line-height: 11px;}' +
+            '.notifyjs-salesPopStyle-base .notificationPreview-box .card-body p.card-text {line-height: 11px !important;}' +
+            '}' +
+
+            '</style>'
+        );
+    }
     if (Shopify.shop == "outdoor-shop-venture.myshopify.com") {
         $jq321("head").append(
             "<style type='text/css'>.notificationPreview-box .card-body {margin-top: 23px;}</style>"
