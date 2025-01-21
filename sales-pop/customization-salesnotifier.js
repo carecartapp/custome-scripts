@@ -2192,6 +2192,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "sun-full.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css"> @media only screen and (max-width: 575px) {.notifyjs-corner {z-index: 9999 !important; margin-top: 64px !important;}} </style>'
+        );
+    }
     if (Shopify.shop == "768c5c-2.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css"> @media only screen and (max-width: 575px) {.notifyjs-corner {z-index: 11 !important;}} </style>'
