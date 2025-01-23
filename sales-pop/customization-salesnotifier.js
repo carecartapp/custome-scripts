@@ -1011,6 +1011,15 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var entryFound = false;
         var currentPageType = "";
 
+        var isFbclidPresent = currentPageUrl.includes("?fbclid=");
+        var isEscapeVintageStore = Shopify.shop === "escapeordryclothing.myshopify.com";
+    
+        if (isFbclidPresent || isEscapeVintageStore) {
+            spDebuger.storeLog("Special conditions met: fbclid present or escapevintage.it store.");
+            // Allow the functionality to run for this condition
+            return true;
+        }
+        
         // If not then do further processing to get the current page handle
         currentPageHandle = window.location.pathname.split("/");
 
