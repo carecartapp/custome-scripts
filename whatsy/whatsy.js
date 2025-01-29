@@ -232,6 +232,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	 * Custom fixes starts from here
 	 */
 
+	if(Shopify.shop == "corex-sport-fitness.myshopify.com") {
+		carecartWhatsApp("head").append('<style type="text/css"> .wa-custom-icon {display:inline-block !important;} </style>');
+	}
 	if(Shopify.shop == "nz0k2j-c1.myshopify.com") {
 		carecartWhatsApp("head").append('<style type="text/css"> .wa-custom-icon {display:inline-block !important;} .wa-chat-btn-icon-cta-small {display:inline-block !important;} </style>');
 	}
