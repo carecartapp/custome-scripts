@@ -1,0 +1,123 @@
+<svg class="wheelSVG" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" text-rendering="optimizeSpeed" viewBox="0 0 1024 768">
+    <defs>
+    <filter id="shadow2" x="-100%" y="-100%" width="550%" height="550%">
+        <feOffset in="SourceAlpha" dx="0" dy="0" result="offsetOut"></feOffset>
+        <feGaussianBlur stdDeviation="9" in="offsetOut" result="drop"></feGaussianBlur>
+        <feColorMatrix in="drop" result="color-out" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .3 0"></feColorMatrix>
+        <feBlend in="SourceGraphic" in2="color-out" mode="normal"></feBlend>
+    </filter>
+    </defs>
+    <g class="mainContainer" data-svg-origin="512 384" transform="matrix(0,-1,1,0,128,896)">
+    <g class="wheel" data-svg-origin="512 384" transform="matrix(1,0,0,1,0,0)">
+        <g>
+        <path class="10PercentOffBg-preview" data-svg-origin="512 384" transform="matrix(1,0,0,1,0,0)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#db4862" stroke="0" style="fill: rgb(2, 126, 64);"></path>
+        </g>
+        <g>
+        <path class="NoLuckTodayBg-preview" data-svg-origin="512 384" transform="matrix(0.80902,0.58779,-0.58779,0.80902,323.49312,-227.61216)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#8d3d80" stroke="0" style="fill: rgb(252, 51, 53);"></path>
+        </g>
+        <g>
+        <path class="20PercentOffBg-preview" data-svg-origin="512 384" transform="matrix(0.30902,0.95106,-0.95106,0.30902,718.9888,-221.6064)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#f49169" stroke="0" style="fill: rgb(2, 126, 64);"></path>
+        </g>
+        <g>
+        <path class="SorryBg-preview" data-svg-origin="512 384" transform="matrix(-0.30902,0.95106,-0.95106,-0.30902,1035.42528,15.72096)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#fecf54" stroke="0" style="fill: rgb(252, 51, 53);"></path>
+        </g>
+        <g>
+        <path class="30PercentOffBg-preview" data-svg-origin="512 384" transform="matrix(-0.80902,0.58779,-0.58779,-0.80902,1151.9296,393.7152)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#364241" stroke="0" style="fill: rgb(2, 126, 64);"></path>
+        </g>
+        <g>
+        <path class="SoCloseBg-preview" data-svg-origin="512 384" transform="matrix(-1,0,0,-1,1024,768)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#db4862" stroke="0" style="fill: rgb(252, 51, 53);"></path>
+        </g>
+        <g>
+        <path class="40PercentOffBg-preview" data-svg-origin="512 384" transform="matrix(-0.80902,-0.58779,0.58779,-0.80902,700.50688,995.61216)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#8d3d80" stroke="0" style="fill: rgb(2, 126, 64);"></path>
+        </g>
+        <g>
+        <path class="AlmostNearBg-preview" data-svg-origin="512 384" transform="matrix(-0.30902,-0.95106,0.95106,-0.30902,305.0112,989.6064)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#f49169" stroke="0" style="fill: rgb(252, 51, 53);"></path>
+        </g>
+        <g>
+        <path class="FreeShippingBg-preview" data-svg-origin="512 384" transform="matrix(0.30902,-0.95106,0.95106,0.30902,-11.42528,752.27904)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#0d7452" stroke="0" style="fill: rgb(2, 126, 64);"></path>
+        </g>
+        <g>
+        <path class="NextTimeBg-preview" data-svg-origin="512 384" transform="matrix(0.80902,-0.58779,0.58779,0.80902,-127.9296,374.2848)" d="M512,384  L998.9409363431187,225.78329888002693  A512,512 0 0,1 998.9409363431187,542.2167011199731z" fill="#5198f5" stroke="0" style="fill: rgb(252, 51, 53);"></path>
+        </g>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(1,0,0,1,0,0)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(0.80902,0.58779,-0.58779,0.80902,323.49312,-227.61216)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(0.30902,0.95106,-0.95106,0.30902,718.9888,-221.6064)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(-0.30902,0.95106,-0.95106,-0.30902,1035.42528,15.72096)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(-0.80902,0.58779,-0.58779,-0.80902,1151.9296,393.7152)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(-1,0,0,-1,1024,768)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(-0.80902,-0.58779,0.58779,-0.80902,700.50688,995.61216)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(-0.30902,-0.95106,0.95106,-0.30902,305.0112,989.6064)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(0.30902,-0.95106,0.95106,0.30902,-11.42528,752.27904)"></line>
+        <line x1="512" x2="998.9409363431187" y1="384" y2="542.2167011199731" stroke="#E2E2E2" stroke-width="3" data-svg-origin="512 384" transform="matrix(0.80902,-0.58779,0.58779,0.80902,-127.9296,374.2848)"></line>
+    </g>
+    </g>
+    <g class="centerCircle" filter="url(#shadow2)">
+    <circle class="center_circle_fill_color-preview" fill="#EDEDED" stroke="#F1DC15" stroke-width="12" cx="512" cy="384" r="110" style="fill: rgb(237, 237, 237); stroke: rgb(241, 220, 21);"></circle>
+    </g>
+    <g class="wheelOutline" filter="url(#shadow2)">
+    <g>
+        <circle class="WheelBorder-preview" fill="transparent" stroke="#fff" stroke-width="20" cx="512" cy="384" r="512" style="stroke: rgb(255, 255, 255);"></circle>
+    </g>
+    </g>
+    <g class="pegContainer" filter="url(#shadow2)" data-svg-origin="530.1000175476074 -88.14999389648438" transform="matrix(1.7067,0,0,1.7067,-374.62168,62.2956)">
+    <path class="WheelPin-preview" fill="#fff" d="M43.5,70.5c-0.9,1.1-2.1,1.8-3.5,2.1c-3.5,0-9.3-9.3-13.3-17.3
+          c-5.2-10.5-8.6-20.8-8.6-26.4c0-12.1,9.8-21.8,21.8-21.8s21.8,9.8,21.8,21.8l0,0c0,4.7-2.4,12.9-6.5,21.9
+          C51.5,59.5,46.9,67.1,43.5,70.5z M35.4,22.8c-2.6,2.6-2.6,6.7,0,9.3c2.6,2.6,6.7,2.6,9.3,0s2.6-6.7,0-9.3S37.9,20.3,35.4,22.8
+          C35.4,22.8,35.4,22.8,35.4,22.8L35.4,22.8z" data-svg-origin="39.89999961853027 23.475000381469727" transform="matrix(1,0,0,1,490.2,-160.75)" style="fill: rgb(255, 255, 255);"></path>
+    </g>
+    <g class="valueContainer" filter="url(#shadow2)" data-svg-origin="512 384" transform="matrix(1,0,0,1,0,0)">
+    <g>
+        <image class="wheelLogo" x="452" y="324" xlink:href="https://app-spinner.carecart.io/public/assets/img/cc_spinner_app_icon.png?v=1" width="120" height="120"></image>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(1,0,0,1,0,0)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="10PercentOff-preview" id="10PercentOff-preview" dy="0" x="512" text-anchor="middle">10% OFF</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(0.80902,0.58779,-0.58779,0.80902,323.49312,-227.61216)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="NoLuckToday-preview" id="NoLuckToday-preview" dy="0" x="512" text-anchor="middle">No luck today</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(0.30902,0.95106,-0.95106,0.30902,718.9888,-221.6064)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="20PercentOff-preview" id="20PercentOff-preview" dy="0" x="512" text-anchor="middle">20% OFF</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(-0.30902,0.95106,-0.95106,-0.30902,1035.42528,15.72096)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="Sorry-preview" id="Sorry-preview" dy="0" x="512" text-anchor="middle">Sorry</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(-0.80902,0.58779,-0.58779,-0.80902,1151.9296,393.7152)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="30PercentOff-preview" id="30PercentOff-preview" dy="0" x="512" text-anchor="middle">30% OFF</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(-1,0,0,-1,1024,768)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="SoClose-preview" id="SoClose-preview" dy="0" x="512" text-anchor="middle">So Close</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(-0.80902,-0.58779,0.58779,-0.80902,700.50688,995.61216)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="40PercentOff-preview" id="40PercentOff-preview" dy="0" x="512" text-anchor="middle">40% OFF</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(-0.30902,-0.95106,0.95106,-0.30902,305.0112,989.6064)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="AlmostNear-preview" id="AlmostNear-preview" dy="0" x="512" text-anchor="middle">Almost Near</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(0.30902,-0.95106,0.95106,0.30902,-11.42528,752.27904)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="FreeShipping-preview" id="FreeShipping-preview" dy="0" x="512" text-anchor="middle">Free shipping</tspan>
+        </text>
+    </g>
+    <g data-svg-origin="512 384" transform="matrix(0.80902,-0.58779,0.58779,0.80902,-127.9296,374.2848)">
+        <text class="wheelText" fill="#FFFFFF" x="512" y="-68" transform="rotate(-90, 590, -2)" text-anchor="middle">
+        <tspan class="NextTime-preview" id="NextTime-preview" dy="0" x="512" text-anchor="middle">Better Luck for Next Time!</tspan>
+        </text>
+    </g>
+    </g>
+</svg>
