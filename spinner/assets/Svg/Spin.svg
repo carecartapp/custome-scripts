@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="760" height="760" viewBox="0 0 760 760">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5374" data-name="Rectangle 5374" width="722.7" height="722.66" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_10520" data-name="Group 10520" transform="translate(14176 -12619)">
+    <circle id="Ellipse_753" data-name="Ellipse 753" cx="362.571" cy="362.571" r="362.571" transform="translate(-14160.355 12636.43)" fill="#fff"/>
+    <g id="Group_8985" data-name="Group 8985" transform="translate(-14157.914 12637.865)">
+      <g id="Mask_Group_8984" data-name="Mask Group 8984" clip-path="url(#clip-path)">
+        <path id="Path_7551" data-name="Path 7551" d="M0,110.2A362.106,362.106,0,0,0,129.591,288.447L339.16,0Z" transform="translate(18.102 364.301)" fill="#db4862"/>
+        <path id="Path_7552" data-name="Path 7552" d="M0,288.45a359.673,359.673,0,0,0,209.572,68.074V0Z" transform="translate(150.217 366.135)" fill="#364241"/>
+        <path id="Path_7553" data-name="Path 7553" d="M17.137,0a362.892,362.892,0,0,0,0,220.4L356.3,110.2Z" transform="translate(0 251.131)" fill="#8d3d80"/>
+        <path id="Path_7554" data-name="Path 7554" d="M129.591,0A362.091,362.091,0,0,0,0,178.248l339.16,110.2Z" transform="translate(18.099 69.912)" fill="#f49169"/>
+        <path id="Path_7555" data-name="Path 7555" d="M0,356.525A359.63,359.63,0,0,0,209.572,288.45L0,0Z" transform="translate(362.911 366.135)" fill="#fecf54"/>
+        <path id="Path_7556" data-name="Path 7556" d="M209.572,0A359.636,359.636,0,0,0,0,68.074l209.572,288.45Z" transform="translate(150.214 -0.003)" fill="#0d7452"/>
+        <path id="Path_7557" data-name="Path 7557" d="M0,356.525,209.575,68.074A359.668,359.668,0,0,0,0,0Z" transform="translate(362.911 -0.003)" fill="#5198f5"/>
+        <path id="Path_7558" data-name="Path 7558" d="M339.16,220.4A361.035,361.035,0,0,0,356.3,110.2,361.035,361.035,0,0,0,339.16,0L0,110.2Z" transform="translate(366.404 251.131)" fill="#8d3d80"/>
+        <path id="Path_7559" data-name="Path 7559" d="M339.16,178.248A362.105,362.105,0,0,0,209.569,0L0,288.447Z" transform="translate(365.438 69.912)" fill="#db4862"/>
+        <path id="Path_7560" data-name="Path 7560" d="M209.572,288.447A362.092,362.092,0,0,0,339.163,110.2L0,0Z" transform="translate(365.435 364.301)" fill="#f49169"/>
+        <text id="_10_OFF" data-name="10% OFF" transform="translate(544.247 235.442) rotate(-36)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-41.52" y="0">10% OFF</tspan></text>
+        <text id="Free_Shipping" data-name="Free Shipping" transform="translate(298.729 150.202) rotate(-108)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-65.292" y="0">Free Shipping</tspan></text>
+        <text id="Almost_Near" data-name="Almost Near" transform="matrix(-0.799, -0.602, 0.602, -0.799, 185.857, 225.221)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-58.38" y="0">Almost Near</tspan></text>
+        <text id="_40_OFF" data-name="40% OFF" transform="matrix(-1, -0.017, 0.017, -1, 138.153, 352.139)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-41.52" y="0">40% OFF</tspan></text>
+        <text id="So_Close" data-name="So Close" transform="translate(176.42 484.807) rotate(145)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-40.836" y="0">So Close</tspan></text>
+        <text id="_30_OFF" data-name="30% OFF" transform="translate(284.212 571.165) rotate(109)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-41.52" y="0">30% OFF</tspan></text>
+        <text id="Sorry" transform="matrix(0.292, 0.956, -0.956, 0.292, 423.04, 578.478)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-25.524" y="0">Sorry</tspan></text>
+        <text id="_20_OFF" data-name="20% OFF" transform="translate(538.771 497.634) rotate(38)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-41.52" y="0">20% OFF</tspan></text>
+        <text id="No_Luck_Today" data-name="No Luck Today" transform="translate(576.821 370.353) rotate(2)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-68.808" y="0">No Luck Today</tspan></text>
+        <text id="Better_Luck" data-name="Better Luck" transform="translate(429.59 69.629) rotate(-79)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-109.752" y="0">Better Luck</tspan></text>
+        <text id="For_Next_Time_" data-name="For Next Time!" transform="matrix(0.326, -0.946, 0.946, 0.326, 469.821, 81.699)" fill="#fff" font-size="24" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-137.112" y="0">For Next Time!</tspan></text>
+      </g>
+    </g>
+    <g id="Ellipse_752" data-name="Ellipse 752" transform="translate(-14176 12619)" fill="none" stroke="#dde6f6" stroke-width="20">
+      <circle cx="380" cy="380" r="380" stroke="none"/>
+      <circle cx="380" cy="380" r="370" fill="none"/>
+    </g>
+    <g id="Ellipse_805" data-name="Ellipse 805" transform="translate(-13852 12944)" fill="#fff" stroke="#dde6f6" stroke-width="8">
+      <circle cx="55" cy="55" r="55" stroke="none"/>
+      <circle cx="55" cy="55" r="51" fill="none"/>
+    </g>
+    <g id="Layer_2" data-name="Layer 2" transform="translate(-13832.092 12963.908)">
+      <g id="Layer_1" data-name="Layer 1" transform="translate(-0.908 -0.908)">
+        <circle id="Ellipse_803" data-name="Ellipse 803" cx="36" cy="36" r="36" transform="translate(0 0)" fill="#ffdc7e" style="isolation: isolate"/>
+        <path id="Path_9341" data-name="Path 9341" d="M278.892,29.676A33.344,33.344,0,0,0,250,13V46.357Z" transform="translate(-214 -10.357)" fill="#fecf54" style="isolation: isolate"/>
+        <path id="Path_9342" data-name="Path 9342" d="M17.474,131.48a33.4,33.4,0,0,0,0,33.357l28.892-16.675Z" transform="translate(-10.366 -112.161)" fill="#0d7452" style="isolation: isolate"/>
+        <path id="Path_9343" data-name="Path 9343" d="M73.612,13A33.344,33.344,0,0,0,44.72,29.675L73.612,46.357Z" transform="translate(-37.612 -10.357)" fill="#db4862" style="isolation: isolate"/>
+        <path id="Path_9344" data-name="Path 9344" d="M278.892,131.48,250,148.161l28.892,16.681a33.4,33.4,0,0,0,0-33.357Z" transform="translate(-214 -112.161)" fill="#364241" style="isolation: isolate"/>
+        <path id="Path_9345" data-name="Path 9345" d="M44.72,266.681a33.345,33.345,0,0,0,28.892,16.675V250Z" transform="translate(-37.612 -214)" fill="#f49169" style="isolation: isolate"/>
+        <path id="Path_9346" data-name="Path 9346" d="M250,283.357a33.345,33.345,0,0,0,28.892-16.675L250,250Z" transform="translate(-214 -214)" fill="#8d3d80" style="isolation: isolate"/>
+        <g id="Group_10028" data-name="Group 10028" transform="translate(2.644 2.643)" opacity="0.3" style="isolation: isolate">
+          <path id="Path_9347" data-name="Path 9347" d="M46.359,79.714a33.357,33.357,0,1,1,23.587-9.77,33.356,33.356,0,0,1-23.587,9.77Zm0-65.879a32.522,32.522,0,1,0,23,9.525,32.522,32.522,0,0,0-23-9.525Z" transform="translate(-13.003 -13.001)" opacity="0.6"/>
+        </g>
+        <circle id="Ellipse_804" data-name="Ellipse 804" cx="7.741" cy="7.741" r="7.741" transform="translate(28.259 28.259)" fill="#fff" style="isolation: isolate"/>
+      </g>
+    </g>
+  </g>
+</svg>
