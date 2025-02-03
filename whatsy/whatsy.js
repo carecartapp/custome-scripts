@@ -232,6 +232,9 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	 * Custom fixes starts from here
 	 */
 
+	if (Shopify.shop == "lady-luxury-india.myshopify.com"){
+		carecartWhatsApp("body").append("<style type='text/css'>.wa-chatbox-container {display: none;} @media only screen and (max-width: 575px) {#chat-box-icon {padding-bottom : 45px !important;}}</style>");
+	}
 	if(Shopify.shop == "corex-sport-fitness.myshopify.com") {
 		carecartWhatsApp("head").append('<style type="text/css"> .wa-custom-icon {display:inline-block !important;} </style>');
 	}
