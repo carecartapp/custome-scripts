@@ -1,0 +1,644 @@
+.input-color {
+  position: relative;
+  z-index: 20;
+}
+.color {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  border-radius: 4px;
+  z-index: 30;
+  width: 26px;
+  padding: 0px;
+  border: unset;
+  height: 30px;
+  transform: translateY(-50%);
+}
+
+.color.color-2 {
+  top: 40px;
+}
+
+#steps-img {
+  height: 63px;
+  object-fit: contain;
+}
+
+#steps-img svg {
+  width: 100%;
+  height: auto;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#pointer {
+  cursor: pointer;
+}
+
+.wincoupon-body {
+  height: 100%;
+}
+
+#btn-filter {
+  filter: invert(1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.react-tel-input .flag-dropdown {
+  background-color: #fff !important;
+  border: 1px solid rgb(138, 138, 138) !important;
+}
+
+#h-100 {
+  height: 100% !important;
+}
+
+#h-100 > .Polaris-ShadowBevel {
+  height: 100%;
+  background-color: #e9e5ff;
+}
+
+#pointer-none {
+  pointer-events: none;
+}
+
+.react-tel-input input.form-control {
+  width: 100% !important;
+  border-radius: 8px !important;
+  border: 1px solid rgb(138, 138, 138) !important;
+}
+
+.react-international-phone-country-selector-button {
+  width: 100% !important;
+  height: 34px !important;
+  border-radius: 6px !important;
+  border: 1px solid #333 !important;
+}
+
+#card-error--badge {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 16px;
+  padding: 14px 24px;
+  border: 2px solid red;
+  background-color: #ff000026;
+}
+
+#phone-container {
+  position: relative;
+}
+
+#phone-container .phone-placeholder {
+  position: absolute;
+  left: 46px;
+  top: 50%;
+  background-color: white;
+  padding: 5px 4px;
+  transform: translateY(-50%);
+}
+
+/* dashboard steps  */
+.skeleton-placeholder {
+  width: 100%;
+  height: 100vh;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  background-color: rgb(227, 227, 227);
+}
+
+#skeleton {
+  border-radius: 8px;
+  background-color: rgb(227, 227, 227);
+}
+
+#skeleton > * {
+  position: relative;
+  z-index: -1;
+}
+
+.skeleton-h-28 {
+  height: 28px;
+}
+
+.skeleton-size-28 {
+  width: 28px;
+  height: 28px;
+  border-radius: 2px;
+  background-color: rgb(227, 227, 227);
+}
+
+.skeleton-h-76 {
+  height: 76px;
+}
+
+.skeleton-h-100 {
+  height: 100px;
+}
+
+.skeleton-h-200 {
+  height: 200px;
+}
+
+.skeleton-h-248 {
+  height: 248px;
+}
+
+#utility-h-70 {
+  height: 70px;
+}
+
+#utility-h-40 {
+  height: 40px;
+}
+
+#banner-dashboard > .Polaris-Banner {
+  background-color: #e9f2ff;
+}
+
+#clickable {
+  cursor: pointer;
+  color: #303030;
+  text-decoration: none;
+  transition: 0.1s ease-in;
+}
+
+#clickable:hover {
+  text-decoration: underline;
+}
+
+#grid-center > .Polaris-Grid {
+  align-items: center;
+}
+
+.steps-placeholder {
+  width: 100%;
+  height: 63px;
+  border-radius: 8px;
+  background-color: rgb(227, 227, 227);
+}
+
+.text-base {
+  font-size: 10px;
+}
+.w-fit {
+  background: rgb(200, 200, 233);
+  width: 200px;
+  height: 53px;
+  border-end-end-radius: 27px;
+  border-start-end-radius: 27px;
+  position: relative;
+}
+.flex {
+  display: flex;
+}
+.justify-end {
+  justify-content: end;
+}
+#spin {
+  position: absolute;
+  right: 0px;
+}
+.center {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  top: 30%;
+  color: black;
+}
+.wheelSVG {
+  overflow: visible !important;
+  z-index: 9999 !important;
+  width: 30%;
+
+  transform: rotate(54deg);
+}
+#button-wheel {
+  padding: 0 !important;
+  width: 50px;
+  height: 70px;
+}
+.wheel-spin {
+  position: absolute;
+  left: -245px;
+  top: -70px;
+}
+.background {
+  overflow: hidden;
+  position: relative;
+  background-position: inherit;
+  background-size: cover;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: beige;
+  height: 620px;
+  width: 500px;
+  background-repeat: no-repeat;
+}
+
+/* modal  */
+.modal-body--wrapper {
+  max-height: 65vh;
+  padding: 0 6px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 9999 !important;
+}
+
+.modal-body--wrapper::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+.modal-body--wrapper::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.modal-body--wrapper::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+.modal-body--wrapper::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* integration cards  */
+.integration-card--body > div.Polaris-ShadowBevel,
+.integration-card--body > div.Polaris-ShadowBevel > div.Polaris-Box {
+  height: 100%;
+}
+
+/* input field  */
+.formik-field {
+  width: 100%;
+  border-radius: 6px;
+  padding: 6px 12px;
+  border: 1px solid rgb(48, 48, 48);
+}
+
+.border-gray {
+  border: 1px solid #333;
+}
+
+.border-danger {
+  border: 1px solid #be0505;
+}
+
+.text-danger {
+  color: #be0505;
+}
+
+/* collapsible  */
+.features-collapsible > button {
+  width: 100%;
+  box-shadow: none;
+  padding-inline: 0;
+  justify-content: flex-start;
+}
+
+.features-collapsible > button:hover {
+  box-shadow: none;
+}
+
+.collapsible-icon {
+  position: absolute;
+  left: -26px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ReactModal__Overlay {
+  z-index: 10000 !important;
+}
+
+.Polaris-Box {
+  min-height: unset !important;
+}
+
+.size-60 {
+  width: 60px;
+  height: 60px;
+}
+
+/* payment card  */
+.payment-card--body {
+  height: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.payment-card {
+  border-radius: 12px;
+  transition: all 0.1s ease-in-out;
+}
+
+#h-full {
+  height: 100%;
+}
+
+#payment-slider .Polaris-RangeSlider-SingleThumb__OutputBubble {
+  display: none !important;
+}
+
+.react-international-phone-country-selector-button {
+  justify-content: flex-start !important;
+  padding-left: 12px !important;
+}
+
+.active-payment-card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.payment-card > div.Polaris-Box > div.Polaris-Box:nth-child(2) {
+  height: calc(100% - 80px);
+}
+.payment-active-icon {
+  position: absolute;
+  right: -4px;
+  top: -7px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 50%;
+}
+.Polaris-ShadowBevel {
+  background-color: white;
+}
+
+.input-color input.color {
+  cursor: pointer;
+}
+.input-color input.color:hover .input-color {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.campaigns-card-wrapper {
+  width: 31.8%;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+}
+@media only screen and (max-width: 1268px) {
+  .campaigns-card-wrapper {
+    width: 31.7%;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  .campaigns-card-wrapper {
+    width: 48.4%;
+  }
+}
+@media only screen and (max-width: 924px) {
+  .campaigns-card-wrapper {
+    width: 47.5%;
+  }
+}
+@media only screen and (max-width: 848px) {
+  .campaigns-card-wrapper {
+    width: 100%;
+  }
+}
+.card-button {
+  padding-block: 0.3rem;
+  padding-inline: 0.75rem;
+  border-radius: 10px;
+  border: unset;
+  min-height: 1.5rem;
+  min-width: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.cc_custom_theme {
+  cursor: pointer;
+  transition-property: transform;
+}
+
+.cc_custom_theme:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.1);
+}
+
+.cc_custom_theme_active {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.1);
+}
+
+.btn-tryLuck {
+  display: flex;
+  justify-content: end;
+}
+/* trigger button */
+#wheelify-spin-trigger-cc {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+#wheelify-spin-trigger-cc span {
+  border-radius: 2px;
+  margin-top: 0;
+  margin-right: -20px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 40px;
+  padding-right: 30px;
+  padding-left: 15px;
+  color: #fff;
+}
+#wheelify-spin-trigger-cc img {
+  width: 40px;
+  border-radius: 100%;
+}
+#wheelify-spin-trigger-cc img,
+#wheelify-spin-trigger-cc span {
+  height: 40px;
+  float: left;
+  box-shadow: 1px 1px 6px #251217;
+}
+.triggerButtonRotate {
+  animation: rotate 4s infinite linear;
+  position: relative;
+  left: 20px;
+  bottom: -20px;
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.triggerButton_shake {
+  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.Spinner {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999999;
+  /* display: grid;
+  place-content: center; */
+}
+.abtest-create{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.campaignCardSubtitleHight {
+  height: 40px;
+}
+.CC_WheelContainer {
+  position: sticky;
+  top: 0;
+}
+
+@media only screen and (max-height: 480px) {
+  .scrollable-container {
+    height: 400px; /* Adjust height for very small screens */
+  }
+}
+.Polaris-Page--fullWidth {
+  max-width: 1400px !important;
+}
+.crisp-client
+  .cc-1brb6
+  .cc-1yy0g
+  .cc-1no03
+  .cc-rfbfu
+  .cc-1iwcs
+  .cc-1nvun
+  .cc-qqgts
+  .cc-1si9v
+  .cc-zl8x6,
+.crisp-client
+  .cc-1brb6
+  .cc-1yy0g
+  .cc-1no03
+  .cc-rfbfu
+  .cc-1iwcs
+  .cc-1nvun
+  .cc-qqgts {
+  display: none !important;
+}
+
+.price_1 {
+  position: absolute;
+}
+.price_2 {
+  position: absolute;
+  left: 159px;
+}
+.price_3 {
+  position: absolute;
+  right:48%
+}
+.price_4 {
+  position: absolute;
+  right: 152px;
+}
+.price_5 {
+  position: absolute;
+  right: 0px;
+}
+.numberField{
+  position: relative;
+}
+.suffix {
+  font-size: 11px;
+  position: absolute;
+  right: 30px;
+  top: 27px;
+  opacity: 0.5;
+}
+.download-button .Polaris-Popover__PopoverOverlay--open{
+ left: 1295.77px !important;
+}
+
+/* carousel  */
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselGrid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 50%; /* Two cards per view */
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselSlide {
+  box-sizing: border-box;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  width: 30px;
+  height: 28px;
+  border-radius: 6px;
+  transform: 0.2 ease-in;
+  color: #7c7c7c;
+}
+
+.carouselButton:hover{
+  color: #000;
+}
+
+.carouselButton:first-of-type {
+  left: -6px;
+}
+
+.carouselButton:last-of-type {
+  right: -6px;
+}
