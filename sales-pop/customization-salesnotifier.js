@@ -2201,6 +2201,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "847b8f-37.myshopify.com") {
+        masterSelector = $jq321(".product-form__buttons");
+        finalSelector = masterSelector[0];
+    }
     if (Shopify.shop == "sun-full.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css"> @media only screen and (max-width: 575px) {.notifyjs-corner {z-index: 9999 !important; margin-top: 64px !important;}} </style>'
@@ -3708,6 +3712,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "847b8f-37.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display: block !important;}</style>');
+            masterSelector = $jq321(".product-form__buttons");
+            finalSelector = masterSelector[0];
+        }
     if (Shopify.shop == "sheettracker.myshopify.com") {
         $jq321("head").append('<style type="text/css">.stock-top {display: block !important;}</style>');
     }
