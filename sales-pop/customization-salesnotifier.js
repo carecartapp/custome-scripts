@@ -2201,6 +2201,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "caribou-gifts-inc.myshopify.com") {
+        $jq321("head").append(
+            '<style type="text/css"> .ccAnnouncmntBanner-bpop {padding: 30px !important;} .row.annFullsection {margin-bottom: -30px !important;}</style>'
+        );
+    }
     if (Shopify.shop == "847b8f-37.myshopify.com") {
         masterSelector = $jq321(".product-form__buttons");
         finalSelector = masterSelector[0];
