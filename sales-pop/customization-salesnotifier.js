@@ -4074,6 +4074,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorTimer5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorTimer6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+    if (Shopify.shop == "coo-cuddles.myshopify.com") {
+        masterSelector = $jq321(".col-auto.position-relative");
+        finalSelector = masterSelector[0];
+    }
     if (Shopify.shop == "2afecb-36.myshopify.com") {
         $jq321(function() {
             // Fix for translating widget store based
