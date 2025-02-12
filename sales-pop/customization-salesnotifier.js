@@ -5891,8 +5891,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         if (Shopify.shop == "safetykit-in.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">' +
-                '.ccAnnouncmntBanner-bpop{height: 34px !important;}' +
-                'h1:not(.tt-title-subpages):not([class^="tt-title"]):not([class^="tt-collapse"]):not([class^="tt-aside"]) { margin-top: -6px !important;}' +
+                '.ccAnnouncmntBanner-bpop {height: 34px !important; display: flex; align-items: center; justify-content: center; text-align: center;}' +
+                '@media (max-width: 768px) {' + 
+                '.ccAnnouncmntBanner-bpop {font-size: 14px; padding: 0 10px;}' + 
+                '}' +
+                'h1:not(.tt-title-subpages):not([class^="tt-title"]):not([class^="tt-collapse"]):not([class^="tt-aside"]) { margin-top: -6px !important; }' +
                 '</style>'
             );
         }
