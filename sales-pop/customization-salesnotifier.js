@@ -5895,7 +5895,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 '@media (max-width: 768px) {' + 
                 '.ccAnnouncmntBanner-bpop {font-size: 14px; padding: 0 10px;}' + 
                 '}' +
-                'h1:not(.tt-title-subpages):not([class^="tt-title"]):not([class^="tt-collapse"]):not([class^="tt-aside"]) { margin-top: -6px !important; }' +
+                'h1:not(.tt-title-subpages):not([class^="tt-title"]):not([class^="tt-collapse"]):not([class^="tt-aside"]) { margin-top: -6px !important; padding-bottom: 17px !important; }' +
                 '</style>'
             );
         }
