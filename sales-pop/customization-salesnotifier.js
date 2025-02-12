@@ -5888,6 +5888,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 return;
             }
         }
+        if (Shopify.shop == "safetykit-in.myshopify.com") {
+            $jq321("head").append(
+                '<style type="text/css">' +
+                '.ccAnnouncmntBanner-bpop{height: 34px !important;}' +
+                '@media (max-width: 575px) {h1:not(.tt-title-subpages):not([class^="tt-title"]):not([class^="tt-collapse"]):not([class^="tt-aside"]) { margin-top: -7px !important;}' +
+                '</style>'
+            );
+        }
         if (Shopify.shop == "todoenmini.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">' +
