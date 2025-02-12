@@ -220,6 +220,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
         productID = 7773449683001;
     }
+    if (Shopify.shop == "8ef387-eb.myshopify.com") {
+        var meta = { "product": { "id": __st.rid } };
+
+        productID = 15036261728601;
+    }
 
     $jq321.ajax({
         type: "GET",
@@ -249,6 +254,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "8ef387-eb.myshopify.com") {
+        customSelctor = $jq321(".product-info__buy-buttons");
+        finalSelector = customSelctor[0];
+        $jq321("head").append('<style type="text/css">.counter-text-carecartbysalespop-2020 {margin-top: -20px !important;}</style>');
+    }
     if (Shopify.shop == "a5ktna-pv.myshopify.com") {
         customSelctor = $jq321(".product-form__buttons");
         finalSelector = customSelctor[0];
