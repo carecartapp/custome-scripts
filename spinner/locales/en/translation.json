@@ -738,9 +738,9 @@
 "action_require_btn": "Enable Wheelify Core Script",
 "make_consent_manadatory": "Make Consent Mandatory",
 "limit_spin_by_phone_number_tooltip": "The spin wheel usage limit will apply on the user's phone number.",
-"limit_spin_by_phone_number": "Limit Spin by Phone Number"
-
-
+"limit_spin_by_phone_number": "Limit Spin by Phone Number",
+"wheel_for_logged_in_tooltip": "Wheel for logged in users only: Enable the wheel widget access for logged-in users only.",
+ "wheel_for_logged_in":"Wheel For Logged-In User Only"
 }
 
 
