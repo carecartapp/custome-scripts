@@ -2201,6 +2201,22 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop === "tiivra.myshopify.com") {
+        const customStyles = `
+            <style type="text/css">
+                .notificationPreview-box .card-body p.card-text,
+                .notificationPreview-box .card-body h5.card-title a,
+                .notificationPreview-box .card-body .pur-time {
+                    font-family: "IBM Plex Sans" !important;
+                }
+                .notificationPreview-box .card-body h5.card-title {
+                    margin-top: 12px !important;
+                }
+            </style>
+        `;
+    
+        $jq321("head").append(customStyles);
+    }    
     if (Shopify.shop == "surprise-me-signs.myshopify.com") {
         masterSelector = $jq321(".product-form__buttons");
         finalSelector = masterSelector[0];
