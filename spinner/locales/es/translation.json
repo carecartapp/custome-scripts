@@ -734,5 +734,14 @@
 "welcome_to_wheelify_p2": "La aplicación es 100% gratuita si tienes hasta 300 impresiones al mes y obtienes una prueba gratuita de 30 días en cualquier caso.",
 "action_require": "Acción requerida: Wheelify no está configurado",
 "action_require_discription": "La ventana emergente de Wheel solo se mostrará una vez que habilite Wheelify Core Script",
-"action_require_btn": "Habilitar el script principal de Wheelify"
+"action_require_btn": "Habilitar el script principal de Wheelify",
+"make_consent_manadatory": "Hacer que el consentimiento sea obligatorio",
+"limit_spin_by_phone_number_tooltip": "El límite de uso de la ruleta se aplicará a la dirección de correo electrónico del usuario.",
+"limit_spin_by_phone_number": "Limite de giros por número de teléfono",
+"wheel_for_logged_in_tooltip": "Rueda solo para usuarios que hayan iniciado sesión: habilite el acceso al widget de rueda solo para usuarios que hayan iniciado sesión.",
+"wheel_for_logged_in":"Rueda solo para usuarios que han iniciado sesión"
+
+
+
+
 }
