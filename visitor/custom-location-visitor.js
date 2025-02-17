@@ -867,6 +867,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "actonlinestore.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { margin-top: 0px !important; height: 30px !important;}</style>');
+        customSelctor = $jq321(".block-actions-wrapper");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "golfpartner.myshopify.com") {
         customSelctor = $jq321(".product-block.product-block--sales-point");
         finalSelector = customSelctor[4];
