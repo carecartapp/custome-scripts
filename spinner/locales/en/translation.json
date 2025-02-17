@@ -735,7 +735,12 @@
 "welcome_to_wheelify_p2": "The app is 100% free if you have upto 300 impressions / month and you get a 30 days free trial either way.",
 "action_require": "Action required - Wheelify is not set up",
 "action_require_discription": "Wheel pop up will only be displayed once you enable Wheelify Core Script",
-"action_require_btn": "Enable Wheelify Core Script"
+"action_require_btn": "Enable Wheelify Core Script",
+"make_consent_manadatory": "Make Consent Mandatory",
+"limit_spin_by_phone_number_tooltip": "The spin wheel usage limit will apply on the user's phone number.",
+"limit_spin_by_phone_number": "Limit Spin by Phone Number"
+
+
 }
 
 
