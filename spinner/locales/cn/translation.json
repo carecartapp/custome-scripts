@@ -733,5 +733,8 @@
 "welcome_to_wheelify_p2": "如果您每月的展示次数最多为 300 次，则该应用程序是 100% 免费的，并且无论如何您都可以获得 30 天的免费试用期。",
 "action_require": "需要采取措施 - Wheelify 未设置",
 "action_require_discription": "仅当您启用 Wheelify 核心脚本后才会显示 Wheel 弹出窗口",
-"action_require_btn": "启用 Wheelify 核心脚本"
+"action_require_btn": "启用 Wheelify 核心脚本",
+ "make_consent_manadatory": "强制同意",
+ "limit_spin_by_phone_number_tooltip": "旋轉輪使用限制將適用於使用者的電子郵件地址",
+ "limit_spin_by_phone_number": "透過電話號碼限制旋轉"
 }
