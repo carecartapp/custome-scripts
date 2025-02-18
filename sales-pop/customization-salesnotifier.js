@@ -2285,7 +2285,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "sun-full.myshopify.com") {
         $jq321("head").append(
-            '<style type="text/css"> .notificationPreview-box .card-body p.card-text,.notificationPreview-box .card-body h5.card-title a,.notificationPreview-box .card-body .pur-time {font-family: "Roboto" !important;} .ccAnnouncmntBanner-bpop {height: 50px;} div.banner-Close-CC svg{fill: none;}</style>'
+            '<style type="text/css"> .notificationPreview-box .card-body p.card-text,.notificationPreview-box .card-body h5.card-title a,.notificationPreview-box .card-body .pur-time {font-family: "Roboto", sans-serif !important;} .ccAnnouncmntBanner-bpop {height: 50px;} div.banner-Close-CC svg{fill: none;}</style>'
         );
     }
     if (Shopify.shop == "goat-boxco.myshopify.com") {
@@ -4456,7 +4456,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     if (Shopify.shop == "sun-full.myshopify.com") {
         $jq321("head").append(
-            "<style type='text/css'>.visitor-font-family-inherit {font-family: 'Roboto' !important;}</style>"
+            "<style type='text/css'>.visitor-font-family-inherit {font-family: 'Roboto', sans-serif !important;}</style>"
         );
     }
     if (Shopify.shop == "331d1f-cd.myshopify.com") {
