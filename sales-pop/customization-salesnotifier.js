@@ -2285,7 +2285,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     }
     if (Shopify.shop == "sun-full.myshopify.com") {
         $jq321("head").append(
-            '<style type="text/css"> .ccAnnouncmntBanner-bpop {height: 50px;} div.banner-Close-CC svg{fill: none;}</style>'
+            '<style type="text/css"> .notificationPreview-box .card-body p.card-text,.notificationPreview-box .card-body h5.card-title a,.notificationPreview-box .card-body .pur-time {font-family: "Roboto" !important;} .ccAnnouncmntBanner-bpop {height: 50px;} div.banner-Close-CC svg{fill: none;}</style>'
         );
     }
     if (Shopify.shop == "goat-boxco.myshopify.com") {
@@ -4454,6 +4454,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorVisitor3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorVisitor4 = $jq321("form[action='/cart/add']:first");
 
+    if (Shopify.shop == "sun-full.myshopify.com") {
+        $jq321("head").append(
+            "<style type='text/css'>.visitor-font-family-inherit {font-family: 'Roboto' !important;}</style>"
+        );
+    }
     if (Shopify.shop == "331d1f-cd.myshopify.com") {
         masterSelector = $jq321(".product-single__form");
         finalSelector = masterSelector[0];
