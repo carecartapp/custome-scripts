@@ -868,22 +868,24 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let finalSelector = "";
 
     if (Shopify.shop == "actonlinestore.myshopify.com") {
-        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { margin-top: 0px !important; height: 30px !important;}</style>');
-        $jq321("head").append('<style type="text/css">@media (max-width: 768px) { .counter-text-carecartbysalespop-2020 {margin-left: -5px; min-height: 80px !important;}}</style>');
-        customSelctor = $jq321(".block-actions-wrapper");
-        finalSelector = customSelctor[0];
-
         // Function to detect language based on URL
         const language = window.location.pathname.includes('/en') ? 'en' : 'it';
+
+        if (language === 'en') {
+            $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { display: none !important;}</style>');
+        } else {
+            $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { margin-top: 0px !important; height: 30px !important;}</style>');
+            $jq321("head").append('<style type="text/css">@media (max-width: 768px) { .counter-text-carecartbysalespop-2020 {margin-left: -5px; min-height: 80px !important;}}</style>');
+        }
+        
+        customSelctor = $jq321(".block-actions-wrapper");
+        finalSelector = customSelctor[0];
 
         function translateText() {
             $jq321("body *").each(function () {
                 let currentText = $jq321(this).html();
 
-                if (language === 'en' && currentText.includes('visitatore(i) stanno attualmente guardando questo prodotto.')) {
-                    $jq321(this).html(currentText.replace('visitatore(i) stanno attualmente guardando questo prodotto.', 'People are currently browsing this site.'));
-                } 
-                else if (language === 'it' && currentText.includes('People are currently browsing this site.')) {
+                if (language === 'it' && currentText.includes('People are currently browsing this site.')) {
                     $jq321(this).html(currentText.replace('People are currently browsing this site.', 'Visitatore(i) stanno attualmente guardando questo prodotto.'));
                 }
             });
