@@ -739,9 +739,8 @@
 "limit_spin_by_phone_number_tooltip": "El límite de uso de la ruleta se aplicará a la dirección de correo electrónico del usuario.",
 "limit_spin_by_phone_number": "Limite de giros por número de teléfono",
 "wheel_for_logged_in_tooltip": "Rueda solo para usuarios que hayan iniciado sesión: habilite el acceso al widget de rueda solo para usuarios que hayan iniciado sesión.",
-"wheel_for_logged_in":"Rueda solo para usuarios que han iniciado sesión"
-
-
-
-
+"wheel_for_logged_in":"Rueda solo para usuarios que han iniciado sesión",
+"wheel_animation": "Animación de ruedas",
+"wheel_animation_tooltip": "Activar para agregar un efecto de giro lento inicial cuando la rueda se carga por primera vez",
+"wheel_animation_logged_in": "Habilitar giro lento de la rueda",
 }
