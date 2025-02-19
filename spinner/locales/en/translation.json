@@ -743,8 +743,5 @@
  "wheel_for_logged_in":"Wheel For Logged-In User Only",
 "wheel_animation":"Wheel Animation",
 "wheel_animation_logged_in":"Enable Slow Wheel Spining",
-"wheel_animation_tooltip":"Activate to add an initial slow spin effect when the wheel first loads",
+"wheel_animation_tooltip":"Activate to add an initial slow spin effect when the wheel first loads"
 }
-
-
-
