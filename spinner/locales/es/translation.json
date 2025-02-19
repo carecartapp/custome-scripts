@@ -742,5 +742,5 @@
 "wheel_for_logged_in":"Rueda solo para usuarios que han iniciado sesión",
 "wheel_animation": "Animación de ruedas",
 "wheel_animation_tooltip": "Activar para agregar un efecto de giro lento inicial cuando la rueda se carga por primera vez",
-"wheel_animation_logged_in": "Habilitar giro lento de la rueda",
+"wheel_animation_logged_in": "Habilitar giro lento de la rueda"
 }
