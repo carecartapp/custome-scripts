@@ -738,5 +738,8 @@
  "limit_spin_by_phone_number_tooltip": "旋轉輪使用限制將適用於使用者的電子郵件地址",
  "limit_spin_by_phone_number": "透過電話號碼限制旋轉",
  "wheel_for_logged_in_tooltip": "僅適用於登入使用者的滾輪：僅對登入使用者啟用滾輪小元件存取權限。",
- "wheel_for_logged_in":"輪盤僅供登入使用者使用"
+ "wheel_for_logged_in":"輪盤僅供登入使用者使用",
+"wheel_animation": “轮子动画”，
+"wheel_animation_tooltip" : 激活以在轮子首次加载时添加初始缓慢旋转效果”，
+"wheel_animation_logged_in"：“启用慢轮旋转”,
 }
