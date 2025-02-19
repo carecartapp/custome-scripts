@@ -740,7 +740,10 @@
 "limit_spin_by_phone_number_tooltip": "The spin wheel usage limit will apply on the user's phone number.",
 "limit_spin_by_phone_number": "Limit Spin by Phone Number",
 "wheel_for_logged_in_tooltip": "Wheel for logged in users only: Enable the wheel widget access for logged-in users only.",
- "wheel_for_logged_in":"Wheel For Logged-In User Only"
+ "wheel_for_logged_in":"Wheel For Logged-In User Only",
+"wheel_animation":"Wheel Animation",
+"wheel_animation_logged_in":"Enable Slow Wheel Spining",
+"wheel_animation_tooltip":"Activate to add an initial slow spin effect when the wheel first loads",
 }
 
 
