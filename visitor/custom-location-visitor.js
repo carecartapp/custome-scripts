@@ -867,6 +867,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "vfd7hh-xs.myshopify.com") {
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 40px !important;  margin-top: -12px !important;}</style>');
+        customSelctor = $jq321(".product__inventory");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "actonlinestore.myshopify.com") {
         // Function to detect language based on URL
         const language = window.location.pathname.includes('/en') ? 'en' : 'it';
