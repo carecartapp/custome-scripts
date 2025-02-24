@@ -39,6 +39,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 	let greetingWidgetOption;
 
 	//custom fix
+
+	//global fix for whatsapp icon
+	carecartWhatsApp("body").append("<style type='text/css'>.wa-chat-btn-icon-image-only.wa-custom-icon.wa-icon-mask, .wa-icon-mask{display: inline-block;}</style>");
+	
 	if (Shopify.shop == "nug01q-i0.myshopify.com") {
 		carecartWhatsApp("body").append("<style type='text/css'>.wa-chat-btn-icon-image-only.wa-custom-icon.wa-icon-mask, .wa-icon-mask{display: inline-block;}</style>");
 	}
