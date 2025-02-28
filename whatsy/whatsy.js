@@ -42,7 +42,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
 	//global fix for whatsapp icon
 	carecartWhatsApp("body").append("<style type='text/css'>.wa-chat-btn-icon-image-only.wa-custom-icon.wa-icon-mask, .wa-icon-mask{display: inline-block !important;}</style>");
-	
+
+	if(Shopify.shop == "a9dd61-b5.myshopify.com") {
+		carecartWhatsApp("head").append('<style type="text/css"> .icon-right:before{display: none !important;}</style>');
+	}
 	if(Shopify.shop == "yofeely.myshopify.com") {
 		carecartWhatsApp("head").append('<style type="text/css"> .share-widget-custom-right {z-index: 2 !important;} .share-widget-custom-right .wa-chat-btn-base-cta {transform: rotate(90deg) !important;}</style>');
 	}
