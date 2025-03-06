@@ -2201,6 +2201,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "bynelo.myshopify.com"){
+        $jq321("head").append(
+            '<style type="text/css"> #ccannouncement-main {display: block !important;} </style>'
+        ); 
+    }
     if (Shopify.shop === "tiivra.myshopify.com") {
         const customStyles = `
             <style type="text/css">
@@ -5965,14 +5970,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 '</style>'
             );
         }
-        if (Shopify.shop == "bynelo.myshopify.com") {
-            $jq321("head").append(
-                '<style type="text/css">' +
-                '.annFullsection .getDiscoundText{margin-bottom:0 !important;}' +
-                '.ccAnnouncmntBanner-bpop{z-index:100000;}' +
-                '</style>'
-            );
-        }
+        // if (Shopify.shop == "bynelo.myshopify.com") {
+        //     $jq321("head").append(
+        //         '<style type="text/css">' +
+        //         '.annFullsection .getDiscoundText{margin-bottom:0 !important;}' +
+        //         '.ccAnnouncmntBanner-bpop{z-index:100000;}' +
+        //         '</style>'
+        //     );
+        // }
         if (Shopify.shop == "multipower-online.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">' +
@@ -5981,14 +5986,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             );
         }
 
-        if (Shopify.shop == "bynelo.myshopify.com") {
-            $jq321("head").append(
-                '<style type="text/css">' +
-                '.header-section{top:60px;}' +
-                '.ccAnnouncmntBanner-bpop{ z-index: 50;}' +
-                '</style>'
-            );
-        }
+        // if (Shopify.shop == "bynelo.myshopify.com") {
+        //     $jq321("head").append(
+        //         '<style type="text/css">' +
+        //         '.header-section{top:60px;}' +
+        //         '.ccAnnouncmntBanner-bpop{ z-index: 50;}' +
+        //         '</style>'
+        //     );
+        // }
         if (Shopify.shop == "cosmetics-fragrance-direct.myshopify.com") {
             $jq321("head").append(
                 '<style type="text/css">' +
