@@ -867,6 +867,47 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "yoon-online.myshopify.com") {
+        // Function to detect language based on URL
+        const language = window.location.pathname.includes('/en') ? 'en' : 'it';
+        if (language === 'en') {
+            $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { display: none !important;}</style>');
+        } else {
+            // Apply styles for Italian (small text, lowercase)
+            $jq321("head").append(`
+                <style type="text/css">
+                    .visitor-counter-content-box-carecartbysalespop-2020,
+                    .visitor-font-family-inherit,
+                    .visitor-font-weight-inherit,
+                    .light-font,
+                    .counter-text-carecartbysalespop-2020 {
+                        text-transform: lowercase !important;
+                    }
+                </style>
+            `);
+        }
+        
+        customSelctor = $jq321(".block-actions-wrapper");
+        finalSelector = customSelctor[0];
+
+        function translateText() {
+            $jq321("body *").each(function () {
+                let currentText = $jq321(this).html();
+
+                if (language === 'it' && currentText.includes('people are currently browsing this site.')) {
+                    $jq321(this).html(currentText.replace('people are currently browsing this site.', 'Visitatore(i) stanno attualmente guardando questo prodotto.'));
+                }
+            });
+        }
+
+        $jq321(function () {
+            translateText(); // Initial translation
+
+            // Observe DOM changes to detect new elements
+            new MutationObserver(() => setTimeout(translateText, 50))
+                .observe(document.body, { childList: true, subtree: true });
+        });
+    }
     if (Shopify.shop == "vfd7hh-xs.myshopify.com") {
         $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 { height: 40px !important;  margin-top: -12px !important;}</style>');
         customSelctor = $jq321(".product__inventory");
