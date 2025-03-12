@@ -1697,6 +1697,11 @@
      var finalSelector = '';
      
      let productID = 0;
+   if (Shopify.shop == "355e6e-7b.myshopify.com") {
+        productID = 9526565175635;
+        masterSelector = $jq321(".product-info__buy-buttons");
+        finalSelector = masterSelector[0];
+    }
   if (Shopify.shop == "z8dqt1-gw.myshopify.com") {
         productID = 9303255744838;
    } 
@@ -2448,7 +2453,13 @@
          {
             if (masterSelector.length > 0) 
             { 
-                $jq321(responseTimer.view).insertBefore(finalSelector);
+             if (Shopify.shop == "355e6e-7b.myshopify.com") {
+                    selectorTimer1.closest('.grid.gap-4').prepend(responseTimer.view);
+                } else {
+                    $jq321(responseTimer.view).insertBefore(finalSelector);
+                }
+             
+              //  $jq321(responseTimer.view).insertBefore(finalSelector);
             }
             else if (selectorTimer1.length == 1) 
             {
@@ -2582,7 +2593,12 @@
          {
              if (selectorSold1.length == 1)
              {
-                 selectorSold1.prepend(response.view);
+               if (Shopify.shop == "355e6e-7b.myshopify.com") {
+                    selectorSold1.closest('.grid.gap-4').prepend(response.view);
+                } else {
+                    selectorSold1.prepend(response.view);
+                }
+                // selectorSold1.prepend(response.view);
              }
              else if (selectorSold2.length == 1)
              {
