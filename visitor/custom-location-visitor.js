@@ -867,6 +867,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "b9732c-f1.myshopify.com") {
+        customSelctor = $jq321(".pmpr_bundle__add_to_cart");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "yoon-online.myshopify.com") {
         // Function to detect language based on URL
         const language = window.location.pathname.includes('/en') ? 'en' : 'it';
