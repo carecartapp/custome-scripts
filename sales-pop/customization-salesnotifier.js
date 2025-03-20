@@ -2201,6 +2201,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "voi-jeans-online.myshopify.com") {
+        masterSelector = $jq321(".product__submit__buttons");
+        finalSelector = masterSelector[0];
+    }
     if (Shopify.shop == "bynelo.myshopify.com"){
         $jq321("head").append(
             '<style type="text/css"> #ccannouncement-main {display: block !important;} </style>'
