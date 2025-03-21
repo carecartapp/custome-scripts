@@ -2204,6 +2204,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     if (Shopify.shop == "voi-jeans-online.myshopify.com") {
         masterSelector = $jq321(".product__submit__buttons");
         finalSelector = masterSelector[0];
+        $jq321("head").append('<style type="text/css">.visitor-counter-content-box-carecartbysalespop-2020 {height: 45px !important;} </style>');
     }
     if (Shopify.shop == "bynelo.myshopify.com"){
         $jq321("head").append(
