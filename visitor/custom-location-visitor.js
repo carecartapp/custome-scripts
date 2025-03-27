@@ -867,6 +867,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     let customSelctor = "";
     let finalSelector = "";
 
+    if (Shopify.shop == "w0ecbx-4v.myshopify.com") {
+        customSelctor = $jq321(".g9M5_PkGCg");
+        finalSelector = customSelctor[0];
+    }
     if (Shopify.shop == "325870-ec.myshopify.com") {
         $jq321("head").append('<style type="text/css">.d-md-flex {flex-wrap: wrap;} {.visitor-counter-content-box-carecartbysalespop-2020 { height: 50px !important;  margin-top: -5px !important;}</style>');
         customSelctor = $jq321(".product-single__title");
