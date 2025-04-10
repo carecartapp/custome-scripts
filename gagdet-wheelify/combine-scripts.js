@@ -1,9 +1,10 @@
+
 (function () {
-  function loadScript(src, defer = false) {
+  function loadScript(src, async = false) {
     return new Promise((resolve, reject) => {
       const script = document.createElement("script");
       script.src = src;
-      if (defer) script.defer = true;
+      if (async) script.async = true;
       script.onload = resolve;
       script.onerror = reject;
       document.head.appendChild(script);
@@ -30,9 +31,12 @@
   loadStyle("https://cdn.shopify.com/extensions/817ed504-1631-465a-a5f3-03cf4811fd96/wheelify-spin-wheel-email-pop-82/assets/intlTelInput.css");
   loadStyle("https://cdn.shopify.com/extensions/817ed504-1631-465a-a5f3-03cf4811fd96/wheelify-spin-wheel-email-pop-82/assets/front-store-spinner.min.css");
 
-  // Chain script loading in your desired order
-  loadScript("https://wheelify.gadget.app/api/client/web.min.js", true)
-    .then(() => loadScript("https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v12.38/gagdet-wheelify/wheelify-inject.js"))
+  // Step 1: Load the first script FIRST and wait for it
+  loadScript("https://wheelify.gadget.app/api/client/web.min.js")
+    .then(() => {
+      // Step 2: Chain the rest AFTER the first one is fully loaded
+      return loadScript("https://cdn.jsdelivr.net/gh/carecartapp/custome-scripts@v12.38/gagdet-wheelify/wheelify-inject.js");
+    })
     .then(() => loadScript("https://cdn.shopify.com/extensions/817ed504-1631-465a-a5f3-03cf4811fd96/wheelify-spin-wheel-email-pop-82/assets/indexgt.js"))
     .then(() => loadScript("https://cdn.shopify.com/extensions/817ed504-1631-465a-a5f3-03cf4811fd96/wheelify-spin-wheel-email-pop-82/assets/intlTelInput.min.js"))
     .then(() => loadScript("https://cdn.shopify.com/extensions/817ed504-1631-465a-a5f3-03cf4811fd96/wheelify-spin-wheel-email-pop-82/assets/spinner.min.js"))
