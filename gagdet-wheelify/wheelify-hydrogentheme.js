@@ -43,7 +43,7 @@ ${lr(e.fields).join(`
       window.Shopify = {};
     }
     if (!Shopify.shop) {
-      Shopify.shop = "quickstart-8be879cc.myshopify.com";
+      Shopify.shop = "airdropgolf.myshopify.com";
     }
   
     // Load external scripts
