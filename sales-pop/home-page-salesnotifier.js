@@ -1697,6 +1697,11 @@
      var finalSelector = '';
      
      let productID = 0;
+     if (Shopify.shop == "railstrvintage.myshopify.com") {
+        productID = 10043422343479;
+        masterSelector = $jq321(".btn--enter-now");
+        finalSelector = masterSelector[0];
+    }
    if (Shopify.shop == "355e6e-7b.myshopify.com") {
         productID = 9526565175635;
         masterSelector = $jq321(".product-info__buy-buttons");
