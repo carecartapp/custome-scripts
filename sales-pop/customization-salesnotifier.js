@@ -4244,8 +4244,8 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             finalSelector = masterSelector[0];
         }
 	if (Shopify.shop == "1minpretty.myshopify.com") {
-            masterSelector = $jq321(".product-page--block");
-            finalSelector = masterSelector[4];
+            masterSelector = $jq321(".wt-product__add-to-cart_form--wrapper");
+            finalSelector = masterSelector[0];
         }  
 	if (Shopify.shop == "myfeedneed.myshopify.com") {
             masterSelector = $jq321(".new-form-atc.addCart");
