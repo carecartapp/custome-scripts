@@ -2205,6 +2205,17 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         masterSelector = $jq321(".bee-product-form__buttons");
         finalSelector = masterSelector[0];
     }
+    if (Shopify.shop == "shopillari.myshopify.com") {
+        $jq321("head").append(
+            `<style type="text/css">
+                @media (min-width: 768px) {
+                    .cc-shareCart {
+                        margin-top: -250px !important;
+                    }
+                }
+            </style>`
+        );
+    }
     if (Shopify.shop == "5fc060.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css">' +
@@ -6163,7 +6174,12 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                         let copyLink = "https://" + Shopify.shop + "/cart/";
                         let cartItems = data.items;
                         if (cartItems.length > 0) {
-                            $jq321(firstSelector[1]).append(response.iconsFile);
+                            if (firstSelector.length == 1) {
+                                $jq321(firstSelector[0]).append(response.iconsFile);
+                            } else {
+                                $jq321(firstSelector[1]).append(response.iconsFile);
+                            }
+                            //$jq321(firstSelector[1]).append(response.iconsFile);
                             for (const items of cartItems) {
                                 copyLink = copyLink + items.variant_id + ":" + items.quantity + ",";
                             }
