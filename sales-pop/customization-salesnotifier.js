@@ -2201,6 +2201,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "yga82z-9q.myshopify.com") {
+        masterSelector = $jq321(".bee-product-form__buttons");
+        finalSelector = masterSelector[0];
+    }
     if (Shopify.shop == "5fc060.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css">' +
