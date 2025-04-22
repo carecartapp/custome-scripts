@@ -2211,17 +2211,6 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             console.warn("Selector '.bee-product-form__buttons' not found on this page.");
         }
     }
-    if (Shopify.shop == "shopillari.myshopify.com") {
-        $jq321("head").append(
-            `<style type="text/css">
-                @media (min-width: 768px) {
-                    .cc-shareCart {
-                        margin-top: -250px !important;
-                    }
-                }
-            </style>`
-        );
-    }
     if (Shopify.shop == "5fc060.myshopify.com") {
         $jq321("head").append(
             '<style type="text/css">' +
