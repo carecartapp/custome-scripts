@@ -2203,7 +2203,13 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
 
     if (Shopify.shop == "yga82z-9q.myshopify.com") {
         masterSelector = $jq321(".bee-product-form__buttons");
-        finalSelector = masterSelector[0];
+        
+        if (masterSelector.length > 0) {
+            finalSelector = masterSelector[0];
+            // You can now use finalSelector safely
+        } else {
+            console.warn("Selector '.bee-product-form__buttons' not found on this page.");
+        }
     }
     if (Shopify.shop == "shopillari.myshopify.com") {
         $jq321("head").append(
