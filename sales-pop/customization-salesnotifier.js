@@ -10,17 +10,17 @@
 
 
 //Create the element using the createElement method.
-var myDiv = document.createElement("ji");
+var cc_myDiv = document.createElement("ji");
 
 //Set its class.
-myDiv.className = 'doubleCheck';
+cc_myDiv.className = 'doubleCheck';
 
 //Finally, append the element to the HTML body
-document.body.appendChild(myDiv);
+document.body.appendChild(cc_myDiv);
 
-var doubleCheck = document.getElementsByClassName("doubleCheck");
-var ndoubleCheck = doubleCheck.length;
-if (ndoubleCheck == 2) {
+var cc_doubleCheck = document.getElementsByClassName("doubleCheck");
+var cc_ndoubleCheck = cc_doubleCheck.length;
+if (cc_ndoubleCheck == 2) {
     window.stop();
     // throw new Error("DOUBLE APP JS");
 }
