@@ -239,7 +239,8 @@
     "show_on_specific_pages": "Mostrar en páginas específicas",
     "all_premium_features": "Todas las características Premium",
     "subscribed": "SUSCRITO",
-    "pick_this_plan": "ELIJA ESTE PLAN",
+    "pick_this_plan": "Iniciar prueba gratuita",
+    "free_trial": "Comience gratis",
     "lite": "Paquete Pro",
     "upto_1000_wheel_impressions": "Hasta 1000 impresiones de ruedas",
     "we_will_not_charge_you_199": "No te cobraremos $199",
@@ -739,7 +740,7 @@
 "limit_spin_by_phone_number_tooltip": "El límite de uso de la ruleta se aplicará a la dirección de correo electrónico del usuario.",
 "limit_spin_by_phone_number": "Limite de giros por número de teléfono",
 "wheel_for_logged_in_tooltip": "Rueda solo para usuarios que hayan iniciado sesión: habilite el acceso al widget de rueda solo para usuarios que hayan iniciado sesión.",
-"wheel_for_logged_in":"Rueda solo para usuarios que han iniciado sesión",
+"wheel_for_logged_in":"Rueda de ejecución solo para usuarios registrados",
 "wheel_animation": "Animación de ruedas",
 "wheel_animation_tooltip": "Activar para agregar un efecto de giro lento inicial cuando la rueda se carga por primera vez",
 "wheel_animation_logged_in": "Habilitar giro lento de la rueda"

@@ -239,7 +239,8 @@
     "show_on_specific_pages": "显示在特定页面上",
     "all_premium_features": "所有高级版功能",
     "subscribed": "订阅了",
-    "pick_this_plan": "选择此计划",
+    "pick_this_plan": "開始免費試用",
+    "free_trial": "免費開始",
     "lite": "专业包",
     "upto_1000_wheel_impressions": "高达 1,000 轮印象",
     "we_will_not_charge_you_199": "我们不会向您收取 199 美元的费用",
@@ -738,8 +739,8 @@
  "limit_spin_by_phone_number_tooltip": "旋轉輪使用限制將適用於使用者的電子郵件地址",
  "limit_spin_by_phone_number": "透過電話號碼限制旋轉",
  "wheel_for_logged_in_tooltip": "僅適用於登入使用者的滾輪：僅對登入使用者啟用滾輪小元件存取權限。",
- "wheel_for_logged_in":"輪盤僅供登入使用者使用",
-"wheel_animation": “轮子动画”，
-"wheel_animation_tooltip" : 激活以在轮子首次加载时添加初始缓慢旋转效果”，
-"wheel_animation_logged_in"：“启用慢轮旋转”
+ "wheel_for_logged_in":"僅對登入使用者執行車輪",
+"wheel_animation": "轮子动画",
+"wheel_animation_tooltip" : "激活以在轮子首次加载时添加初始缓慢旋转效果",
+"wheel_animation_logged_in":"启用慢轮旋转"
 }
