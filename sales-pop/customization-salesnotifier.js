@@ -2201,6 +2201,10 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var masterSelector2 = '';
     var finalSelector2 = '';
 
+    if (Shopify.shop == "afs0jy-un.myshopify.com") {
+        masterSelector = $jq321(".product-form__option-selector");
+        finalSelector = masterSelector[0];
+    }
     if (Shopify.shop == "harpercollins-uk.myshopify.com") {
         masterSelector = $jq321(".qty-and-add-to-cart");
         finalSelector = masterSelector[0];
@@ -4798,6 +4802,14 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold3 = $jq321("form[action='/cart/add']:first").find("button[type='submit'],input[type='submit']").parent();
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
+        if (Shopify.shop == "afs0jy-un.myshopify.com") {
+            masterSelector = $jq321(".product-form__option-selector");
+            finalSelector = masterSelector[0];
+        }
+        if (Shopify.shop == "doowearshop.myshopify.com") {
+            masterSelector = $jq321(".product-form__submit");
+            finalSelector = masterSelector[0];
+        }
         if (Shopify.shop == "simplemartaustralia.myshopify.com") {
             masterSelector = $jq321(".buy-buttons--multiple");
             finalSelector = masterSelector[0];
