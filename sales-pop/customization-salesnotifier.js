@@ -5173,6 +5173,22 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
                 }
             });
         }
+        if (Shopify.shop == "afs0jy-un.myshopify.com") {
+            $jq321(".product-item__image-wrapper").each(function () {
+                // Look for the <a> inside the wrapper
+                var href = $jq321(this).find('a').attr('href');
+        
+                if (href) {
+                    var url = href.split("/");
+        
+                    if ($jq321.inArray("products", url) != -1) {
+                        allLinks.push(href);
+                    }
+                } else {
+                    console.warn("No href found in .product-item__image-wrapper", this);
+                }
+            });
+        }
 		if (Shopify.shop == "hilaling.myshopify.com") {
                     $jq321(".product-item__image-wrapper").each(function () {
                         var href = $jq321(this).attr('href');
