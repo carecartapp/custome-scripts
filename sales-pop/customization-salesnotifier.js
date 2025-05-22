@@ -5303,8 +5303,16 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
             var qvselector;
 
             var cardwrapper = $jq321("main").find('.card-wrapper');
+
+            if(Shopify.shop == "afs0jy-un.myshopify.com") {
+                cardwrapper = $jq321("#main").find('.product-item__image-wrapper');
+            }
+
             if (cardwrapper.length != 0) {
                 qvselector = $jq321("main .card-wrapper").find("img:first");
+                if (Shopify.shop == "afs0jy-un.myshopify.com") {
+                    qvselector = $jq321("#main .product-item__image-wrapper").find("img:first");
+                }
             }
             else {
                 qvselector = $jq321("main").find("img");
