@@ -2202,7 +2202,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
     var finalSelector2 = '';
 
     if (Shopify.shop == "afs0jy-un.myshopify.com") {
-        masterSelector = $jq321(".product-form__option-selector");
+        masterSelector = $jq321(".flex");
         finalSelector = masterSelector[0];
     }
     if (Shopify.shop == "harpercollins-uk.myshopify.com") {
@@ -3841,6 +3841,11 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorStock5 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']").find("button[type='submit'],input[type='submit']").parent();
         var selectorStock6 = $jq321("#shopify-section-product-template").find("form[action='/cart/add']");
 
+        if (Shopify.shop == "afs0jy-un.myshopify.com") {
+            $jq321("head").append('<style type="text/css">.stock-top {display: block !important; margin-top: 20px !important;}</style>');
+            masterSelector = $jq321(".flex");
+            finalSelector = masterSelector[0];
+        }
         if (Shopify.shop == "colorboost1.myshopify.com") {
             $jq321("head").append('<style type="text/css">.stock-top {display: block !important; margin-top: 20px !important;}</style>');
             masterSelector = $jq321(".product-form__submit");
@@ -4803,7 +4808,7 @@ scriptInjection("https://code.jquery.com/jquery-3.2.1.min.js", function () {
         var selectorSold4 = $jq321("form[action='/cart/add']:first");
 
         if (Shopify.shop == "afs0jy-un.myshopify.com") {
-            masterSelector = $jq321(".product-form__option-selector");
+            masterSelector = $jq321(".flex");
             finalSelector = masterSelector[0];
         }
         if (Shopify.shop == "doowearshop.myshopify.com") {
