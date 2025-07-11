@@ -22,10 +22,11 @@
 
 (function(window) {
 	var TweenLite = window.TweenLite;
-  var _gsScope = window._gsScope;
-  var globals = window._gsScope._gsDefine.globals;
-  var TweenPlugin = window.TweenPlugin;
-  var Ease = window.Ease || TweenLite.Ease;
+	var TweenPlugin = window.com.greensock.plugins.TweenPlugin;
+	var Ease = TweenLite.defaultEase || window.Ease;
+
+	var _gsScope = window;
+	var globals = window.com.greensock;
 
   
   if (!window.TweenLite || !window._gsScope || !window._gsScope._gsDefine) {
