@@ -21,16 +21,19 @@
  */
 
 (function(window) {
+	var TweenLite = window.TweenLite;
+  var _gsScope = window._gsScope;
+  var globals = window._gsScope._gsDefine.globals;
+  var TweenPlugin = window.TweenPlugin;
+  var Ease = window.Ease || TweenLite.Ease;
+
+  
   if (!window.TweenLite || !window._gsScope || !window._gsScope._gsDefine) {
     console.warn("GSAP (TweenLite) is required for ThrowPropsPlugin.");
     return;
   }
 
-  var TweenLite = window.TweenLite;
-  var _gsScope = window._gsScope;
-  var globals = window._gsScope._gsDefine.globals;
-  var TweenPlugin = window.TweenPlugin;
-  var Ease = window.Ease || TweenLite.Ease;
+
 
   _gsScope._gsDefine("plugins.ThrowPropsPlugin", ["utils.VelocityTracker", "plugins.TweenPlugin", "TweenLite", "easing.Ease"], function(VelocityTracker) {
 		
