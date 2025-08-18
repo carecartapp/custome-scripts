@@ -268,7 +268,7 @@
     "impression_per_month": "Impression per month",
     "price": "Price",
     "note": "Note",
-    "above_50000_impressions_will_be_charged_at_one_dollar": "Above 50,000 impressions will be charged at $1 per 1000 impressions.",
+    "above_50000_impressions_will_be_charged_at_one_dollar": "Above 50,000 impressions will be charged at $1 per 1,000 impressions.",
     "ab_test_success_alert_1": "You have successfully created your test, please modified your",
     "ab_test_success_alert_2": "to differentiate from original variant.",
     "all_charges_bulid_usd": "All charges are billed in USD. Recurring and usage-based charges are billed every 30 days",
