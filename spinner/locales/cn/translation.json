@@ -250,7 +250,7 @@
     "impression_per_month": "每月展示次数",
     "price": "价格",
     "note": "注解",
-    "above_50000_impressions_will_be_charged_at_one_dollar": "超过 50,000 次展示将按每 1000 次展示 1 美元收费。",
+    "above_50000_impressions_will_be_charged_at_one_dollar": "超过 50,000 次展示将按每 1,000 次展示 1 美元收费。",
     "ab_test_success_alert_1": "您已成功创建测试，请修改您的",
     "ab_test_success_alert_2": "以区别于初始变体。",
     "all_charges_bulid_usd": "所有费用均以美元计费。定期费用和基于使用量的费用每 30 天计费一次",

@@ -250,7 +250,7 @@
     "impression_per_month": "Impresión por mes",
     "price": "Precio",
     "note": "Nota",
-    "above_50000_impressions_will_be_charged_at_one_dollar": "Por encima de las 50 000 impresiones se cobrará $1 por cada 1000 impresiones.",
+    "above_50000_impressions_will_be_charged_at_one_dollar": "Por encima de las 50,000 impresiones se cobrará $1 por cada 1,000 impresiones.",
     "ab_test_success_alert_1": "Ha creado correctamente su prueba, por favor, modifique su",
     "ab_test_success_alert_2": "para diferenciarla de la variante original.",
     "s2": "Pegue el código en cualquier segmento e ingrese \"Label\" y \"Win Text\".",
